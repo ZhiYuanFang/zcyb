@@ -11,7 +11,6 @@ public class ExitApplication extends Application {
 	private static ExitApplication instance;
 
 	private ExitApplication() {
-		//退出APP
 	}
 
 	// 单例模式中获取唯ExitApplication实例
