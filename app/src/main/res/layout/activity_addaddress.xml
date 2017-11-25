@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical">
+
+
+    <com.wzzc.other_view.BasicTitleView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/layout_all"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="15dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:orientation="horizontal"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="5dp"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.6"
+                        android:gravity="center|start"
+                        android:text="收件人"
+                        android:textColor="@color/tv_Black"
+                        android:textSize="16sp" />
+
+                    <EditText
+                        android:id="@+id/tv_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.4"
+                        android:background="@color/bg_White"
+                        android:hint="真实姓名（必填）"
+                        android:padding="2dp"
+                        android:singleLine="true"
+                        android:textColor="@color/bg_Black"
+                        android:textColorHint="@color/tv_line"
+                        android:textSize="16sp">
+
+                    </EditText>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="5dp"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.6"
+                        android:gravity="center|start"
+                        android:text="联系电话"
+                        android:textColor="@color/tv_Black"
+                        android:textSize="16sp" />
+
+                    <EditText
+                        android:id="@+id/lab_tel"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.4"
+                        android:background="@color/bg_White"
+                        android:hint="联系电话（选填）"
+                        android:padding="2dp"
+                        android:singleLine="true"
+                        android:textColor="@color/bg_Black"
+                        android:textColorHint="@color/tv_line"
+                        android:textSize="16sp">
+
+                    </EditText>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="5dp"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.6"
+                        android:gravity="center|start"
+                        android:text="手机号码"
+                        android:textColor="@color/tv_Black"
+                        android:textSize="16sp" />
+
+                    <EditText
+                        android:id="@+id/lab_mobile"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.4"
+                        android:background="@color/bg_White"
+                        android:hint="手机号码（必填）"
+                        android:padding="2dp"
+                        android:singleLine="true"
+                        android:textColor="@color/bg_Black"
+                        android:textColorHint="@color/tv_line"
+                        android:textSize="16sp">
+
+                    </EditText>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="5dp"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.6"
+                        android:gravity="center|start"
+                        android:text="邮政编码"
+                        android:textColor="@color/tv_Black"
+                        android:textSize="16sp" />
+
+                    <EditText
+                        android:id="@+id/lab_code"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.4"
+                        android:background="@color/bg_White"
+                        android:hint="邮政编码（选填）"
+                        android:padding="2dp"
+                        android:singleLine="true"
+                        android:textColor="@color/bg_Black"
+                        android:textColorHint="@color/tv_line"
+                        android:textSize="16sp">
+
+                    </EditText>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="5dp"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.6"
+                        android:gravity="start"
+                        android:text="详细地址"
+                        android:textColor="@color/tv_Black"
+                        android:textSize="16sp" />
+
+                    <EditText
+                        android:id="@+id/lab_address"
+                        android:layout_width="match_parent"
+                        android:layout_height="90dp"
+                        android:layout_weight="0.4"
+                        android:background="@drawable/bg_collection"
+                        android:gravity="start"
+                        android:hint="详细地址(请尽量详细填写地址)"
+                        android:padding="2dp"
+                        android:textColor="@color/bg_Black"
+                        android:textColorHint="@color/tv_line"
+                        android:textSize="16sp">
+
+                    </EditText>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="5dp"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.6"
+                        android:gravity="center|start"
+                        android:text="省/市/区"
+                        android:textColor="@color/tv_Black"
+                        android:textSize="16sp" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.4"
+                        android:orientation="horizontal">
+                        <Spinner
+                            android:id="@+id/spinner"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentEnd="true"/>
+                        <TextView
+                            android:id="@+id/lab_addressForProvince"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical"
+                            android:hint="省/市/区"
+                            android:singleLine="true" />
+
+
+
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="5dp"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.6"
+                        android:gravity="center|start"
+                        android:text="配送时间"
+                        android:textColor="@color/tv_Black"
+                        android:textSize="16sp" />
+
+                    <Spinner
+                        android:id="@+id/spinner3"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.4" />
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/btn_distribution"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/angel_border_selected"
+                    android:text="确认添加"
+                    android:textColor="#ffffff"
+                    android:textSize="14dp" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

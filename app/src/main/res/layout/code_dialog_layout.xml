@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_White"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_0"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/OnpurchaseMarginLeftRight"
+        android:gravity="center_vertical"
+        android:padding="@dimen/OnepurchaseIndexSmallPadding"
+        android:text="保存二维码" />
+
+    <TextView
+        android:id="@+id/tv_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/OnpurchaseMarginLeftRight"
+        android:gravity="center_vertical"
+        android:padding="@dimen/OnepurchaseIndexSmallPadding"
+        android:text="发送给朋友" />
+
+    <TextView
+        android:id="@+id/tv_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/OnpurchaseMarginLeftRight"
+        android:gravity="center_vertical"
+        android:padding="@dimen/OnepurchaseIndexSmallPadding"
+        android:text="分享朋友圈"
+        android:visibility="gone" />
+</LinearLayout>

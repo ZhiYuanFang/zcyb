@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:installLocation="preferExternal"
+    package="com.wzzc.zcyb365">
+
+    <permission
+        android:name="com.wzzc.zcyb365.permission.JPUSH_MESSAGE"
+        android:protectionLevel="signature" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="com.wzzc.zcyb365.x.JPUSH_MESSAGE" />
+    <uses-permission android:name="android.permission.RECEIVE_USER_PRESENT" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="com.android.browser.permission.READ_HISTORY_BOOKMARKS" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <!--<uses-permission android:name="android.permission.GET_TASKS" />-->
+    <!-- Required  SDK核心功能-->
+
+    <application
+        android:name="com.application.StartApplication"
+        tools:replace="android:allowBackup, android:theme, android:icon"
+        android:allowBackup="true"
+        android:theme="@style/AppTheme"
+        android:icon="@mipmap/applogo"
+        android:label="@string/app_name"
+        android:screenOrientation="portrait"
+        android:supportsRtl="true"
+        tools:ignore="InnerclassSeparator">
+        <meta-data android:name="com.baidu.lbsapi.API_KEY"
+            android:value="3QC00yNUGR5kO0uOG28npjAavBOmLIph"/>
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:permission="android.permission.BAIDU_LOCATION_SERVICE"
+            android:process=":remote" >
+            <intent-filter>
+                <action android:name="com.baidu.location.service_v2.2" />
+            </intent-filter>
+        </service>
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.wzzc.zcyb365.fileprovider"
+            android:grantUriPermissions="true"
+            android:exported="false"
+            >
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+        <receiver
+            android:name="com.wzzc.other_function.jpush.receiver.JpushReceiver"
+            android:enabled="true"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.REGISTRATION" /> <!--Required  用户注册SDK的intent-->
+                <action android:name="cn.jpush.android.intent.MESSAGE_RECEIVED" /> <!--Required  用户接收SDK消息的intent-->
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED" /> <!--Required  用户接收SDK通知栏信息的intent-->
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_OPENED" /> <!--Required  用户打开自定义通知栏的intent-->
+                <action android:name="cn.jpush.android.intent.CONNECTION" /><!-- 接收网络变化 连接/断开 since 1.6.3 -->
+                <category android:name="com.wzzc.zcyb365" />
+            </intent-filter>
+        </receiver>
+        <activity
+            android:name="com.alipay.sdk.app.H5PayActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="behind">
+        </activity>
+        <activity
+            android:name="com.alipay.sdk.auth.AuthActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="behind">
+        </activity>
+        <!--android:hardwareAccelerated="true"-->
+        <activity android:name="com.wzzc.welcome.WellcomeActivity"
+            android:hardwareAccelerated="true"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.wzzc.base.BaseActivity" android:screenOrientation="portrait"/>
+
+        <activity android:name="com.wzzc.index.home.zcybStores.ConvertActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.wzzc.index.home.zcybStores.GiftExchangeActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.wzzc.index.home.zcybStores.PaymentActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.wzzc.NextIndex.saomiao.WebviewActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.wzzc.NextIndex.saomiao.SaomiaoActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.wzzc.NextIndex.saomiao.android.CaptureActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.wzzc.NextIndex.saomiao.OtherWZActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.wzzc.index.home.a.GcbActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.wzzc.index.home.b.ZcbActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.wzzc.index.home.c.PrizeActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.wzzc.NextTBSearch.JdpageActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.wzzc.index.home.d.PrizeOneActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.wzzc.index.home.d.main_view.main_view.DzpAddressActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.wzzc.index.home.d.main_view.RecordActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.wzzc.index.home.h.NewNearbyActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.wzzc.index.home.h.main_view.main_view.ShopDetailsActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.wzzc.NextTBSearch.TBrebackActivity"
+            android:screenOrientation="portrait" android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <activity android:name="com.wzzc.NextTBSearch.main_view.TBrebackListActivity"
+            android:screenOrientation="portrait" android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <activity android:name="com.wzzc.NextTBSearch.JDrebackActivity"
+            android:screenOrientation="portrait" android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+
+
+        <activity android:name="com.wzzc.other_function.action.toActivity.ArticleActivity" android:screenOrientation="portrait"/>
+
+        <activity android:name="com.wzzc.index.ShoppingCart.ShoppingCartActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.wzzc.index.ShoppingCart.ConfirmOrder.a.AConfirmOrderActivity"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" android:screenOrientation="portrait"/>
+        <activity android:name="com.wzzc.index.ShoppingCart.ConfirmOrder.b.BConfirmOrderActivity"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" android:screenOrientation="portrait"/>
+
+        <activity android:name="com.wzzc.NextIndex.views.e.LoginActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.wzzc.NextIndex.views.e.other_activity.backmoney.BackMoneyActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.wzzc.new_index.userCenter.regest.ordinary.RegisterActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.wzzc.NextIndex.views.e.other_activity.CBI.CBIActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.wzzc.new_index.userCenter.regest.ordinary.main_view.AgreementActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.wzzc.new_index.userCenter.regest.personalAgent.RegisterPersonalAgentActivity"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" android:screenOrientation="portrait"/>
+        <activity android:name="com.wzzc.new_index.userCenter.regest.personalAgent.SignupAgentPreActivity"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" android:screenOrientation="portrait"/>
+        <activity android:name="com.wzzc.new_index.userCenter.regest.personalAgent.SignupagentpayActivity"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" android:screenOrientation="portrait"/>
+        <activity android:name="com.wzzc.new_index.userCenter.password.RetrieveActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.wzzc.new_index.userCenter.password.PasswordEditActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.wzzc.NextIndex.views.e.other_activity.InvitedCodeActivity"
+            android:exported="true" android:screenOrientation="portrait"/>
+        <activity android:name="com.wzzc.NextIndex.views.e.other_activity.settings.SettingActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.wzzc.NextIndex.views.e.other_activity.collection.CollectionActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.wzzc.NextIndex.views.e.other_activity.address.other_activity.AddressAddActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.wzzc.NextIndex.views.e.other_activity.address.other_activity.AddressEditActivity"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" android:screenOrientation="portrait"/>
+        <activity android:name="com.wzzc.NextIndex.views.e.other_activity.address.other_activity.AddressLookActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.wzzc.NextIndex.views.e.other_activity.address.AddressActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.wzzc.NextIndex.views.e.other_activity.order.OrderListActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.wzzc.NextIndex.views.e.other_activity.RebateRanking.RebateRankingActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.wzzc.NextIndex.views.e.other_activity.order.main_view.myOrder.main_view.main.DetailsActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.wzzc.NextIndex.views.e.other_activity.order.main_view.businiess.OrderDetailsActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.wzzc.NextIndex.views.e.other_activity.order.main_view.myOrder.main_view.MyOrderDetailsActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.wzzc.NextIndex.views.e.other_activity.RelationsShips.main_view.main_view.RelationsShopDetailActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.wzzc.NextIndex.views.e.other_activity.order.main_view.myOrder.main_view.main.main_view.main_view.ConfirmOrderToDeliveryOrderActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.wzzc.NextIndex.views.e.other_activity.order.waitPostOrder.PostOrderActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.wzzc.NextIndex.views.e.other_activity.order.waitCollectOrder.CollectThemActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.wzzc.NextIndex.views.e.other_activity.order.waitSendOrder.BackOrdersActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.wzzc.NextIndex.views.e.other_activity.order.hasFinishOrder.CompletedActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.wzzc.NextIndex.views.e.other_activity.money.MoneyActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.wzzc.NextIndex.views.e.other_activity.money.recharge.RechargesActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.wzzc.NextIndex.views.e.other_activity.BusinessShop.money.replenishment.ReplenishmentActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.wzzc.NextIndex.views.e.other_activity.BusinessShop.contract.ContractActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.wzzc.NextIndex.views.e.other_activity.BusinessShop.agent.AgentActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.wzzc.NextIndex.views.e.other_activity.BusinessShop.money.commission.statistic.CommissionActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.wzzc.NextIndex.views.e.other_activity.BusinessShop.invoice.InvoiceActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.wzzc.NextIndex.views.e.other_activity.BusinessShop.invoice.main_view.delivery.DeliveryActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.wzzc.NextIndex.views.e.other_activity.BusinessShop.money.sendProduction.GiveProductsActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.wzzc.NextIndex.views.e.other_activity.BusinessShop.data.MerchantDataActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.wzzc.NextIndex.views.e.other_activity.BusinessShop.money.commission.detail.ShopDetailedActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.wzzc.NextIndex.views.e.other_activity.BusinessShop.money.commission.withdrawals.ShopWithdrawalsActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.wzzc.NextIndex.views.e.other_activity.BusinessShop.data.main_view.tradingarea.ShopeDateActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.wzzc.NextIndex.views.e.other_activity.RecommendBusinessShops.RecommendBusinessShopsActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.wzzc.NextIndex.views.e.other_activity.redpackage.UseRedActivity" android:screenOrientation="portrait"/>
+
+        <activity android:name="com.wzzc.other_activity.web.WebActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.wzzc.taobao.TBDetailActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.wzzc.other_activity.LoadWebActivity" android:screenOrientation="portrait"
+            android:exported="true">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT" />
+                <action android:name="android.intent.action.VIEW" />
+
+                <data android:scheme="taobao" />
+                <data android:scheme="https" />
+
+                <data android:host="shop.m.taobao.com" />
+                <data android:host="detail.tmall.com"/>
+                <data android:host="item.taobao.com" />
+                <data android:host="s.click.taobao.com" />
+
+                <data android:path="/shop/shop_index.htm" />
+                <data android:path="/item.htm" />
+                <data android:path="/t" />
+
+            </intent-filter>
+
+        </activity>
+        <activity
+            android:name="com.wzzc.other_view.production.list.BrowseProductionActivity"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.wzzc.other_view.production.detail.gcb.DetailGcbActivity"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" android:screenOrientation="portrait"/>
+        <activity android:name="com.wzzc.other_activity.other.usercenter.BusinessActivity" android:screenOrientation="portrait"/>
+
+        <activity android:name="com.wzzc.onePurchase.OnePurchaseMainActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.wzzc.onePurchase.activity.index.main_view.limiteRevealed.LimitedRevealedActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.wzzc.onePurchase.activity.productDetail.ProductDetailActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.wzzc.onePurchase.activity.ShopDetail.ShopDetailActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.wzzc.onePurchase.activity.index.main_view.center.activity.beginnerGuide.BeginnerGuideActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.wzzc.onePurchase.activity.index.main_view.center.activity.accountRecharge.AccountRechargeActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.wzzc.onePurchase.activity.index.main_view.center.activity.PersonalSettings.PersonalSettingsActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.wzzc.onePurchase.activity.personal_home_page.PersonalHomePageActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.wzzc.onePurchase.activity.OnePurchaseIndexActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.wzzc.onePurchase.activity.index.main_view.shopCar.OnePurchaseShopCarActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.wzzc.onePurchase.activity.index.main_view.allProduction.OnePurchaseAllProductionActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.wzzc.onePurchase.activity.specialProduction.SpecialProductionActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.wzzc.onePurchase.activity.index.main_view.center.activity.UserDetail.UserDetailActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.wzzc.onePurchase.activity.index.main_view.center.activity.myShowOrder.OnePurchaseMyShowOrderActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.wzzc.taobao.CouponActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.wzzc.taobao.OrderActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.wzzc.index.classification.ClassifyActivity"/>
+        <activity android:name="com.wzzc.other_view.production.detail.zcb.DetailZcbActivity" android:screenOrientation="portrait"/>
+
+
+        <activity android:name="com.wzzc.NextIndex.NextIndex"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.wzzc.NextSuperDeliver.search.SuperDeliverSearch" android:screenOrientation="portrait"/>
+        <activity android:name="com.wzzc.NextSuperDeliver.SuperDeliver" android:screenOrientation="portrait"/>
+        <activity android:name="com.wzzc.NextSuperDeliver.list.SuperDeliverList"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.wzzc.NextIndex.views.e.other_activity.NextRelation.NextRelations" android:screenOrientation="portrait"/>
+        <activity android:name="com.wzzc.NextIndex.views.e.other_activity.NextRelation.main_view.RelationDetail" android:screenOrientation="portrait"/>
+        <activity android:name="com.wzzc.NextIndex.views.e.other_activity.NextRelation.RelationShopDetail" android:screenOrientation="portrait"/>
+        <activity android:name="com.wzzc.NextSuperDeliver.main_view.a_b.BrandActivity" android:screenOrientation="portrait"/>
+    </application>
+
+</manifest>

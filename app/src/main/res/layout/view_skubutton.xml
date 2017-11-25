@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="25dp">
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:minWidth="25dp"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:background="@drawable/sku_button_noselect"
+        android:gravity="center"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:text="名字"
+        android:textColor="#000000"
+        android:textSize="14sp" />
+
+    <ImageView
+        android:id="@+id/img_icon"
+        android:layout_width="10dp"
+        android:layout_height="10dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="1dp"
+        android:layout_marginLeft="-11dp"
+        android:layout_toRightOf="@+id/tv_name"
+        android:src="@drawable/img_triangle"
+        android:visibility="gone" />
+</RelativeLayout>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.wzzc.other_view.BasicTitleView xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/basicTitleView17"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:title="子成分类" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/basicTitleView17"
+        android:background="@color/SuperDeliverGJColor">
+
+        <ListView
+            android:id="@+id/lv_index"
+            android:layout_width="90dp"
+            android:layout_height="match_parent"
+            android:divider="@color/tv_line"
+            android:dividerHeight="1dp"
+            android:scrollbars="none" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_toEndOf="@+id/lv_index"
+            android:background="@color/tv_line" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toEndOf="@+id/textView"
+            android:background="#FFF1E4E4">
+
+            <ListView
+                android:id="@+id/lv_item"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:divider="@color/SuperDeliverGJColor"
+                android:dividerHeight="1dp"
+                android:scrollbars="none" />
+
+            <com.wzzc.other_view.NoDataView
+                android:id="@+id/noDataView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"></com.wzzc.other_view.NoDataView>
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/touchLayout"
+        android:layout_width="@dimen/TouchLayoutWidth"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+    </RelativeLayout>
+</RelativeLayout>

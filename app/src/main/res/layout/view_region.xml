@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/OnpurchaseMarginLeftRight"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:padding="@dimen/OnepurchaseIndexSmallPadding"
+        android:weightSum="2">
+
+        <TextView
+            android:id="@+id/textView14"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.8"
+            android:gravity="center_vertical|end"
+            android:text="省" />
+
+        <Spinner
+            android:id="@+id/spinner_province"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/OnpurchaseMarginLeftRight"
+            android:layout_marginStart="@dimen/OnpurchaseMarginLeftRight"
+            android:layout_weight="0.2" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/OnpurchaseMarginLeftRight"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:padding="@dimen/OnepurchaseIndexSmallPadding"
+        android:weightSum="2">
+
+        <TextView
+            android:id="@+id/textView98"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.8"
+            android:gravity="center_vertical|end"
+            android:text="市" />
+
+        <Spinner
+            android:id="@+id/spinner_city"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/OnpurchaseMarginLeftRight"
+            android:layout_marginStart="@dimen/OnpurchaseMarginLeftRight"
+            android:layout_weight="0.2" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/OnpurchaseMarginLeftRight"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:padding="@dimen/OnepurchaseIndexSmallPadding"
+        android:weightSum="2">
+
+        <TextView
+            android:id="@+id/textView99"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.8"
+            android:gravity="center_vertical|end"
+            android:text="区" />
+
+        <Spinner
+            android:id="@+id/spinner_district"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/OnpurchaseMarginLeftRight"
+            android:layout_marginStart="@dimen/OnpurchaseMarginLeftRight"
+            android:layout_weight="0.2" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_contain_street"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/OnpurchaseMarginLeftRight"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:padding="@dimen/OnepurchaseIndexSmallPadding"
+        android:weightSum="2">
+
+        <TextView
+            android:id="@+id/textView103"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.8"
+            android:gravity="center_vertical|end"
+            android:text="街道" />
+
+        <Spinner
+            android:id="@+id/spinner_street"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/OnpurchaseMarginLeftRight"
+            android:layout_marginStart="@dimen/OnpurchaseMarginLeftRight"
+            android:layout_weight="0.2" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_contain_button"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/OnpurchaseMarginLeftRight"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:padding="@dimen/OnepurchaseIndexSmallPadding">
+
+    </LinearLayout>
+</LinearLayout>

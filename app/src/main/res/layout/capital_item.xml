@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="0"
+            android:orientation="vertical"
+            android:weightSum="2">
+
+            <TextView
+                android:id="@+id/textView120"
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="3dp"
+                android:layout_marginStart="3dp"
+                android:layout_weight="1"
+                android:background="@color/tv_line" />
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="6dp"
+                android:layout_height="6dp"
+                android:layout_weight="0"
+                android:background="@drawable/gray_ball" />
+
+            <TextView
+                android:id="@+id/textView119"
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="3dp"
+                android:layout_marginStart="3dp"
+                android:layout_weight="1"
+                android:background="@color/tv_line" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/OnpurchaseMarginLeftRight"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:id="@+id/tv_category"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="bottom"
+                        android:text="提现：￥100.00 " />
+
+                    <TextView
+                        android:id="@+id/tv_time"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="top"
+                        android:text="2017-04-20" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearLayout7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0"
+                    android:orientation="vertical"
+                    android:weightSum="2">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <TextView
+                            android:id="@+id/textView27"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="@dimen/OnepurchaseIndexSmallPadding"
+                            android:layout_weight="1"
+                            android:gravity="bottom"
+                            android:padding="@dimen/OnepurchaseIndexSmallPadding"
+                            android:text="状态：" />
+
+                        <TextView
+                            android:id="@+id/tv_state"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="@dimen/OnepurchaseIndexSmallPadding"
+                            android:layout_weight="1"
+                            android:gravity="bottom"
+                            android:padding="@dimen/OnepurchaseIndexSmallPadding"
+                            android:text="未确认" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/layout_operator"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center">
+
+                            <TextView
+                                android:id="@+id/tv_pay"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="@dimen/OnepurchaseIndexSmallPadding"
+                                android:layout_weight="1"
+                                android:background="@drawable/angel_border_selected"
+                                android:gravity="center"
+                                android:padding="@dimen/OnepurchaseIndexSmallPadding"
+                                android:text="付款"
+                                android:textColor="@color/tv_White" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center">
+
+                            <TextView
+                                android:id="@+id/tv_cancel"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="@dimen/OnepurchaseIndexSmallPadding"
+                                android:layout_weight="1"
+                                android:background="@drawable/angel_border_gray"
+                                android:gravity="center"
+                                android:padding="@dimen/OnepurchaseIndexSmallPadding"
+                                android:text="取消"
+                                android:textColor="@color/tv_White" />
+                        </RelativeLayout>
+
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView117"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_margin="@dimen/OnpurchaseMarginLeftRight"
+                android:layout_weight="0"
+                android:background="@color/tv_line" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

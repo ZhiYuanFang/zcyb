@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/aliceblue">
+    <com.wzzc.other_view.BasicTitleView
+        android:id="@+id/basicTitleView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        app:hasBack="false"
+        app:hasHome="false"
+        app:title = "帮助中心"/>
+
+    <com.wzzc.other_activity.web.tou.MyWebView
+        android:id="@+id/webBrowser"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/basicTitleView"
+        />
+</RelativeLayout>

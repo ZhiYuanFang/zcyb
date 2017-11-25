@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/imageView26"
+        android:layout_width="130dp"
+        android:layout_height="126dp"
+        android:layout_marginTop="125dp"
+        android:background="@drawable/address_no_data" />
+
+    <TextView
+        android:id="@+id/textView201"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:layout_marginTop="9dp"
+        android:text="亲，你的列表还没有地址哦~" />
+
+    <TextView
+        android:id="@+id/tv_add_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_pressed_virtual_circle_red"
+        android:paddingBottom="4dp"
+        android:paddingEnd="13dp"
+        android:paddingLeft="13dp"
+        android:paddingRight="13dp"
+        android:paddingStart="13dp"
+        android:paddingTop="4dp"
+        android:text="添加地址" />
+</LinearLayout>

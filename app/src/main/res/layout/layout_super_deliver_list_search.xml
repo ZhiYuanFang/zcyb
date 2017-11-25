@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout4"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_height"
+        android:paddingTop="25dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="5dp"
+            android:layout_marginStart="5dp"
+            android:layout_toEndOf="@+id/btn_back"
+            android:layout_toStartOf="@+id/tv_search"
+            android:orientation="vertical"
+            android:paddingBottom="5dp"
+            android:paddingTop="3dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp">
+
+                <TextView
+                    android:id="@+id/tv_category"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/button_pressed_more"
+                    android:gravity="center"
+                    android:paddingBottom="3dp"
+                    android:paddingEnd="8dp"
+                    android:paddingStart="8dp"
+                    android:paddingTop="3dp"
+                    android:text="全部"
+                    android:textColor="@color/tv_Black"
+                    android:textSize="12sp" />
+
+                <EditText
+                    android:id="@+id/edt_search"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="5dp"
+                    android:layout_toEndOf="@+id/tv_category"
+                    android:background="@android:color/transparent"
+                    android:ems="10"
+                    android:hint="请输入商品名称、关键字"
+                    android:imeOptions="actionSearch"
+                    android:inputType="textPersonName"
+                    android:singleLine="true"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/textView258"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_weight="0"
+                android:background="@color/black" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_search"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/button_pressed_angle_gradule_yello"
+            android:gravity="center"
+            android:text="搜索"
+            android:textColor="@color/tv_White">
+
+        </TextView>
+
+        <RelativeLayout
+            android:id="@+id/btn_back"
+            android:layout_width="30dp"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imageView40"
+                android:layout_width="@dimen/SuperDeliverBackDrawableHeight"
+                android:layout_height="@dimen/SuperDeliverBackDrawableHeight"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="10dp"
+                android:background="@drawable/super_deliver_back" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

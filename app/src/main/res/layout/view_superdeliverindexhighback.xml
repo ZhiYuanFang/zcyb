@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/bg_White"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/imageView28"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/SuperDeliverItemTitleHeight"
+        android:background="@drawable/super_deliver_high_back" />
+
+    <com.wzzc.other_view.extendView.ExtendImageView
+        android:id="@+id/hB0"
+        android:layout_width="match_parent"
+        android:layout_height="120dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="11dp"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="152dp"
+            android:layout_marginBottom="8dp">
+
+            <com.wzzc.other_view.extendView.ExtendImageView
+                android:id="@+id/hB4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@+id/t42"
+                android:layout_below="@+id/t41"
+                android:layout_toEndOf="@+id/t43"
+                android:layout_toStartOf="@+id/t44" />
+
+            <TextView
+                android:id="@+id/t41"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentTop="true"
+                android:background="@color/tv_line" />
+
+            <TextView
+                android:id="@+id/t42"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentBottom="true"
+                android:background="@color/tv_line" />
+
+            <TextView
+                android:id="@+id/t43"
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentStart="true"
+                android:background="@color/tv_line" />
+
+            <TextView
+                android:id="@+id/t44"
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true"
+                android:background="@color/tv_line" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="152dp"
+            android:layout_marginBottom="8dp">
+
+            <com.wzzc.other_view.extendView.ExtendImageView
+                android:id="@+id/hB3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@+id/t32"
+                android:layout_below="@+id/t31"
+                android:layout_toEndOf="@+id/t33"
+                android:layout_toStartOf="@+id/t34" />
+
+            <TextView
+                android:id="@+id/t31"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentTop="true"
+                android:background="@color/tv_line" />
+
+            <TextView
+                android:id="@+id/t32"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentBottom="true"
+                android:background="@color/tv_line" />
+
+            <TextView
+                android:id="@+id/t33"
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentStart="true"
+                android:background="@color/tv_line" />
+
+            <TextView
+                android:id="@+id/t34"
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true"
+                android:background="@color/tv_line" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="152dp"
+            android:layout_marginBottom="8dp">
+
+            <com.wzzc.other_view.extendView.ExtendImageView
+                android:id="@+id/hB2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@+id/t22"
+                android:layout_below="@+id/t21"
+                android:layout_toEndOf="@+id/t23"
+                android:layout_toStartOf="@+id/t24" />
+
+            <TextView
+                android:id="@+id/t21"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentTop="true"
+                android:background="@color/tv_line" />
+
+            <TextView
+                android:id="@+id/t22"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentBottom="true"
+                android:background="@color/tv_line" />
+
+            <TextView
+                android:id="@+id/t23"
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentStart="true"
+                android:background="@color/tv_line" />
+
+            <TextView
+                android:id="@+id/t24"
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true"
+                android:background="@color/tv_line" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="152dp">
+
+            <com.wzzc.other_view.extendView.ExtendImageView
+                android:id="@+id/hB1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@+id/t12"
+                android:layout_below="@+id/t11"
+                android:layout_toEndOf="@+id/t13"
+                android:layout_toStartOf="@+id/t14" />
+
+            <TextView
+                android:id="@+id/t11"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentTop="true"
+                android:background="@color/tv_line" />
+
+            <TextView
+                android:id="@+id/t12"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentBottom="true"
+                android:background="@color/tv_line" />
+
+            <TextView
+                android:id="@+id/t13"
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentStart="true"
+                android:background="@color/tv_line" />
+
+            <TextView
+                android:id="@+id/t14"
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true"
+                android:background="@color/tv_line" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/hB_more"
+        android:layout_width="131dp"
+        android:layout_height="@dimen/SuperDeliverMoreButtonHeight"
+        android:layout_marginBottom="24dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/super_deliver_more_baby"
+        android:contentDescription="@string/noMore" />
+</LinearLayout>

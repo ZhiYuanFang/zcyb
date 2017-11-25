@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <include
+        layout="@layout/layout_super_deliver_list_search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/include11" />
+
+    <include
+        layout="@layout/recyle_superdeliver_list_filter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/include11"
+        android:layout_alignParentStart="true"
+        android:id="@+id/include12" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/include12">
+
+        <ListView
+            android:id="@+id/superDeliverListView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <ImageButton
+            android:id="@+id/imb_top"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginBottom="15dp"
+            android:layout_marginEnd="15dp"
+            android:background="@drawable/super_deliver_up"
+            android:visibility="gone" />
+
+        <RelativeLayout
+            android:id="@+id/layout_noData"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone">
+
+            <include
+                layout="@layout/layout_no_data_in_super_deliver_list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/contain_category"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/include11">
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_arrange"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/include12">
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/contain_filter"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true">
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/touchLayout"
+        android:layout_width="@dimen/TouchLayoutWidth"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/include12">
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/touchFilter"
+        android:layout_width="@dimen/TouchLayoutWidth"
+        android:layout_height="match_parent"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/include12">
+
+    </RelativeLayout>
+</RelativeLayout>

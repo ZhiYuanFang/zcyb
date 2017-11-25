@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.wzzc.other_activity.web.main_view.WebBrowser
+        android:id="@+id/main_webview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/top_view"></com.wzzc.other_activity.web.main_view.WebBrowser>
+
+</LinearLayout>

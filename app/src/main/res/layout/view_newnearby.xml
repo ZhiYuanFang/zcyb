@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/basicLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.wzzc.other_view.BasicTitleView
+        android:id="@+id/basicTitleView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        app:title="定位"/>
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/basicTitleView"
+        android:divider="@color/SuperDeliverGJColor"
+        android:dividerHeight="15dp" />
+    <RelativeLayout
+        android:id="@+id/touchLayout"
+        android:layout_width="@dimen/TouchLayoutWidth"
+        android:layout_height="match_parent"/>
+</RelativeLayout>

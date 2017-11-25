@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/activity_vertical_margin">
+
+    <com.wzzc.onePurchase.view.AnotherItemLayoutView
+        android:id="@+id/shopping_guides"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:arrow="@drawable/arrow"
+        app:title="购物指南"
+        app:titleColor="@color/tv_Black"
+        app:titleSize="18"></com.wzzc.onePurchase.view.AnotherItemLayoutView>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/rv_shopguids"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <com.wzzc.onePurchase.view.AnotherItemLayoutView
+        android:id="@+id/frequently_questions"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:arrow="@drawable/arrow"
+        app:title="常见问题"
+        app:titleColor="@color/tv_Black"
+        app:titleSize="18">
+
+    </com.wzzc.onePurchase.view.AnotherItemLayoutView>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/rv_question"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </RelativeLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <com.wzzc.onePurchase.view.AnotherItemLayoutView
+        android:id="@+id/feedback"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:arrow="@drawable/arrow"
+        app:title="意见反馈"
+        app:titleColor="@color/tv_Black"
+        app:titleSize="18"></com.wzzc.onePurchase.view.AnotherItemLayoutView>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/rv_feedback"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

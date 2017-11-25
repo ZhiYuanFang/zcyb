@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingBottom="5dp">
+
+    <LinearLayout
+        android:id="@+id/main_view1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_weight="1"
+        android:tag="0"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/img_view1"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="#ffffff">
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/lab_name1"
+            android:layout_width="match_parent"
+            android:layout_height="26dp"
+            android:gravity="center_vertical"
+            android:ellipsize="end"
+            android:lines="1"
+            android:text="名称"
+            android:textSize="15sp"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="25dp">
+
+            <TextView
+                android:id="@+id/lab_money1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="价格"
+                android:textColor="#ff0000"
+                android:textSize="15sp"/>
+
+            <TextView
+                android:id="@+id/lab_money1_1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical|right"
+                android:text="工厂币"
+                android:textColor="#ff0000"
+                android:textSize="15sp"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/main_view2"
+        android:tag="1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/img_view2"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="#ffffff">
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/lab_name2"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:lines="1"
+            android:text="名称"
+            android:textSize="15sp"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="25dp">
+
+            <TextView
+                android:id="@+id/lab_money2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="价格"
+                android:textColor="#ff0000"
+                android:textSize="15sp"/>
+
+            <TextView
+                android:id="@+id/lab_money2_1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical|right"
+                android:text="工厂币"
+                android:textColor="#ff0000"
+                android:textSize="15sp"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

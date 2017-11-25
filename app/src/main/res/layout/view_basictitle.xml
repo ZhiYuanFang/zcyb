@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_height"
+        android:background="@color/tv_Red"
+        android:paddingTop="25dp">
+
+        <RelativeLayout
+            android:id="@+id/btn_back"
+            android:layout_width="30dp"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imageView53"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="15dp"
+                android:background="@drawable/btn_back_normal"
+                android:clickable="false"></ImageView>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/contain_title"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toEndOf="@+id/btn_back"
+            android:layout_toStartOf="@+id/bt_go_home"
+            android:gravity="center"
+            android:padding="@dimen/OnepurchaseIndexSmallPadding">
+
+            <TextView
+                android:id="@+id/lab_title"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="18dp"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="标题"
+                android:textColor="@color/tv_title"
+                android:textSize="16sp" />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/bt_go_home"
+            android:layout_width="38dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true">
+
+            <ImageView
+                android:id="@+id/imageView54"
+                android:layout_width="23dp"
+                android:layout_height="21dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="15dp"
+                android:background="@drawable/home_icon" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+</LinearLayout>

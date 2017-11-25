@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/basicLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_White"
+    android:orientation="vertical">
+
+    <com.wzzc.other_view.BasicTitleView
+        android:id="@+id/basicTitleView8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:title="返利订单" />
+
+    <RelativeLayout
+        android:id="@+id/layout_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/basicTitleView8">
+
+        <ListView
+            android:id="@+id/listView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@color/bg_White"
+            android:dividerHeight="@dimen/OnpurchaseMarginLeftRight" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/touchLayout"
+        android:layout_width="@dimen/TouchLayoutWidth"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/basicTitleView8">
+
+    </RelativeLayout>
+</RelativeLayout>

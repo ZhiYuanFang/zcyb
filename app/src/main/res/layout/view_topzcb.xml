@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/ads1_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@color/bg_Gray_light"
+            android:gravity="center">
+
+            <EditText
+                android:id="@+id/et_browse"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="28dp"
+                android:layout_marginLeft="28dp"
+                android:layout_marginRight="28dp"
+                android:layout_marginStart="28dp"
+                android:background="@drawable/angel_border_noselect"
+                android:ems="10"
+                android:hint="输入您想买的商品"
+                android:imeOptions="actionSearch"
+                android:inputType="textPersonName"
+                android:padding="@dimen/OnpurchaseMarginLeftRight" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.wzzc.other_view.extendView.ExtendImageView
+                android:id="@+id/ads_11"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:scaleType="centerInside" />
+
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:background="@drawable/bg"
+                android:scaleType="centerCrop" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="280dp"
+            android:layout_marginEnd="3dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="3dp"
+            android:layout_marginStart="4dp"
+            android:background="@drawable/zcb_bg1"
+            android:orientation="vertical"
+            android:paddingBottom="30dp"
+            android:paddingEnd="4dp"
+            android:paddingLeft="4dp"
+            android:paddingRight="4dp"
+            android:paddingStart="4dp"
+            android:paddingTop="20dp"
+            android:weightSum="2">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:weightSum="4">
+
+                <com.wzzc.other_view.extendView.ExtendImageView
+                    android:id="@+id/ads_11_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="2dp"
+                    android:layout_marginRight="2dp"
+                    android:layout_weight="1"
+                    android:scaleType="centerInside" />
+
+                <com.wzzc.other_view.extendView.ExtendImageView
+                    android:id="@+id/ads_11_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="2dp"
+                    android:layout_marginRight="2dp"
+                    android:layout_weight="1"
+                    android:paddingLeft="2dp"
+                    android:paddingStart="2dp"
+                    android:scaleType="centerCrop" />
+
+                <com.wzzc.other_view.extendView.ExtendImageView
+                    android:id="@+id/ads_11_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="2dp"
+                    android:layout_marginRight="2dp"
+                    android:layout_weight="1"
+                    android:paddingLeft="2dp"
+                    android:paddingStart="2dp"
+                    android:scaleType="centerCrop" />
+
+                <com.wzzc.other_view.extendView.ExtendImageView
+                    android:id="@+id/ads_11_4"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:paddingLeft="2dp"
+                    android:paddingStart="2dp"
+                    android:scaleType="centerCrop" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:weightSum="4">
+
+                <com.wzzc.other_view.extendView.ExtendImageView
+                    android:id="@+id/ads_21_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="2dp"
+                    android:layout_marginRight="2dp"
+                    android:layout_weight="1"
+                    android:scaleType="centerInside" />
+
+                <com.wzzc.other_view.extendView.ExtendImageView
+                    android:id="@+id/ads_21_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="2dp"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="2dp"
+                    android:layout_marginStart="2dp"
+                    android:layout_weight="1"
+                    android:scaleType="centerInside" />
+
+                <com.wzzc.other_view.extendView.ExtendImageView
+                    android:id="@+id/ads_21_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="2dp"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="2dp"
+                    android:layout_marginStart="2dp"
+                    android:layout_weight="1"
+                    android:scaleType="centerInside" />
+
+                <com.wzzc.other_view.extendView.ExtendImageView
+                    android:id="@+id/ads_21_4"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginStart="2dp"
+                    android:layout_weight="1"
+                    android:scaleType="centerInside" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+    <ImageView
+        android:id="@+id/imageView20"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/zcb_bar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:background="@color/bg_Gray_light"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+        <TextView
+            android:id="@+id/tv_nomal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="@dimen/OnepurchaseIndexSmallPadding"
+            android:text="默认" />
+
+        <TextView
+            android:id="@+id/textView149"
+            android:layout_width="5dp"
+            android:layout_height="5dp"
+            android:layout_weight="0"
+            android:background="@drawable/bg_iszhuce" />
+
+        <TextView
+            android:id="@+id/tv_new"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="@dimen/OnepurchaseIndexSmallPadding"
+            android:text="最新" />
+
+        <TextView
+            android:id="@+id/textView146"
+            android:layout_width="5dp"
+            android:layout_height="5dp"
+            android:layout_weight="0"
+            android:background="@drawable/bg_iszhuce" />
+
+        <TextView
+            android:id="@+id/tv_sales"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="@dimen/OnepurchaseIndexSmallPadding"
+            android:text="销量" />
+    </LinearLayout>
+</LinearLayout>

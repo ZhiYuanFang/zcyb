@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/changeColor_layout"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:alpha="0"
+        android:background="@color/bg_change">
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingTop="25dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginStart="10dp"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/lab_address"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_weight="3"
+                android:gravity="center"
+                android:imeOptions="actionSearch"
+                android:inputType="text"
+                android:lines="1"
+                android:singleLine="true"
+                android:text="温州"
+                android:textColor="#ffffff"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/txt_edit"
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:layout_centerVertical="true"
+                android:layout_weight="1"
+                android:background="@drawable/bg_edittext"
+                android:gravity="center_vertical"
+                android:hint="请输入商品名称、关键字"
+                android:imeOptions="actionSearch"
+                android:inputType="text"
+                android:lines="1"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:textColor="#ffffff"
+                android:textColorHint="#ffffff"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:id="@+id/lab_scan"
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:layout_weight="3"
+                android:src="@drawable/icon_9" />
+        </LinearLayout>
+
+    </RelativeLayout>
+</RelativeLayout>

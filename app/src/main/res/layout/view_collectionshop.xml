@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="15dp"
+        android:paddingStart="15dp"
+        android:paddingEnd="15dp"
+        android:paddingRight="15dp"
+        android:paddingBottom="15dp">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:ellipsize="end"
+                android:lines="2"
+                android:text="名称"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:drawableLeft="@drawable/btn_input" />
+
+            <ImageView
+                android:id="@+id/img_delete"
+                android:tag="0"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_marginTop="13dp"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/btn_delete"
+                android:layout_weight="0" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <com.wzzc.other_view.extendView.ExtendImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:id="@+id/img_shop" />
+            <TextView
+                android:text="进店逛逛"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_goshop"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:textColor="@color/tv_Red"
+                android:textSize="18sp"
+                android:tag="1" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#cccccc"
+        android:id="@+id/textView67"
+        android:layout_marginBottom="15dp" />
+</LinearLayout>

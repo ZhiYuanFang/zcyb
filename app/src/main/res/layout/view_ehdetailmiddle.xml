@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/bg_production_name">
+
+        <com.wzzc.other_view.TextLoadView
+            android:id="@+id/loadLayout_name"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:layout_marginTop="8dp"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp">
+
+        <LinearLayout
+            android:layout_width="60dp"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="子成币"
+                android:textColor="#979797"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/lab_money1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="8dp"
+                android:textColor="#ff0500"
+                android:textSize="22sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginTop="8dp"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp">
+
+        <LinearLayout
+            android:layout_width="60dp"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="品牌"
+                android:textColor="#979797"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/lab_brand"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:background="#aeaeae"
+                android:padding="5dp"
+                android:textColor="#ffffff"
+                android:textSize="14sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginTop="8dp"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp">
+        <LinearLayout
+            android:layout_width="60dp"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="数量"
+                android:textColor="#979797"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="120dp"
+            android:layout_height="30dp"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/detail_number_view">
+            <TextView
+                android:id="@+id/detail_reduce"
+                android:layout_width="30dp"
+                android:layout_height="match_parent"
+                android:background="#00ffffff"
+                android:gravity="center"
+                android:paddingTop="3dp"
+                android:text="-" />
+
+            <EditText
+                android:id="@+id/detail_text"
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/detail_number_edittext"
+                android:gravity="center"
+                android:inputType="number"
+                android:lines="1"
+                android:text="1" />
+
+            <TextView
+                android:id="@+id/detail_plus"
+                android:layout_width="30dp"
+                android:layout_height="match_parent"
+                android:background="#00ffffff"
+                android:gravity="center"
+                android:text="+" />
+        </LinearLayout>
+    </LinearLayout>
+    <TextView
+        android:id="@+id/lab_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="70dp"/>
+
+    <TextView
+        android:id="@+id/tv_zc_discount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="6dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="6dp"
+        android:background="@drawable/bg_rangle_virtul_red"
+        android:gravity="center"
+        android:paddingBottom="6dp"
+        android:paddingTop="6dp"
+        android:text="高档礼品，只为店铺订货，会员请到实体店兑换。"
+        android:textSize="12sp" />
+
+    <LinearLayout
+        android:id="@+id/list_sku"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:orientation="vertical">
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="上拉商品详情"
+            android:textSize="14sp" />
+    </RelativeLayout>
+</LinearLayout>

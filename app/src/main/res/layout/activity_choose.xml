@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/choose_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+   >
+   <TextView
+       android:id="@+id/tv_title"
+       android:layout_width="match_parent"
+       android:layout_height="?attr/actionBarSize"
+       android:layout_alignParentTop="true"
+       android:gravity="center"
+       android:text="选择上传的图片"
+       android:textSize="22sp"
+       android:textColor="@android:color/white"
+       android:background="#312E3F" />
+   
+    <Button
+        android:id="@+id/btn_change_fragment" 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:layout_margin="20dp"
+        android:layout_alignParentBottom="true"
+        android:text="Fragment中上传图片"
+        android:textSize="20sp"
+        android:textColor="@android:color/white"
+        android:background="#312E3F"/>
+
+    <GridView
+        android:id="@+id/grid_upload_pictures" 
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/btn_change_fragment"
+        android:layout_below="@+id/tv_title"
+        android:horizontalSpacing="5dp"
+        android:verticalSpacing="5dp"
+        android:numColumns="3"
+        android:stretchMode="columnWidth"/>
+
+</RelativeLayout>

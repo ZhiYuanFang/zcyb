@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/layout_contain"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/jd_bg">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="196dp">
+
+            <com.wzzc.other_view.production.detail.main_view.FlowLayout
+                android:id="@+id/flowLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="19dp" />
+
+        </RelativeLayout>
+
+
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout14"
+        android:layout_width="match_parent"
+        android:layout_height="41dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="155dp">
+
+        <com.wzzc.other_view.editSelect.EditSelectText
+            android:id="@+id/et_search"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_toStartOf="@+id/layout_search"
+            android:background="@drawable/bg_circle_left_solid_white"
+            android:drawablePadding="12dp"
+            android:drawableStart="@drawable/jingdong_search"
+            android:hint="宝贝名称/关键词"
+            android:inputType="textPersonName"
+            android:imeOptions="actionSearch"
+            android:paddingEnd="5dp"
+            android:paddingStart="12dp"
+            android:singleLine="true"
+            android:textSize="14sp" />
+
+        <RelativeLayout
+            android:id="@+id/layout_search"
+            android:layout_width="84dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/button_pressed_circle_right_solid_gradint_orange"
+                android:clickable="false"
+                android:gravity="center"
+                android:text="搜商品"
+                android:textColor="@color/tv_White"
+                android:textSize="18sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="45dp">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_gravity="center"
+            android:layout_centerHorizontal="true">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="最高返利"
+                android:textColor="@color/white"
+                android:textSize="30sp"/>
+            <TextView
+                android:id="@+id/fan_back_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="56%"
+                android:textColor="@color/white"
+                android:textSize="30sp"
+                android:textStyle="bold"/>
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="260dp"
+            android:layout_height="34dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/jingdong_text"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

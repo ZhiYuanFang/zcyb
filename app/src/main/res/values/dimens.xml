@@ -1,0 +1,30 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">18dp</dimen>
+    <dimen name="activity_vertical_margin">18dp</dimen>
+    <dimen name="title_height">69dp</dimen>
+    <dimen name="OnpurchaseMarginLeftRight">7dp</dimen>
+    <dimen name="OnepurchaseIndexSmallPadding">3dp</dimen>
+    <dimen name="OnepurchaseDrawpadding">8dp</dimen>
+    <dimen name="TimeSize">22dp</dimen>
+    <dimen name="SuperDeliverLongHeight">142dp</dimen>
+    <dimen name="playerHeight">100dp</dimen>
+    <dimen name="playerSlideCountHeight">37dp</dimen>
+    <dimen name="SuperDeliverItemTitleHeight">51dp</dimen>
+    <dimen name="SuperDeliverMoreButtonHeight">35dp</dimen>
+    <dimen name="SuperDeliverJGHeight">11dp</dimen>
+    <dimen name="SuperDeliverBackDrawableHeight">20dp</dimen>
+    <dimen name="TouchLayoutWidth">20dp</dimen>
+    <dimen name="RoundRadio">5dp</dimen>
+    <dimen name="LargeTextSize">16dp</dimen>
+    <dimen name="BasicTextSize">15dp</dimen>
+    <dimen name="TitleTextSize">18dp</dimen>
+    <dimen name="SmallTextSize">14dp</dimen>
+    <dimen name="SmallerTextSize">13dp</dimen>
+    <dimen name="LargestTextSize">30dp</dimen>
+    <dimen name="ChattingTextSize">16dp</dimen>
+    <dimen name="ChattingContentMinHeight">49dp</dimen>
+    <dimen name="PreferenceItemHeight">42dp</dimen>
+    <dimen name="ConversationItemHeight">58dp</dimen>
+    <dimen name="LargeAvatarSize">56dp</dimen>
+</resources>

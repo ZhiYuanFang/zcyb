@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include
+            android:id="@+id/include"
+            layout="@layout/super_deliver_select_item_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/relativeLayout4" />
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout4"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/title_height"
+            android:paddingTop="25dp">
+
+            <Button
+                android:id="@+id/layout_search"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true"
+                android:layout_marginBottom="6dp"
+                android:layout_marginEnd="6dp"
+                android:layout_marginRight="6dp"
+                android:layout_marginTop="6dp"
+                android:background="@drawable/button_pressed_angel_solid_gradient_gray"
+                android:text="搜索">
+
+            </Button>
+
+            <RelativeLayout
+                android:id="@+id/btn_back"
+                android:layout_width="30dp"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/imageView40"
+                    android:layout_width="@dimen/SuperDeliverBackDrawableHeight"
+                    android:layout_height="@dimen/SuperDeliverBackDrawableHeight"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="10dp"
+                    android:background="@drawable/super_deliver_back" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_toEndOf="@+id/btn_back"
+                android:layout_toStartOf="@+id/layout_search"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:paddingBottom="6dp"
+                android:paddingLeft="6dp"
+                android:paddingStart="6dp"
+                android:paddingTop="6dp">
+
+                <com.wzzc.other_view.editSelect.EditSelectText
+                    android:id="@+id/et_search"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/bg_angel_left_solid_gray"
+                    android:drawablePadding="@dimen/OnepurchaseDrawpadding"
+                    android:drawableStart="@drawable/search_transpart"
+                    android:ems="10"
+                    android:hint="搜索你想要的商品"
+                    android:imeOptions="actionSearch"
+                    android:inputType="textPersonName"
+                    android:padding="4dp"
+                    android:paddingStart="8dp"
+                    android:singleLine="true"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/contain_ssiv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/include">
+
+            <com.wzzc.new_index.SuperDeliver.main_view.childView.SelectSecondItemView
+                android:id="@+id/ssiv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+
+        <include
+            layout="@layout/recyle_tbreback_list_filter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/contain_ssiv"
+            android:id="@+id/include7" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/include7"
+            android:background="@color/SuperDeliverGJColor">
+
+            <ListView
+                android:id="@+id/listView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:divider="@color/SuperDeliverGJColor"
+                android:dividerHeight="7dp"
+                android:scrollbars="none" />
+
+            <com.wzzc.other_view.NoDataView
+                android:id="@+id/ndv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </RelativeLayout>
+
+
+        <ImageView
+            android:id="@+id/ib_top"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginBottom="@dimen/activity_vertical_margin"
+            android:layout_marginEnd="@dimen/activity_vertical_margin"
+            android:background="@drawable/super_deliver_up"
+            android:layout_marginRight="@dimen/activity_vertical_margin"
+            android:layout_alignParentRight="true" />
+
+        <RelativeLayout
+            android:id="@+id/lisdv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/include" />
+
+        <RelativeLayout
+            android:id="@+id/contain_fragment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/relativeLayout4"
+            android:layout_marginEnd="55dp"
+            android:layout_marginStart="75dp"
+            android:layout_marginTop="-7dp">
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout_fragment_filter"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/touchLayout"
+            android:layout_width="@dimen/TouchLayoutWidth"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/include">
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical">
+
+
+    <com.wzzc.other_view.BasicTitleView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/OnpurchaseMarginLeftRight"
+        android:orientation="horizontal"
+        android:padding="@dimen/OnepurchaseIndexSmallPadding">
+
+        <EditText
+            android:id="@+id/et_input"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/bg_circle_red"
+            android:hint="订单号"
+            android:inputType="number"
+            android:padding="@dimen/OnepurchaseIndexSmallPadding"
+            android:textColor="@color/tv_Black" />
+
+        <SearchView
+            android:id="@+id/search"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_weight="0" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lab_noshopping"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="您没有订单记录" />
+    </LinearLayout>
+
+    <com.wzzc.other_view.extendView.ExtendListView
+        android:id="@+id/main_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/OnpurchaseMarginLeftRight"
+        android:divider="@null"
+        android:padding="@dimen/OnepurchaseIndexSmallPadding"></com.wzzc.other_view.extendView.ExtendListView>
+
+</LinearLayout>

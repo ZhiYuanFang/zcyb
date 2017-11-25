@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/button_pressed_normal"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <com.wzzc.other_view.extendView.ExtendImageView
+        android:id="@+id/eiv_icon"
+        android:layout_width="44dp"
+        android:layout_height="41dp"
+        android:layout_marginBottom="7dp"
+        android:layout_marginTop="14dp" />
+
+    <TextView
+        android:id="@+id/tv_nav"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="14dp"
+        android:gravity="center"
+        android:text="超值返"
+        android:textColor="#666666"
+        android:textSize="12sp" />
+</LinearLayout>

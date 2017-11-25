@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/bg_White"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/viewPager"
+            android:layout_width="match_parent"
+            android:layout_height="180dp" />
+
+        <com.wzzc.other_view.SlideView.slidePager.SlidePagerCountView
+            android:id="@+id/countView"
+            android:layout_width="wrap_content"
+            android:layout_height="37dp"
+            android:layout_below="@+id/viewPager"
+            android:layout_centerHorizontal="true" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@+id/countView"
+            android:padding="4dp">
+
+            <EditText
+                android:id="@+id/et_search"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_toStartOf="@+id/relativeLayout16"
+                android:background="@drawable/bg_circle_left_solid_white_2"
+                android:ems="10"
+                android:hint="搜索店铺"
+                android:imeOptions="actionSearch"
+                android:inputType="textPersonName"
+                android:paddingStart="18dp"
+                android:textColor="#ff3a50"
+                android:textSize="14sp" />
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout16"
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true"
+                android:background="@drawable/bg_circle_right_solid_white_2">
+
+                <RelativeLayout
+                    android:id="@+id/layout_search"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/button_solid_circle_gradule_red">
+
+                    <ImageView
+                        android:id="@+id/imageView41"
+                        android:layout_width="14dp"
+                        android:layout_height="13dp"
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/search_white" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

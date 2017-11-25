@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id= "@+id/layout_cart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/relativeLayout5">
+
+        <ListView
+            android:id="@+id/listView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@color/SuperDeliverGJColor"
+            android:dividerHeight="4dp" />
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/textView214"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_above="@+id/relativeLayout5"
+        android:background="@color/tv_line"
+        android:text="TextView" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_alignParentBottom="true"
+        android:paddingStart="15dp"
+        android:id="@+id/relativeLayout5">
+
+        <CheckBox
+            android:id="@+id/check_all"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:button="@drawable/radio_cart_default"
+            android:paddingStart="5dp"
+            android:text="全选"
+            android:textSize="16sp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toEndOf="@+id/check_all"
+            android:layout_toStartOf="@+id/tv_submit"
+            android:orientation="vertical"
+            android:paddingEnd="12dp">
+
+            <LinearLayout
+                android:id="@+id/layout_a"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@+id/layout_b"
+                android:layout_weight="1"
+                android:gravity="center_vertical|end"
+                android:orientation="horizontal"
+                android:paddingEnd="2dp">
+
+                <TextView
+                    android:id="@+id/textView213"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0"
+                    android:gravity="bottom"
+                    android:text="总计："
+                    android:textColor="@color/tv_Black"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tv_all"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0"
+                    android:gravity="bottom"
+                    android:text="￥0.00"
+                    android:textColor="@color/tv_Red"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_b"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="5dp"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/tv_category"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="bottom|end"
+                    android:text="不含运费、优惠折扣" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_submit"
+            android:layout_width="95dp"
+            android:layout_height="55dp"
+            android:layout_alignParentEnd="true"
+            android:background="@drawable/button_pressed_red"
+            android:gravity="center"
+            android:text="结算(0)"
+            android:textColor="@color/tv_White"
+            android:textSize="16sp">
+
+        </TextView>
+    </RelativeLayout>
+</RelativeLayout>

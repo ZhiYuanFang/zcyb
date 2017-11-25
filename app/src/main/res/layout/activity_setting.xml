@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <com.wzzc.other_view.BasicTitleView
+        android:id="@+id/basicTitleView5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/basicTitleView5"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/OnpurchaseMarginLeftRight"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="@dimen/OnpurchaseMarginLeftRight"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:id="@+id/textView24"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.4"
+                        android:gravity="center|end"
+                        android:padding="@dimen/OnepurchaseIndexSmallPadding"
+                        android:text="出生日期："
+                        android:textColor="@color/tv_Black"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/lab_birthday"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.6"
+                        android:background="@drawable/bg_collection"
+                        android:gravity="center|start"
+                        android:padding="@dimen/OnepurchaseIndexSmallPadding" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="@dimen/OnpurchaseMarginLeftRight"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:id="@+id/textView105"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.4"
+                        android:gravity="center|end"
+                        android:padding="@dimen/OnepurchaseIndexSmallPadding"
+                        android:text="性别："
+                        android:textColor="@color/tv_Black"
+                        android:textSize="18sp" />
+
+                    <RadioGroup
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.6"
+                        android:orientation="horizontal"
+                        android:weightSum="3">
+
+                        <RadioButton
+                            android:id="@+id/secret"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:text="保密"
+                            android:textSize="14sp" />
+
+                        <RadioButton
+                            android:id="@+id/male"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:text="男"
+                            android:textSize="14sp" />
+
+                        <RadioButton
+                            android:id="@+id/female"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:text="女"
+                            android:textSize="14sp" />
+                    </RadioGroup>
+                </LinearLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="@dimen/OnpurchaseMarginLeftRight">
+
+                    <LinearLayout
+                        android:id="@+id/linearLayout6"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="@dimen/OnpurchaseMarginLeftRight"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <TextView
+                            android:id="@+id/textView107"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1.4"
+                            android:gravity="center|end"
+                            android:padding="@dimen/OnepurchaseIndexSmallPadding"
+                            android:text="手机："
+                            android:textColor="@color/tv_Black"
+                            android:textSize="18sp" />
+
+                        <EditText
+                            android:id="@+id/lab_mobile"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.6"
+                            android:background="@drawable/bg_collection"
+                            android:gravity="center|start"
+                            android:padding="@dimen/OnepurchaseIndexSmallPadding"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/layout_code"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_below="@+id/linearLayout6"
+                        android:layout_marginTop="@dimen/OnpurchaseMarginLeftRight"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <TextView
+                            android:id="@+id/textView124"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1.4"
+                            android:gravity="center|end"
+                            android:padding="@dimen/OnepurchaseIndexSmallPadding"
+                            android:text="验证码："
+                            android:textColor="@color/tv_Black"
+                            android:textSize="18sp" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.6"
+                            android:orientation="horizontal"
+                            android:weightSum="2">
+
+                            <EditText
+                                android:id="@+id/lab_code"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="0.8"
+                                android:background="@drawable/bg_collection"
+                                android:gravity="center|start"
+                                android:padding="@dimen/OnepurchaseIndexSmallPadding"
+                                android:textSize="14sp" />
+
+                            <TextView
+                                android:id="@+id/sendCode"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1.2"
+                                android:gravity="center"
+                                android:padding="@dimen/OnepurchaseIndexSmallPadding"
+                                android:text="发送验证码"
+                                android:textColor="@color/tv_Red" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="@dimen/OnpurchaseMarginLeftRight"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:id="@+id/textView108"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.4"
+                        android:gravity="center|end"
+                        android:padding="@dimen/OnepurchaseIndexSmallPadding"
+                        android:text="工行卡号："
+                        android:textColor="@color/tv_Black"
+                        android:textSize="18sp" />
+
+                    <EditText
+                        android:id="@+id/card_number"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.6"
+                        android:background="@drawable/bg_collection"
+                        android:gravity="center|start"
+                        android:padding="@dimen/OnepurchaseIndexSmallPadding"
+                        android:textSize="14sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="@dimen/OnpurchaseMarginLeftRight"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:id="@+id/textView112"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.4"
+                        android:gravity="center|end"
+                        android:padding="@dimen/OnepurchaseIndexSmallPadding"
+                        android:text="开户地址："
+                        android:textColor="@color/tv_Black"
+                        android:textSize="18sp" />
+
+                    <EditText
+                        android:id="@+id/card_address"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.6"
+                        android:background="@drawable/bg_collection"
+                        android:gravity="center|start"
+                        android:padding="@dimen/OnepurchaseIndexSmallPadding"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="@dimen/OnpurchaseMarginLeftRight"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:id="@+id/textView113"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.4"
+                        android:gravity="center|end"
+                        android:padding="@dimen/OnepurchaseIndexSmallPadding"
+                        android:text="开户姓名："
+                        android:textColor="@color/tv_Black"
+                        android:textSize="18sp" />
+
+                    <EditText
+                        android:id="@+id/card_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.6"
+                        android:background="@drawable/bg_collection"
+                        android:gravity="center|start"
+                        android:padding="@dimen/OnepurchaseIndexSmallPadding"
+                        android:textSize="14sp" />
+
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/btn_modify"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:background="@drawable/button_pressed_angle_gradule_red"
+                    android:text="修改资料"
+                    android:textColor="@color/tv_White"
+                    android:textSize="18sp" />
+
+                <Button
+                    android:id="@+id/btn_clear_data"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/button_pressed_angle_gray"
+                    android:text="清除缓存"
+                    android:textColor="@color/darkorange"
+                    android:textSize="18sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

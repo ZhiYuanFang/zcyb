@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/layout_cart"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/relativeLayout5"
+        android:layout_alignParentTop="true">
+
+        <ListView
+            android:id="@+id/listView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="@color/SuperDeliverGJColor"
+            android:dividerHeight="4dp" />
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/textView214"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_above="@+id/relativeLayout5"
+        android:background="@color/tv_line"
+        android:text="TextView" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_alignParentBottom="true"
+        android:paddingStart="15dp"
+        android:id="@+id/relativeLayout5">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toEndOf="@+id/check_all"
+            android:layout_toStartOf="@+id/tv_submit"
+            android:orientation="vertical"
+            android:paddingEnd="12dp"
+            android:weightSum="2">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="end"
+                android:orientation="horizontal"
+                android:paddingBottom="3dp"
+                android:paddingEnd="2dp">
+
+                <TextView
+                    android:id="@+id/textView213"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0"
+                    android:gravity="center_vertical"
+                    android:text="共需子成币："
+                    android:textColor="@color/tv_Black"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tv_exchage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0"
+                    android:gravity="center_vertical"
+                    android:text="0"
+                    android:textColor="@color/tv_Red"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_submit"
+            android:layout_width="95dp"
+            android:layout_height="55dp"
+            android:layout_alignParentEnd="true"
+            android:background="@drawable/button_pressed_red"
+            android:gravity="center"
+            android:text="结算(0)"
+            android:textColor="@color/tv_White"
+            android:textSize="16sp">
+
+        </TextView>
+    </RelativeLayout>
+</RelativeLayout>

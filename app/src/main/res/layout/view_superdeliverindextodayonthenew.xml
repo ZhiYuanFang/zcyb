@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/imageView27"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/SuperDeliverItemTitleHeight"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/super_deliver_today_new" />
+
+    <com.wzzc.other_view.extendView.ExtendImageView
+        android:id="@+id/tN0"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/SuperDeliverLongHeight"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/imageView27">
+
+    </com.wzzc.other_view.extendView.ExtendImageView>
+
+    <LinearLayout
+        android:id="@+id/linearLayout9"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/OnpurchaseMarginLeftRight"
+        android:layout_marginEnd="@dimen/OnpurchaseMarginLeftRight"
+        android:layout_marginLeft="@dimen/OnpurchaseMarginLeftRight"
+        android:layout_marginRight="@dimen/OnpurchaseMarginLeftRight"
+        android:layout_marginStart="@dimen/OnpurchaseMarginLeftRight"
+        android:layout_marginTop="174dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="102dp"
+            android:layout_weight="0"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <TextView
+                android:id="@+id/textView137"
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0"
+                android:background="@color/tv_line" />
+
+            <com.wzzc.other_view.extendView.ExtendImageView
+                android:id="@+id/tN11"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/white">
+
+            </com.wzzc.other_view.extendView.ExtendImageView>
+
+            <TextView
+                android:id="@+id/textView130"
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0"
+                android:background="@color/tv_line" />
+
+            <com.wzzc.other_view.extendView.ExtendImageView
+                android:id="@+id/tN12"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/white">
+
+            </com.wzzc.other_view.extendView.ExtendImageView>
+
+            <TextView
+                android:id="@+id/textView138"
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0"
+                android:background="@color/tv_line" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView135"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_weight="0"
+            android:background="@color/tv_line" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="103dp"
+            android:layout_weight="0"
+            android:orientation="horizontal"
+            android:weightSum="4">
+
+            <TextView
+                android:id="@+id/textView139"
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0"
+                android:background="@color/tv_line" />
+
+            <com.wzzc.other_view.extendView.ExtendImageView
+                android:id="@+id/tN21"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+            </com.wzzc.other_view.extendView.ExtendImageView>
+
+            <TextView
+                android:id="@+id/textView132"
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0"
+                android:background="@color/tv_line" />
+
+            <com.wzzc.other_view.extendView.ExtendImageView
+                android:id="@+id/tN22"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+            </com.wzzc.other_view.extendView.ExtendImageView>
+
+            <TextView
+                android:id="@+id/textView133"
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0"
+                android:background="@color/tv_line" />
+
+            <com.wzzc.other_view.extendView.ExtendImageView
+                android:id="@+id/tN23"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+            </com.wzzc.other_view.extendView.ExtendImageView>
+
+            <TextView
+                android:id="@+id/textView134"
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0"
+                android:background="@color/tv_line" />
+
+            <com.wzzc.other_view.extendView.ExtendImageView
+                android:id="@+id/tN24"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+            </com.wzzc.other_view.extendView.ExtendImageView>
+
+            <TextView
+                android:id="@+id/textView140"
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0"
+                android:background="@color/tv_line" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView136"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_weight="0"
+            android:background="@color/tv_line" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView165"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/SuperDeliverJGHeight"
+        android:layout_below="@+id/linearLayout9"
+        android:background="@color/SuperDeliverGJColor" />
+
+    <ListView
+        android:id="@+id/lv_goods"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/textView165"
+        android:layout_margin="11dp" />
+
+    <ImageView
+        android:id="@+id/tN_more"
+        android:layout_width="131dp"
+        android:layout_height="@dimen/SuperDeliverMoreButtonHeight"
+        android:layout_below="@+id/lv_goods"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="19dp"
+        android:background="@drawable/super_deliver_more_baby" />
+</RelativeLayout>

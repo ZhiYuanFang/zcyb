@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="78dp"
+        android:layout_marginLeft="10dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/lab_state"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:tag="0">
+
+            <RelativeLayout
+                android:layout_width="57sp"
+                android:layout_height="match_parent">
+                <TextView
+                    android:id="@+id/textView1511"
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/tv_line" />
+
+                <TextView
+                    android:id="@+id/textView1641"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/tv_line" />
+
+                <TextView
+                    android:id="@+id/textView1521"
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentEnd="true"
+                    android:background="@color/tv_line" />
+
+                <TextView
+                    android:id="@+id/textView1631"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/tv_line" />
+                <com.wzzc.other_view.extendView.ExtendImageView
+                    android:id="@+id/img_icon"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_above="@+id/textView1631"
+                    android:layout_below="@+id/textView1641"
+                    android:layout_toEndOf="@+id/textView1511"
+                    android:layout_toStartOf="@+id/textView1521"/>
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/OnpurchaseMarginLeftRight"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:textColor="@color/tv_Black" />
+
+                <TextView
+                    android:id="@+id/lab_name_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:textColor="#969696" />
+
+                <TextView
+                    android:id="@+id/lab_money"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/bg_circle_red"
+                    android:padding="3dp"
+                    android:textColor="#ff4f61"
+                    android:textSize="12sp"
+                    android:visibility="gone" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#eeeeee" />
+
+        <LinearLayout
+            android:id="@+id/lab_state1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:tag="1">
+
+            <RelativeLayout
+                android:layout_width="57sp"
+                android:layout_height="match_parent">
+                <TextView
+                    android:id="@+id/textView1111"
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/tv_line" />
+
+                <TextView
+                    android:id="@+id/textView1212"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/tv_line" />
+
+                <TextView
+                    android:id="@+id/textView1313"
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentEnd="true"
+                    android:background="@color/tv_line" />
+
+                <TextView
+                    android:id="@+id/textView1414"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/tv_line" />
+                <com.wzzc.other_view.extendView.ExtendImageView
+                    android:id="@+id/img_icon1"
+                    android:layout_width="57sp"
+                    android:layout_height="match_parent"
+                    android:layout_above="@+id/textView1414"
+                    android:layout_below="@+id/textView1212"
+                    android:layout_toEndOf="@+id/textView1111"
+                    android:layout_toStartOf="@+id/textView1313"/>
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/OnpurchaseMarginLeftRight"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/lab_name1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:text="男士潮服"
+                    android:textColor="@color/tv_Black" />
+
+                <TextView
+                    android:id="@+id/lab_name1_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:text="时尚潮流勇士"
+                    android:textColor="#969696" />
+
+                <TextView
+                    android:id="@+id/lab_money1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/bg_circle_red"
+                    android:padding="3dp"
+                    android:text="2000子成币"
+                    android:textColor="#ff4f61"
+                    android:textSize="12sp"
+                    android:visibility="gone" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

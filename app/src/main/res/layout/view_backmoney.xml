@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/bg_White"
+    android:orientation="vertical"
+    android:padding="@dimen/OnepurchaseIndexSmallPadding">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:id="@+id/imageView31"
+            android:layout_width="@dimen/TimeSize"
+            android:layout_height="@dimen/TimeSize"
+            android:layout_centerVertical="true"
+            android:background="@drawable/btn_input" />
+
+        <ImageView
+            android:id="@+id/imageView32"
+            android:layout_width="9dp"
+            android:layout_height="18dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/OnpurchaseMarginLeftRight"
+            android:layout_toEndOf="@+id/imageView31"
+            android:background="@drawable/settinggoto" />
+
+        <TextView
+            android:id="@+id/tv_state_back_order"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:gravity="center"
+            android:text="已关闭"
+            android:textColor="@color/tv_Red" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginBottom="14dp"
+        android:layout_marginTop="@dimen/OnepurchaseIndexSmallPadding"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <com.wzzc.other_view.extendView.ExtendImageView
+            android:id="@+id/img_production"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_weight="0">
+
+        </com.wzzc.other_view.extendView.ExtendImageView>
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:paddingEnd="@dimen/OnpurchaseMarginLeftRight"
+            android:paddingStart="@dimen/OnpurchaseMarginLeftRight" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="20dp">
+
+        <TextView
+            android:id="@+id/tv_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/OnpurchaseMarginLeftRight"
+            android:layout_toStartOf="@+id/tv_order_now"
+            android:background="@drawable/button_pressed_virtual_circle_red"
+            android:gravity="center"
+            android:padding="4dp"
+            android:text="关闭订单"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/tv_order_now"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/OnpurchaseMarginLeftRight"
+            android:layout_toStartOf="@+id/tv_fillin"
+            android:background="@drawable/button_pressed_virtual_circle_red"
+            android:gravity="center"
+            android:padding="4dp"
+            android:text="现在去下单"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/tv_fillin"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/button_pressed_virtual_circle_red"
+            android:gravity="center"
+            android:padding="4dp"
+            android:text="填写订单"
+            android:textSize="10sp" />
+    </RelativeLayout>
+</LinearLayout>

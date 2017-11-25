@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_productionName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/cannot_getName"
+        android:textColor="@color/tv_Black"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/tv_remaindNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="剩余-人次" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:text="总共云购：1人次/" />
+
+        <TextView
+            android:id="@+id/tv_coupons"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:text="￥1.00"
+            android:textColor="@color/tv_Red" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_release"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_weight="0"
+            android:background="@drawable/bg_collection"
+            android:gravity="center"
+            android:text="-"
+            android:textColor="@color/tv_Gray" />
+
+        <EditText
+            android:id="@+id/et_number"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="2dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:layout_marginStart="2dp"
+            android:layout_weight="0"
+            android:background="@drawable/bg_collection"
+            android:ems="10"
+            android:gravity="center"
+            android:inputType="number"
+            android:text="1"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_Add"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_weight="0"
+            android:background="@drawable/bg_collection"
+            android:gravity="center"
+            android:text="+"
+            android:textColor="@color/tv_Black" />
+    </LinearLayout>
+</LinearLayout>

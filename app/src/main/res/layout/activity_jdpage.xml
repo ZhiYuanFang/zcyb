@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout20"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:background="@color/tv_Red"
+        android:paddingTop="25dp">
+
+        <RelativeLayout
+            android:id="@+id/layout_set"
+            android:layout_width="30dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="5dp"
+            android:layout_alignParentEnd="true">
+
+            <ImageView
+                android:id="@+id/imageView49"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/reload_img" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/textView242"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toEndOf="@+id/btn_back"
+            android:layout_toStartOf="@+id/layout_set"
+            android:gravity="center"
+            android:text="京东"
+            android:textColor="@color/tv_White"
+            android:textSize="18sp" />
+
+        <RelativeLayout
+            android:id="@+id/btn_back"
+            android:layout_width="30dp"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imageView48"
+                android:layout_width="12dp"
+                android:layout_height="20dp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/btn_back_normal"
+                android:clickable="false" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="30dp"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@+id/btn_back">
+
+            <ImageView
+                android:id="@+id/close_page"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/close_img"
+                android:clickable="false" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <com.wzzc.other_activity.web.main_view.WebBrowser
+
+        android:id="@+id/main_webview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/relativeLayout20" />
+
+</RelativeLayout>

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical">
+
+
+    <com.wzzc.other_view.BasicTitleView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:weightSum="2"
+        android:layout_height="45dp">
+
+        <LinearLayout
+            android:id="@+id/layout_like_production"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/bg_hasOK"
+            android:orientation="horizontal"
+            android:tag="0">
+
+            <TextView
+                android:id="@+id/tv_like_production"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="收藏的宝贝"
+                android:textColor="@color/tv_White" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:id="@+id/layout_like_shop"
+            android:tag="1">
+
+            <TextView
+                android:text="收藏的店铺"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/tv_like_shop"
+                android:layout_weight="1"
+                android:gravity="center" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/OnpurchaseMarginLeftRight">
+
+            <LinearLayout
+                android:id="@+id/lab_noshopping"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="暂无收藏"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginBottom="20dp"
+                android:background="@color/tv_Gray" />
+
+            <LinearLayout
+                android:id="@+id/layout_production"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <com.wzzc.other_view.extendView.ExtendListView
+                    android:id="@+id/main_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_collection"
+                    android:divider="@null"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:scrollbars="none"></com.wzzc.other_view.extendView.ExtendListView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_shop"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <com.wzzc.other_view.extendView.ExtendListView
+                    android:id="@+id/main_view_shop"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_collection"
+                    android:divider="@null"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:scrollbars="none"></com.wzzc.other_view.extendView.ExtendListView>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

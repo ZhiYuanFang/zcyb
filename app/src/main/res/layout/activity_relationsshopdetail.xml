@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/SuperDeliverGJColor">
+
+    <com.wzzc.other_view.BasicTitleView
+        android:id="@+id/basicTitleView14"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:title="购物详情" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout11"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/basicTitleView14"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:weightSum="2">
+
+        <TextView
+            android:id="@+id/textView200"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="淘宝订单ID"
+            android:textColor="@color/tv_Black" />
+
+        <TextView
+            android:id="@+id/textView199"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.9"
+            android:gravity="center"
+            android:text="商品名"
+            android:textColor="@color/tv_Black"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/textView198"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.1"
+            android:gravity="center"
+            android:text="获返C米"
+            android:textColor="@color/tv_Black" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/basicLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/linearLayout11">
+
+        <ListView
+            android:id="@+id/listView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:divider="@drawable/list_divider"
+            android:dividerHeight="1dp" />
+
+        <RelativeLayout
+            android:id="@+id/layout_noMore"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone">
+
+            <include
+                layout="@layout/layout_no_shop_detail"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/touchLayout"
+        android:layout_width="@dimen/TouchLayoutWidth"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/basicTitleView14">
+
+    </RelativeLayout>
+</RelativeLayout>

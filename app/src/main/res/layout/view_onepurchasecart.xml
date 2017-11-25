@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1"
+        android:layout_marginTop="5dp">
+
+        <com.wzzc.other_view.extendView.ExtendImageView
+            android:id="@+id/img_production"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0"
+            android:scaleType="centerInside" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:weightSum="4">
+
+            <TextView
+                android:id="@+id/tv_goods_name"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:singleLine="true"
+                android:text="小牛电动M1只能锂电踏板车"
+                android:textColor="@color/tv_Black"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/tv_remaindNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:padding="5dp"
+                android:singleLine="true"
+                android:text="剩余60人次" />
+
+            <TextView
+                android:id="@+id/tv_coupons"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="总共云购：1人次/￥1.00" />
+
+            <LinearLayout
+                android:layout_width="120dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_collection"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <Button
+                    android:id="@+id/bt_release"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.1"
+                    android:background="@drawable/bg_collection"
+                    android:tag="0"
+                    android:text="－"
+                    android:textColor="@color/tv_Gray" />
+
+                <EditText
+                    android:id="@+id/et_num"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="1dp"
+                    android:layout_marginLeft="1dp"
+                    android:layout_marginRight="1dp"
+                    android:layout_marginStart="1dp"
+                    android:layout_weight="0.8"
+                    android:background="@drawable/detail_number_view"
+                    android:ems="10"
+                    android:focusable="false"
+                    android:gravity="center_vertical|center"
+                    android:inputType="textPersonName"
+                    android:text="1" />
+
+                <Button
+                    android:id="@+id/bt_add"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.1"
+                    android:background="@drawable/bg_collection"
+                    android:tag="1"
+                    android:text="＋"
+                    android:textColor="@color/tv_Black" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="0">
+
+            <ImageButton
+                android:id="@+id/ib_delete"
+                android:layout_width="26dp"
+                android:layout_height="29dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/btn_delete"
+                android:tag="2" />
+        </RelativeLayout>
+
+    </LinearLayout>
+</LinearLayout>

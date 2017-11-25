@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layout_contain"
+    android:layout_width="match_parent"
+    android:layout_height="135dp"
+    android:layout_marginEnd="6dp"
+    android:layout_marginStart="6dp"
+    android:background="@drawable/button_pressed_normal"
+    android:orientation="horizontal">
+
+    <RelativeLayout
+        android:layout_width="135dp"
+        android:layout_height="match_parent">
+
+        <com.wzzc.other_view.extendView.ExtendImageView
+            android:id="@+id/eiv_icon"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/textView274"
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0"
+        android:background="@color/tv_line" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="5dp"
+        android:paddingEnd="11dp"
+        android:paddingStart="11dp"
+        android:paddingTop="6dp">
+
+        <TextView
+            android:id="@+id/tv_from"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="淘宝"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tv_productionName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_from"
+            android:layout_marginTop="8dp"
+            android:maxLines="2"
+            android:text="正品胜捷五星鹅毛球 耐打王羽毛球12只装室内室外训练比赛用球"
+            android:textColor="@color/tv_Black"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tv_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_productionName"
+            android:layout_marginTop="7dp"
+            android:text="￥19.90"
+            android:textColor="@color/tv_Black"
+            android:textSize="12sp" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="16dp"
+            android:layout_below="@+id/tv_price"
+            android:layout_marginTop="9dp"
+            android:background="@drawable/bg_angel_production_price">
+
+            <TextView
+                android:id="@+id/textView276"
+                android:layout_width="27dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/bg_solid_half_production_coupon"
+                android:gravity="center"
+                android:text="领券"
+                android:textColor="@color/tv_White"
+                android:textSize="8sp" />
+
+            <TextView
+                android:id="@+id/tv_coupon"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_toEndOf="@+id/textView276"
+                android:gravity="center"
+                android:paddingEnd="4dp"
+                android:paddingStart="4dp"
+                android:text="满49元减40元"
+                android:textColor="#f20e56"
+                android:textSize="8sp" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/bt_buy"
+            android:layout_width="56dp"
+            android:layout_height="28dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:background="@drawable/button_pressed_circle_solid_light_gray"
+            android:gravity="center"
+            android:text="马上抢"
+            android:textColor="#f20e56"
+            android:textSize="12sp" />
+    </RelativeLayout>
+</LinearLayout>

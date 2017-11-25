@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="@dimen/OnepurchaseIndexSmallPadding">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/OnpurchaseMarginLeftRight"
+        android:layout_marginTop="@dimen/OnpurchaseMarginLeftRight"
+        android:focusable="true"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/OnpurchaseMarginLeftRight"
+        android:paddingTop="@dimen/OnpurchaseMarginLeftRight"
+        android:weightSum="2">
+
+        <TextView
+            android:id="@+id/textView92"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.5"
+            android:gravity="center_vertical|end"
+            android:padding="@dimen/OnepurchaseIndexSmallPadding"
+            android:text="手机号码"
+            android:textColor="@color/tv_Black" />
+
+        <EditText
+            android:id="@+id/et_phone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:background="@color/tv_White"
+            android:editable="false"
+            android:ems="10"
+            android:inputType="phone"
+            android:padding="@dimen/OnepurchaseIndexSmallPadding"
+            android:text="12345678910"
+            android:textColor="@color/tv_Gray"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/OnpurchaseMarginLeftRight"
+        android:layout_marginTop="@dimen/OnpurchaseMarginLeftRight"
+        android:background="@drawable/bg_collection"
+        android:focusable="true"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/OnpurchaseMarginLeftRight"
+        android:paddingTop="@dimen/OnpurchaseMarginLeftRight"
+        android:weightSum="2">
+
+        <TextView
+            android:id="@+id/textView93"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.5"
+            android:gravity="center_vertical|end"
+            android:padding="@dimen/OnepurchaseIndexSmallPadding"
+            android:text="昵称"
+            android:textColor="@color/tv_Black" />
+
+        <EditText
+            android:id="@+id/et_name"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:background="@color/tv_White"
+            android:ems="10"
+            android:gravity="center_vertical|start"
+            android:hint="昵称"
+            android:inputType="textPersonName"
+            android:padding="@dimen/OnepurchaseIndexSmallPadding"
+            android:textColor="@color/tv_Gray"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:layout_marginBottom="@dimen/OnpurchaseMarginLeftRight"
+        android:layout_marginTop="@dimen/OnpurchaseMarginLeftRight"
+        android:background="@drawable/bg_collection"
+        android:focusable="true"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/OnpurchaseMarginLeftRight"
+        android:paddingTop="@dimen/OnpurchaseMarginLeftRight"
+        android:weightSum="2">
+
+        <TextView
+            android:id="@+id/textView95"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.5"
+            android:gravity="end"
+            android:padding="@dimen/OnepurchaseIndexSmallPadding"
+            android:text="签名"
+            android:textColor="@color/tv_Black" />
+
+        <EditText
+            android:id="@+id/et_signature"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:background="@color/tv_White"
+            android:ems="10"
+            android:gravity="start"
+            android:hint="随便写点什么，让大家了解你把..."
+            android:inputType="textMultiLine"
+            android:padding="@dimen/OnepurchaseIndexSmallPadding"
+            android:textColor="@color/tv_Gray"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/bt_submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/OnpurchaseMarginLeftRight"
+        android:background="@drawable/angel_border_selected"
+        android:gravity="center"
+        android:paddingBottom="12dp"
+        android:paddingTop="12dp"
+        android:text="提交保存"
+        android:textColor="@color/tv_White" />
+
+
+</LinearLayout>

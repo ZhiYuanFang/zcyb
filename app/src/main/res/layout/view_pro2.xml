@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <com.wzzc.other_view.production.list.main_view.Browse_ProductionView
+        android:id="@+id/bpv1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginEnd="@dimen/OnepurchaseIndexSmallPadding"
+        android:layout_marginStart="@dimen/OnpurchaseMarginLeftRight"
+        android:layout_weight="1" />
+
+    <com.wzzc.other_view.production.list.main_view.Browse_ProductionView
+        android:id="@+id/bpv2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginEnd="@dimen/OnpurchaseMarginLeftRight"
+        android:layout_marginStart="@dimen/OnepurchaseIndexSmallPadding"
+        android:layout_weight="1" />
+</LinearLayout>

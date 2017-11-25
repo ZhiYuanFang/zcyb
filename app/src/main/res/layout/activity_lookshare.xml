@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/layout_info"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#defcd4"
+        android:gravity="bottom"
+        android:paddingBottom="3dp"
+        android:paddingEnd="15dp"
+        android:paddingStart="15dp">
+
+        <TextView
+            android:id="@+id/tv_rule"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:text="规则》" />
+
+        <TextView
+            android:id="@+id/textView261"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toStartOf="@+id/tv_rule"
+            android:text="您的佣金为30%(预估返利￥19.20)"
+            android:textColor="@color/bg_continue" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_img"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout_info"
+        android:padding="15dp">
+
+        <TextView
+            android:id="@+id/textView192"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="选择图片"
+            android:textColor="@color/tv_Black" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView231"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toStartOf="@+id/editText"
+                android:text="已选"
+                android:textColor="@color/tv_Black" />
+
+            <EditText
+                android:id="@+id/editText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toStartOf="@+id/textView193"
+                android:background="@color/white"
+                android:ems="1"
+                android:gravity="center"
+                android:inputType="number"
+                android:text="1"
+                android:textColor="@color/tv_Red"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/textView193"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="张"
+                android:textColor="@color/tv_Black" />
+        </LinearLayout>
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_below="@+id/textView192"
+            android:layout_marginTop="15dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical" />
+        </HorizontalScrollView>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/touchLayout"
+        android:layout_width="@dimen/TouchLayoutWidth"
+        android:layout_height="match_parent">
+
+    </RelativeLayout>
+</RelativeLayout>

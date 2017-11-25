@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <com.wzzc.other_view.OverrideScrollView
+        android:id="@+id/sv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="@color/SuperDeliverGJColor"
+            android:dividerPadding="10dp"
+            android:orientation="vertical">
+
+            <com.wzzc.NextIndex.views.a.views.AView
+                android:id="@+id/a_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <com.wzzc.NextIndex.views.a.views.BView
+                android:id="@+id/b_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <com.wzzc.NextIndex.views.a.views.CView
+                android:id="@+id/c_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <com.wzzc.NextIndex.views.a.views.DView
+                android:id="@+id/d_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <com.wzzc.NextIndex.views.a.views.EView
+                android:id="@+id/e_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <com.wzzc.NextIndex.views.a.views.FView
+                android:id="@+id/f_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <com.wzzc.NextIndex.views.a.views.GView
+                android:id="@+id/g_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <com.wzzc.NextIndex.views.a.views.CView
+                android:id="@+id/h_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+    </com.wzzc.other_view.OverrideScrollView>
+
+    <include
+        layout="@layout/layout_float_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>

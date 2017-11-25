@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingTop="7dp">
+
+    <ImageView
+        android:id="@+id/imageView25"
+        android:layout_width="match_parent"
+        android:layout_height="281dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="80dp"
+        android:background="@drawable/super_deliver_nine_zone_backgound" />
+
+    <ImageView
+        android:id="@+id/img_go"
+        android:layout_width="wrap_content"
+        android:layout_height="120dp"
+        android:background="@drawable/super_deliver_nine_zone_icon" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/linearLayout8"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/img_go"
+        android:layout_marginBottom="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="25dp"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <com.wzzc.other_view.extendView.ExtendImageView
+            android:id="@+id/nine1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="3dp"
+            android:layout_weight="1.1"
+            android:background="@color/white">
+
+        </com.wzzc.other_view.extendView.ExtendImageView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="3dp"
+            android:layout_weight="0.9"
+            android:orientation="vertical"
+            android:weightSum="2">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="2dp"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <com.wzzc.other_view.extendView.ExtendImageView
+                    android:id="@+id/nine21"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="2dp"
+                    android:layout_weight="1"
+                    android:background="@color/white">
+
+                </com.wzzc.other_view.extendView.ExtendImageView>
+
+                <com.wzzc.other_view.extendView.ExtendImageView
+                    android:id="@+id/nine22"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="2dp"
+                    android:layout_weight="1"
+                    android:background="@color/white">
+
+                </com.wzzc.other_view.extendView.ExtendImageView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="2dp"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <com.wzzc.other_view.extendView.ExtendImageView
+                    android:id="@+id/nine31"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="2dp"
+                    android:layout_weight="1"
+                    android:background="@color/white">
+
+                </com.wzzc.other_view.extendView.ExtendImageView>
+
+                <com.wzzc.other_view.extendView.ExtendImageView
+                    android:id="@+id/nine32"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="2dp"
+                    android:layout_weight="1"
+                    android:background="@color/white">
+
+                </com.wzzc.other_view.extendView.ExtendImageView>
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout8"
+        android:layout_width="match_parent"
+        android:layout_height="317dp"
+        android:layout_below="@+id/imageView25"
+        android:orientation="vertical"
+        android:padding="@dimen/OnepurchaseIndexSmallPadding"
+        android:weightSum="2">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <com.wzzc.other_view.extendView.ExtendImageView
+                android:id="@+id/pro11"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/white">
+
+            </com.wzzc.other_view.extendView.ExtendImageView>
+
+            <TextView
+                android:id="@+id/textView126"
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0"
+                android:background="@color/tv_line" />
+
+            <com.wzzc.other_view.extendView.ExtendImageView
+                android:id="@+id/pro12"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/white">
+
+            </com.wzzc.other_view.extendView.ExtendImageView>
+
+            <TextView
+                android:id="@+id/textView127"
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0"
+                android:background="@color/tv_line" />
+
+            <com.wzzc.other_view.extendView.ExtendImageView
+                android:id="@+id/pro13"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/white">
+
+            </com.wzzc.other_view.extendView.ExtendImageView>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView131"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_weight="0"
+            android:background="@color/tv_line" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <com.wzzc.other_view.extendView.ExtendImageView
+                android:id="@+id/pro21"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/white">
+
+            </com.wzzc.other_view.extendView.ExtendImageView>
+
+            <TextView
+                android:id="@+id/textView128"
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0"
+                android:background="@color/tv_line" />
+
+            <com.wzzc.other_view.extendView.ExtendImageView
+                android:id="@+id/pro22"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/white">
+
+            </com.wzzc.other_view.extendView.ExtendImageView>
+
+            <TextView
+                android:id="@+id/textView129"
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0"
+                android:background="@color/tv_line" />
+
+            <com.wzzc.other_view.extendView.ExtendImageView
+                android:id="@+id/pro23"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/white">
+
+            </com.wzzc.other_view.extendView.ExtendImageView>
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

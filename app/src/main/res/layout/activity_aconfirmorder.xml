@@ -1,0 +1,432 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <com.wzzc.other_view.BasicTitleView xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/basicTitleView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:title="确认订单" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/basicTitleView">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/bg_White"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/layout_address"
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:background="@drawable/button_pressed_normal"
+                android:paddingEnd="15dp"
+                android:paddingStart="15dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_toStartOf="@+id/imageView37"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:id="@+id/layout_a"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="12dp"
+                        android:layout_marginTop="12dp">
+
+                        <TextView
+                            android:id="@+id/tv_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="张三"
+                            android:textColor="@color/tv_Black" />
+
+                        <TextView
+                            android:id="@+id/tv_phone"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="16dp"
+                            android:layout_toEndOf="@+id/tv_name"
+                            android:text="15866668888"
+                            android:textColor="@color/tv_Black" />
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/tv_address"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:singleLine="true"
+                        android:text="河南省郑州市管城区"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/tv_addressInfo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="7dp"
+                        android:singleLine="true"
+                        android:text="航海路中州大道交叉口富田太阳城52号5666号"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/imageView37"
+                    android:layout_width="13dp"
+                    android:layout_height="25dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/next_arror_gray" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/textView68"
+                android:layout_width="match_parent"
+                android:layout_height="12dp"
+                android:background="@color/SuperDeliverGJColor" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <ListView
+                    android:id="@+id/listView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:divider="@drawable/list_divider"
+                    android:dividerHeight="1dp" />
+
+                <TextView
+                    android:id="@+id/textView223"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/tv_line" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingBottom="11dp"
+                android:paddingEnd="15dp"
+                android:paddingStart="15dp"
+                android:paddingTop="11dp">
+
+                <EditText
+                    android:id="@+id/et_message"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_circle_solid_light_gray"
+                    android:gravity="center_vertical"
+                    android:hint="买家留言"
+                    android:paddingBottom="5dp"
+                    android:paddingEnd="9dp"
+                    android:paddingStart="9dp"
+                    android:paddingTop="5dp"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingEnd="15dp"
+                android:paddingStart="15dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="15dp"
+                    android:paddingTop="15dp">
+
+                    <TextView
+                        android:id="@+id/tv_shipping"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="12dp"
+                        android:layout_toStartOf="@+id/tv_other_shipping"
+                        android:drawablePadding="5dp"
+                        android:drawableStart="@drawable/cart_select_icon"
+                        android:text="顺丰速运 ￥25"
+                        android:textColor="@color/tv_Black" />
+
+                    <TextView
+                        android:id="@+id/tv_other_shipping"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:background="@drawable/button_pressed_normal"
+                        android:drawableEnd="@drawable/arrow_black"
+                        android:drawablePadding="13dp"
+                        android:text="选择其他" />
+
+                    <TextView
+                        android:id="@+id/textView233"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="配送方式 "
+                        android:textColor="@color/tv_Black" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="15dp"
+                    android:paddingTop="15dp"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/tv_how_oos"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="12dp"
+                        android:layout_toStartOf="@+id/tv_other_how_oos"
+                        android:drawablePadding="5dp"
+                        android:drawableStart="@drawable/cart_select_icon"
+                        android:text="与店主协商"
+                        android:textColor="@color/tv_Black" />
+
+                    <TextView
+                        android:id="@+id/tv_other_how_oos"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:background="@drawable/button_pressed_normal"
+                        android:drawableEnd="@drawable/arrow_black"
+                        android:drawablePadding="13dp"
+                        android:text="选择其他" />
+
+                    <TextView
+                        android:id="@+id/textView234"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="缺货处理"
+                        android:textColor="@color/tv_Black" />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView226"
+                android:layout_width="match_parent"
+                android:layout_height="6dp"
+                android:background="@color/SuperDeliverGJColor" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:paddingEnd="15dp"
+                android:paddingStart="15dp"
+                android:paddingTop="24dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="10dp">
+
+                    <TextView
+                        android:id="@+id/textView229"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="使用余额"
+                        android:textColor="@color/tv_Black" />
+
+                    <EditText
+                        android:id="@+id/et_use_surplus"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:background="@drawable/bg_circle_virtual_gray"
+                        android:ems="0"
+                        android:gravity="end"
+                        android:inputType="number"
+                        android:paddingEnd="5dp"
+                        android:paddingStart="5dp"
+                        android:text="0"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/tv_surplus_remain"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_below="@+id/et_use_surplus"
+                        android:layout_marginTop="5dp"
+                        android:text="余额：1024"
+                        android:textSize="10sp" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:id="@+id/tv_gcb_remain"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_below="@+id/et_use_gcb"
+                        android:layout_marginTop="5dp"
+                        android:text="剩余工厂币：1024"
+                        android:textSize="10sp" />
+
+                    <EditText
+                        android:id="@+id/et_use_gcb"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:background="@drawable/bg_circle_virtual_gray"
+                        android:ems="0"
+                        android:gravity="end"
+                        android:inputType="number"
+                        android:paddingEnd="5dp"
+                        android:paddingStart="5dp"
+                        android:text="0"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/tv_use_gcb_info"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="17dp"
+                        android:layout_marginStart="17dp"
+                        android:layout_toEndOf="@+id/textView239"
+                        android:layout_toStartOf="@+id/et_use_gcb"
+                        android:singleLine="true"
+                        android:text="本次可用工厂币0抵现金￥0 "
+                        android:textSize="10sp" />
+
+                    <TextView
+                        android:id="@+id/textView239"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="使用工厂币"
+                        android:textColor="@color/tv_Black" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingBottom="24dp"
+                    android:paddingTop="24dp">
+
+                    <TextView
+                        android:id="@+id/tv_production_money"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentTop="true"
+                        android:text="￥426"
+                        android:textColor="@color/tv_Black" />
+
+                    <TextView
+                        android:id="@+id/textView240"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="商品价格总和"
+                        android:textColor="@color/tv_Black" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingBottom="24dp"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/textView241"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="已优惠"
+                        android:textColor="@color/tv_Black" />
+
+                    <TextView
+                        android:id="@+id/tv_earn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:text="￥50"
+                        android:textColor="@color/tv_Black" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_will_get_integral"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView245"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:paddingStart="15dp"
+                android:text="该订单完成后，您将获得792工厂币	"
+                android:textColor="@color/tv_Black"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/textView227"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/tv_line" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingBottom="16dp"
+                android:paddingTop="17dp">
+
+                <TextView
+                    android:id="@+id/tv_payNumber"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:layout_toStartOf="@+id/textView245"
+                    android:text="共5件商品 "
+                    android:textColor="@color/tv_Black" />
+
+                <TextView
+                    android:id="@+id/tv_payMoney"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@+id/textView245"
+                    android:text="￥940.00"
+                    android:textColor="@color/tv_Red" />
+
+                <TextView
+                    android:id="@+id/textView245"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:text="共计"
+                    android:textColor="@color/tv_Black" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_submit"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginStart="15dp"
+                android:background="@drawable/button_pressed_solid_circle_red"
+                android:gravity="center"
+                android:text="确认下单"
+                android:textColor="@color/tv_White"
+                android:textSize="18sp" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

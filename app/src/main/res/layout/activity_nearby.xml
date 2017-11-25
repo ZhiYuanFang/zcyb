@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.wzzc.other_view.BasicTitleView
+        android:id="@+id/basicTitleView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <com.wzzc.other_view.extendView.scrollView.ExtendScrollView
+        android:id="@+id/scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <android.support.v4.view.ViewPager
+                    android:id="@+id/viewPager"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"></android.support.v4.view.ViewPager>
+
+                <com.wzzc.other_view.SlideView.slidePager.SlidePagerCountView
+                    android:id="@+id/countPager"
+                    android:layout_width="wrap_content"
+                    android:layout_height="37dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center"></com.wzzc.other_view.SlideView.slidePager.SlidePagerCountView>
+
+                <TextView
+                    android:id="@+id/textView70"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/tv_line" />
+
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/rv_shop"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ListView
+                    android:id="@+id/listView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:divider="@null"
+                    android:scrollbars="none"></ListView>
+            </RelativeLayout>
+        </LinearLayout>
+    </com.wzzc.other_view.extendView.scrollView.ExtendScrollView>
+
+
+
+    <!--<RelativeLayout-->
+    <!--android:id="@+id/main_view"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_above="@+id/main_bottomview">-->
+    <!--</RelativeLayout>-->
+
+</LinearLayout>

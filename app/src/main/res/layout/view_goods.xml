@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="176dp"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_goods_item_background"
+    android:orientation="vertical"
+    android:paddingBottom="3dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="168dp">
+
+        <com.wzzc.other_view.extendView.ExtendImageView
+            android:id="@+id/eiv_goods_icon"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <ImageView
+            android:id="@+id/iv_high_back_icon"
+            android:layout_width="45dp"
+            android:layout_height="14dp"
+            android:background="@drawable/high_back" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="11dp"
+        android:layout_marginLeft="11dp"
+        android:layout_marginRight="11dp"
+        android:layout_marginStart="11dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_productionName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:maxLines="2"
+            android:text="潮格成人折叠床单人双人午休床办公室午睡床家用沙发床简易床包邮"
+            android:textColor="@color/tv_Black"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/textView272"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/tv_line" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tv_hasSort"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:maxWidth="70dp"
+                    android:singleLine="true"
+                    android:text="已售523件"
+                    android:textSize="12sp"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/tv_lastPrice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:text="券后价2.5"
+                    android:textColor="#de001d"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:gravity="center_vertical">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_angel_production_price"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:id="@+id/button5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bg_solid_half_production_coupon"
+                        android:gravity="center"
+                        android:paddingBottom="1dp"
+                        android:paddingEnd="4dp"
+                        android:paddingStart="4dp"
+                        android:paddingTop="1dp"
+                        android:text="领券"
+                        android:textColor="@color/tv_White"
+                        android:textSize="10sp" />
+
+                    <TextView
+                        android:id="@+id/tv_coupons"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toEndOf="@+id/button5"
+                        android:gravity="center"
+                        android:paddingBottom="1dp"
+                        android:paddingEnd="4dp"
+                        android:paddingStart="4dp"
+                        android:paddingTop="1dp"
+                        android:text="10元"
+                        android:textColor="#bf4c6b"
+                        android:textSize="10sp" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/tv_remain_day"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:text="剩6天"
+                    android:textSize="8sp" />
+            </RelativeLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

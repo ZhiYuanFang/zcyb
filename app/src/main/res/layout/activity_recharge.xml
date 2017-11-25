@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:background="#ffffff"
+    android:orientation="vertical">
+
+
+    <com.wzzc.other_view.BasicTitleView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="15dp"
+            android:paddingEnd="15dp"
+            android:paddingRight="15dp"
+            android:paddingStart="15dp">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:paddingLeft="10dp"
+                android:paddingEnd="10dp"
+                android:paddingRight="10dp"
+                android:paddingStart="10dp"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/btn_money_detail"
+                    android:layout_weight="1"
+                    android:background="@color/white"
+                    android:text="@string/money_detail"
+                    android:tag="3"
+                    android:gravity="center" />
+
+                <TextView
+                    android:text="@string/user_detail"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/btn_user_detail"
+                    android:layout_weight="1"
+                    android:background="@color/white"
+                    android:tag="4"
+                    android:gravity="center" />
+
+                <TextView
+                    android:text="@string/money_add"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/btn_money_add"
+                    android:layout_weight="1"
+                    android:background="@color/white"
+                    android:textColor="@color/tv_Red"
+                    android:tag="5"
+                    android:gravity="center" />
+
+                <TextView
+                    android:text="@string/money_get"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/btn_money_get"
+                    android:layout_weight="1"
+                    android:background="@color/white"
+                    android:tag="6"
+                    android:gravity="center" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:id="@+id/textView33"
+                android:background="@color/tv_Gray" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:weightSum="1"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="充值金额："
+                    android:layout_weight="0.7"
+                    android:gravity="center"
+                    android:textSize="14sp"
+                    android:textColor="@color/tv_Black" />
+
+                <EditText
+                android:id="@+id/input_money"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/bg_collection"
+                    android:layout_weight="0.3"
+                    android:maxLines="1" />
+
+                <TextView
+                    android:text="元"
+                    android:layout_height="20dp"
+                    android:id="@+id/textView29"
+                    android:layout_weight="0"
+                    android:layout_width="20dp"
+                    android:gravity="center" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:id="@+id/textView31"
+                android:background="@color/tv_Gray" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:weightSum="1"
+                android:paddingTop="20dp"
+                android:paddingBottom="30dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="会员备注 :"
+                    android:layout_weight="0.7"
+                    android:gravity="center_horizontal"
+                    android:textColor="@color/tv_Black" />
+
+                <EditText
+                android:id="@+id/edit_input"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/bg_collection"
+                    android:layout_weight="0.3"
+                    android:gravity="start" />
+
+                <TextView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:id="@+id/textView30"
+                    android:layout_weight="0" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:id="@+id/textView32"
+                android:background="@color/tv_Gray" />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:paddingTop="30dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="支付方式 :"
+                    android:textSize="18sp"
+                    android:textColor="@color/tv_Black" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:paddingTop="10dp">
+                <RadioGroup
+                    android:id="@+id/btn_group"
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <RadioButton
+                        android:id="@+id/radio_pay1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:tag="1"
+                        android:text="支付宝"
+                        android:layout_marginBottom="5dp" />
+                    <RadioButton
+                        android:id="@+id/radio_pay2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:tag="3"
+                        android:text="微信支付"/>
+                </RadioGroup>
+                    <LinearLayout
+                        android:layout_weight="1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:gravity="center_vertical"
+                            android:text="0"
+                            android:visibility="gone" />
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:gravity="center_vertical"
+                            android:text="0"
+                            android:visibility="gone" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:weightSum="1"
+                android:padding="8dp">
+
+                <Button
+                    android:id="@+id/btn_tj"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/angel_border_selected"
+                    android:text="提交申请"
+                    android:layout_weight="0.5"
+                    android:gravity="center"
+                    android:textColor="@color/tv_White"
+                    android:textSize="18sp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:tag="1" />
+
+                <Button
+                    android:text="重置表单"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/btn_reset"
+                    android:layout_weight="0.5"
+                    android:background="@drawable/angel_border_selected"
+                    android:textColor="@color/tv_White"
+                    android:textSize="18sp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:tag="2" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

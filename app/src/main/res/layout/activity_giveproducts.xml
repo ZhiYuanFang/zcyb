@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:background="#ffffff">
+
+
+    <com.wzzc.other_view.BasicTitleView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="75dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/logo1"
+        android:visibility="gone" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:orientation="vertical"
+        android:layout_marginLeft="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginStart="30dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:gravity="center_vertical"
+            android:text="请输入消费者手机号"/>
+        <EditText
+            android:id="@+id/edit_usid"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="37dp"
+            android:background="@drawable/bg_collection"/>
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:gravity="center_vertical"
+            android:text="请输入在本店消费的金额"/>
+        <EditText
+            android:id="@+id/edit_money"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="37dp"
+            android:background="@drawable/bg_collection"/>
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:gravity="center_vertical"
+            android:text="本次兑换产品金额"/>
+        <EditText
+            android:id="@+id/edit_money1"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="37dp"
+            android:background="@drawable/bg_collection"/>
+        <Button
+            android:id="@+id/btn_tj"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/angel_border_selected"
+            android:textColor="#ffffff"
+            android:text="确定提交"/>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="#ffffff"
+    android:layout_height="100dp">
+
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/lay_01"
+            android:visibility="gone"
+            android:tag="0"
+            android:layout_width="wrap_content"
+            android:layout_height="83dp">
+
+            <RelativeLayout
+                android:id="@+id/imageview_000"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentTop="true" />
+
+            <TextView
+                android:id="@+id/lab_money"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_marginTop="63dp"
+                android:background="#e0000000"
+                android:gravity="center_horizontal"
+                android:text="价格"
+                android:textColor="#ffffff" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="match_parent"
+            android:layout_height="20dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_marginLeft="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/lay_02"
+            android:tag="1"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="83dp">
+
+            <RelativeLayout
+                android:id="@+id/imageview_001"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentTop="true"/>
+
+            <TextView
+                android:id="@+id/lab_money1"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_marginTop="63dp"
+                android:background="#e0000000"
+                android:gravity="center_horizontal"
+                android:text="价格"
+                android:textColor="#ffffff" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/lab_name1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_marginLeft="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/lay_03"
+            android:tag="2"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="83dp">
+
+            <RelativeLayout
+                android:id="@+id/imageview_002"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentTop="true" />
+
+            <TextView
+                android:id="@+id/lab_money2"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_marginTop="63dp"
+                android:background="#e0000000"
+                android:gravity="center_horizontal"
+                android:text="价格"
+                android:textColor="#ffffff" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/lab_name2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/lay_04"
+            android:tag="3"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="83dp">
+
+            <RelativeLayout
+                android:id="@+id/imageview_003"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentTop="true" />
+
+            <TextView
+                android:id="@+id/lab_money3"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_marginTop="63dp"
+                android:background="#e0000000"
+                android:gravity="center_horizontal"
+                android:text="价格"
+                android:textColor="#ffffff" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/lab_name3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/basicLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_margin="@dimen/OnpurchaseMarginLeftRight"
+        android:orientation="horizontal"
+        android:padding="@dimen/OnepurchaseIndexSmallPadding">
+
+        <TextView
+            android:id="@+id/textView172"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="方式一、您的邀请码："
+            android:textColor="@color/tv_Red" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/OnpurchaseMarginLeftRight"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="@dimen/OnepurchaseIndexSmallPadding">
+
+        <ImageView
+            android:id="@+id/img_code"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_margin="@dimen/OnpurchaseMarginLeftRight"
+            android:background="@color/SuperDeliverGJColor"
+            android:scaleType="centerInside" />
+
+        <TextView
+            android:id="@+id/textView186"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/OnpurchaseMarginLeftRight"
+            android:text="长按二维码保存图片或发送给朋友" />
+
+    </LinearLayout>
+
+</LinearLayout>

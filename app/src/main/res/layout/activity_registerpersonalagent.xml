@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.wzzc.other_view.BasicTitleView
+        android:id="@+id/basicTitleView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:title="个人代理" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/basicTitleView"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <com.wzzc.other_view.extendView.ExtendImageView
+                android:id="@+id/eiv_personalAgent"
+                android:layout_width="match_parent"
+                android:layout_height="350dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/OnpurchaseMarginLeftRight"
+                android:layout_marginTop="@dimen/OnpurchaseMarginLeftRight"
+                android:orientation="vertical"
+                android:padding="@dimen/OnpurchaseMarginLeftRight">
+
+                <EditText
+                    android:id="@+id/et_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="@dimen/OnpurchaseMarginLeftRight"
+                    android:layout_marginTop="@dimen/OnpurchaseMarginLeftRight"
+                    android:background="@drawable/bg_collection"
+                    android:ems="10"
+                    android:hint="姓名"
+                    android:inputType="textPersonName"
+                    android:padding="@dimen/OnepurchaseIndexSmallPadding"
+                    android:singleLine="true" />
+
+                <LinearLayout
+                    android:id="@+id/layout_none_info"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="@dimen/OnpurchaseMarginLeftRight"
+                    android:layout_marginTop="@dimen/OnpurchaseMarginLeftRight"
+                    android:background="@drawable/bg_collection"
+                    android:orientation="vertical"
+                    android:padding="@dimen/OnepurchaseIndexSmallPadding">
+
+                    <EditText
+                        android:id="@+id/et_phone"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="@dimen/OnpurchaseMarginLeftRight"
+                        android:background="@drawable/bg_collection_yellow"
+                        android:ems="10"
+                        android:hint="手机号"
+                        android:inputType="textPersonName"
+                        android:padding="@dimen/OnepurchaseIndexSmallPadding"
+                        android:singleLine="true" />
+
+                    <EditText
+                        android:id="@+id/et_passWord"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="@dimen/OnpurchaseMarginLeftRight"
+                        android:background="@drawable/bg_collection_yellow"
+                        android:ems="10"
+                        android:hint="密码"
+                        android:inputType="textPassword"
+                        android:padding="@dimen/OnepurchaseIndexSmallPadding"
+                        android:singleLine="true" />
+
+                    <EditText
+                        android:id="@+id/et_repeat_passWord"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="@dimen/OnpurchaseMarginLeftRight"
+                        android:background="@drawable/bg_collection_yellow"
+                        android:ems="10"
+                        android:hint="核对密码"
+                        android:inputType="textPassword"
+                        android:padding="@dimen/OnepurchaseIndexSmallPadding"
+                        android:singleLine="true" />
+
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/et_promatName"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="@dimen/OnpurchaseMarginLeftRight"
+                    android:layout_marginTop="@dimen/OnpurchaseMarginLeftRight"
+                    android:background="@drawable/bg_collection"
+                    android:ems="10"
+                    android:hint="推荐人账号"
+                    android:inputType="textPersonName"
+                    android:padding="@dimen/OnepurchaseIndexSmallPadding"
+                    android:singleLine="true" />
+
+                <EditText
+                    android:id="@+id/et_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    android:layout_marginBottom="@dimen/OnpurchaseMarginLeftRight"
+                    android:layout_marginTop="@dimen/OnpurchaseMarginLeftRight"
+                    android:background="@drawable/bg_collection"
+                    android:ems="10"
+                    android:gravity="start"
+                    android:hint="收货地址"
+                    android:inputType="textMultiLine"
+                    android:padding="@dimen/OnepurchaseIndexSmallPadding" />
+
+                <LinearLayout
+                    android:id="@+id/layout_none_code"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <EditText
+                        android:id="@+id/et_code"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="@dimen/OnpurchaseMarginLeftRight"
+                        android:layout_marginTop="@dimen/OnpurchaseMarginLeftRight"
+                        android:layout_weight="0.5"
+                        android:background="@drawable/bg_collection"
+                        android:ems="10"
+                        android:hint="短信验证码"
+                        android:inputType="textPersonName"
+                        android:padding="@dimen/OnepurchaseIndexSmallPadding"
+                        android:singleLine="true" />
+
+                    <TextView
+                        android:id="@+id/tv_getCode"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="@dimen/OnpurchaseMarginLeftRight"
+                        android:layout_marginTop="@dimen/OnpurchaseMarginLeftRight"
+                        android:layout_weight="1.5"
+                        android:background="@drawable/bg_circle_red"
+                        android:gravity="center"
+                        android:padding="@dimen/OnepurchaseIndexSmallPadding"
+                        android:text="@string/getCode"
+                        android:textColor="@color/tv_Red" />
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <RadioButton
+                        android:id="@+id/radio_agree"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/OnpurchaseMarginLeftRight"
+                        android:layout_marginTop="@dimen/OnpurchaseMarginLeftRight"
+                        android:padding="@dimen/OnepurchaseIndexSmallPadding"
+                        android:textColor="@color/tv_Gray" />
+
+                    <TextView
+                        android:id="@+id/tv_deal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toEndOf="@+id/radio_agree"
+                        android:text="我已阅读并同意协议" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/tv_submit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/OnpurchaseMarginLeftRight"
+                    android:layout_marginTop="@dimen/OnpurchaseMarginLeftRight"
+                    android:background="@drawable/angel_border_selected"
+                    android:gravity="center"
+                    android:paddingBottom="@dimen/OnpurchaseMarginLeftRight"
+                    android:paddingEnd="@dimen/OnepurchaseIndexSmallPadding"
+                    android:paddingLeft="@dimen/OnepurchaseIndexSmallPadding"
+                    android:paddingRight="@dimen/OnepurchaseIndexSmallPadding"
+                    android:paddingStart="@dimen/OnepurchaseIndexSmallPadding"
+                    android:paddingTop="@dimen/OnpurchaseMarginLeftRight"
+                    android:text="申请"
+                    android:textColor="@color/tv_White" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/contain_pay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="@dimen/title_height">
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="@dimen/TouchLayoutWidth"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/basicTitleView">
+
+    </RelativeLayout>
+</RelativeLayout>

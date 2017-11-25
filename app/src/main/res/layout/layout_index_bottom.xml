@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#333333"
+    android:orientation="horizontal"
+    android:weightSum="5">
+
+    <Button
+        android:id="@+id/bt_home"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@color/bg_hasOK"
+        android:drawablePadding="5dp"
+        android:drawableTop="@drawable/index_home"
+        android:gravity="center"
+        android:paddingBottom="4dp"
+        android:paddingTop="5dp"
+        android:text="主页"
+        android:textColor="@color/tv_White"
+        android:textSize="12sp" />
+
+    <Button
+        android:id="@+id/bt_call"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@android:color/transparent"
+        android:drawablePadding="5dp"
+        android:drawableTop="@drawable/index_call"
+        android:gravity="center"
+        android:paddingBottom="4dp"
+        android:paddingTop="5dp"
+        android:text="客服"
+        android:textColor="@color/tv_White"
+        android:textSize="12sp" />
+
+    <Button
+        android:id="@+id/bt_help"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@android:color/transparent"
+        android:drawablePadding="5dp"
+        android:drawableTop="@drawable/index_help"
+        android:gravity="center"
+        android:paddingBottom="4dp"
+        android:paddingTop="5dp"
+        android:text="帮助"
+        android:textColor="@color/tv_White"
+        android:textSize="12sp" />
+
+    <Button
+        android:id="@+id/bt_cart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@android:color/transparent"
+        android:drawablePadding="5dp"
+        android:drawableTop="@drawable/index_cart"
+        android:gravity="center"
+        android:paddingBottom="4dp"
+        android:paddingTop="5dp"
+        android:text="兑换车"
+        android:textColor="@color/tv_White"
+        android:textSize="12sp" />
+
+    <Button
+        android:id="@+id/bt_center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@android:color/transparent"
+        android:drawablePadding="5dp"
+        android:drawableTop="@drawable/index_center"
+        android:gravity="center"
+        android:paddingBottom="4dp"
+        android:paddingTop="5dp"
+        android:text="个人中心"
+        android:textColor="@color/tv_White"
+        android:textSize="12sp" />
+</LinearLayout>

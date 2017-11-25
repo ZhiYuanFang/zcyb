@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textView96"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/bg_hasOK" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignTop="@+id/user_icon"
+        android:layout_marginEnd="@dimen/OnpurchaseMarginLeftRight"
+        android:layout_marginLeft="@dimen/OnpurchaseMarginLeftRight"
+        android:layout_marginRight="@dimen/OnpurchaseMarginLeftRight"
+        android:layout_marginStart="@dimen/OnpurchaseMarginLeftRight"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/bg_collection"
+        android:padding="@dimen/OnpurchaseMarginLeftRight">
+
+        <TextView
+            android:id="@+id/tv_goods_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:gravity="center"
+            android:padding="@dimen/OnepurchaseIndexSmallPadding"
+            android:text="@string/app_name"
+            android:textColor="@color/tv_Red" />
+
+        <TextView
+            android:id="@+id/tv_signature"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/tv_goods_name"
+            android:layout_below="@+id/tv_goods_name"
+            android:layout_marginBottom="14dp"
+            android:gravity="center"
+            android:padding="@dimen/OnepurchaseIndexSmallPadding"
+            android:text="作为一名电商我很认真！"
+            android:textSize="12sp" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/tv_signature"
+            android:layout_marginTop="@dimen/OnpurchaseMarginLeftRight"
+            android:padding="@dimen/OnepurchaseIndexSmallPadding"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="@dimen/OnpurchaseMarginLeftRight">
+
+                <com.wzzc.onePurchase.view.AnotherItemLayoutView
+                    android:id="@+id/item_myCurrent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/OnpurchaseMarginLeftRight"
+                    android:layout_marginTop="@dimen/OnpurchaseMarginLeftRight"
+                    android:padding="@dimen/OnepurchaseIndexSmallPadding"
+                    app:title="我的账户余额"
+                    app:titleDrawable="@drawable/onepurchase_mybalance" />
+
+                <TextView
+                    android:id="@+id/textView104"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginBottom="@dimen/OnpurchaseMarginLeftRight"
+                    android:layout_marginTop="@dimen/OnpurchaseMarginLeftRight"
+                    android:background="@color/tv_line"
+                    android:text="TextView" />
+
+                <com.wzzc.onePurchase.view.AnotherItemLayoutView
+                    android:id="@+id/item_myRecord"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/OnepurchaseIndexSmallPadding"
+                    app:title="我的云购记录"
+                    app:titleDrawable="@drawable/onepurchase_cloud_record" />
+
+                <com.wzzc.onePurchase.view.AnotherItemLayoutView
+                    android:id="@+id/item_MyGetted"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/OnepurchaseIndexSmallPadding"
+                    app:title="获得的商品"
+                    app:titleDrawable="@drawable/onepurchase_hasgetted" />
+
+                <com.wzzc.onePurchase.view.AnotherItemLayoutView
+                    android:id="@+id/item_myShowOrder"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/OnepurchaseIndexSmallPadding"
+                    app:title="我的晒单"
+                    app:titleDrawable="@drawable/onepurchase_show_order" />
+
+                <com.wzzc.onePurchase.view.AnotherItemLayoutView
+                    android:id="@+id/item_myDetail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/OnepurchaseIndexSmallPadding"
+                    app:title="账户明细"
+                    app:titleDrawable="@drawable/onepurchase_myaccount_detail" />
+
+                <com.wzzc.onePurchase.view.AnotherItemLayoutView
+                    android:id="@+id/item_myManager"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/OnepurchaseIndexSmallPadding"
+                    app:title="邀请管理"
+                    app:titleDrawable="@drawable/onepurchase_manage" />
+
+                <com.wzzc.onePurchase.view.AnotherItemLayoutView
+                    android:id="@+id/item_helpCenter"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/OnepurchaseIndexSmallPadding"
+                    app:title="帮助中心"
+                    app:titleDrawable="@drawable/onepurchase_help_center" />
+
+                <com.wzzc.onePurchase.view.AnotherItemLayoutView
+                    android:id="@+id/item_userSetting"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/OnepurchaseIndexSmallPadding"
+                    app:title="个人设置"
+                    app:titleDrawable="@drawable/onepurchase_setting" />
+
+
+                <TextView
+                    android:id="@+id/tv_submit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="14dp"
+                    android:background="@drawable/angel_border_selected"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="退出登陆"
+                    android:textColor="@color/tv_White" />
+            </LinearLayout>
+        </ScrollView>
+
+    </RelativeLayout>
+
+
+    <com.wzzc.other_view.extendView.ExtendImageView
+        android:id="@+id/user_icon"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:background="@mipmap/applogo" />
+
+    <TextView
+        android:id="@+id/tv_another"
+        android:layout_width="26dp"
+        android:layout_height="6dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/user_icon"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/another" />
+
+</RelativeLayout>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clipChildren="false"
+    android:gravity="center_horizontal"
+    android:layerType="software"
+    android:orientation="vertical">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:layout_marginLeft="110dp"
+        android:layout_marginRight="110dp"
+        android:clipChildren="false"></android.support.v4.view.ViewPager>
+
+    <com.wzzc.other_view.SlideView.slidePager.SlidePagerCountView
+        android:id="@+id/count_pager"
+        android:layout_width="wrap_content"
+        android:layout_height="37dp"
+        android:layout_centerHorizontal="true"></com.wzzc.other_view.SlideView.slidePager.SlidePagerCountView>
+
+</LinearLayout>

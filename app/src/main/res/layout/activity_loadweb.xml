@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout17"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="@color/aquamarine"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/textView242"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="优惠券"
+            android:textColor="@color/tv_White"
+            android:textSize="18sp" />
+
+        <RelativeLayout
+            android:id="@+id/btn_back"
+            android:layout_width="30dp"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imageView48"
+                android:layout_width="12dp"
+                android:layout_height="20dp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/btn_back_normal" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <com.wzzc.other_activity.web.main_view.WebBrowser
+        android:id="@+id/myWebView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/tv_footer_message"
+        android:layout_below="@+id/relativeLayout17" />
+
+    <TextView
+        android:id="@+id/tv_category"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@color/aliceblue"
+        android:gravity="center"
+        android:padding="@dimen/OnepurchaseIndexSmallPadding"
+        android:text="即将前往淘宝"
+        android:textColor="@color/bg_continue"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/tv_footer_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/bg_hasOK"
+        android:gravity="center"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp"
+        android:text="最高返利18.22%"
+        android:textColor="@color/tv_White"
+        android:visibility="gone" />
+
+</RelativeLayout>

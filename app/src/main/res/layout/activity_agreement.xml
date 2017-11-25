@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.wzzc.other_view.BasicTitleView
+        android:id="@+id/basicTitleView16"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <com.wzzc.other_activity.web.main_view.WebBrowser
+
+        android:id="@+id/main_webview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/basicTitleView16" />
+
+    <RelativeLayout
+        android:id="@+id/touchLayout"
+        android:layout_width="@dimen/TouchLayoutWidth"
+        android:layout_height="match_parent"
+        android:layout_marginTop="37dp">
+
+    </RelativeLayout>
+</RelativeLayout>

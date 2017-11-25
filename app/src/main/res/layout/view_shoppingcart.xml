@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/basicLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.wzzc.other_view.BasicTitleView
+        android:id="@+id/basicTitleView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:id="@+id/layout_noData_filter"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:layout_below="@+id/basicTitleView">
+
+        <TextView
+            android:id="@+id/tv_shop_cart"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="7dp"
+            android:layout_marginEnd="25dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="7dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_pressed_solid_circle_red"
+            android:gravity="center"
+            android:text="购物车"
+            android:textColor="@color/tv_White" />
+
+        <TextView
+            android:id="@+id/tv_exchange_cart"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="7dp"
+            android:layout_marginEnd="25dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="7dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_pressed_circle_solid_light_gray"
+            android:gravity="center"
+            android:text="兑换车"
+            android:textColor="@color/tv_White" />
+    </LinearLayout>
+
+    <com.wzzc.other_view.viewPager.MyViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/layout_noData_filter" />
+
+</RelativeLayout>

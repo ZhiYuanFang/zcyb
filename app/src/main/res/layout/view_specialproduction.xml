@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="@dimen/OnepurchaseIndexSmallPadding"
+        android:id="@+id/linearLayout3">
+
+        <TextView
+            android:id="@+id/tv_home"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="@dimen/OnepurchaseIndexSmallPadding"
+            android:singleLine="true"
+            android:text="首页" />
+
+        <TextView
+            android:id="@+id/tv_allProduction"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="@dimen/OnepurchaseIndexSmallPadding"
+            android:singleLine="true"
+            android:text="所有商品" />
+
+        <TextView
+            android:id="@+id/tv_lastPublished"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="@dimen/OnepurchaseIndexSmallPadding"
+            android:singleLine="true"
+            android:text="最新揭晓" />
+
+        <TextView
+            android:id="@+id/tv_showOrder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="@dimen/OnepurchaseIndexSmallPadding"
+            android:singleLine="true"
+            android:text="晒单" />
+
+        <TextView
+            android:id="@+id/tv_shortTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="@dimen/OnepurchaseIndexSmallPadding"
+            android:singleLine="true"
+            android:text="限时" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_lastPublished"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/linearLayout3"
+        android:visibility="gone">
+
+        <ListView
+            android:id="@+id/listView_lastPublished"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_showOrder"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/linearLayout3">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:orientation="horizontal"
+            android:id="@+id/linearLayout4">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/tv_newsOrder"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true"
+                    android:gravity="center"
+                    android:text="最新晒单" />
+
+                <TextView
+                    android:id="@+id/tv_line_newsOrder"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/tv_line"
+                    android:gravity="center" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/textView111"
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/OnpurchaseMarginLeftRight"
+                android:layout_marginTop="@dimen/OnpurchaseMarginLeftRight"
+                android:layout_weight="0"
+                android:background="@color/tv_line"
+                android:paddingBottom="@dimen/OnepurchaseIndexSmallPadding"
+                android:paddingTop="@dimen/OnepurchaseIndexSmallPadding" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/tv_popularOrder"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true"
+                    android:gravity="center"
+                    android:text="人气晒单" />
+
+                <TextView
+                    android:id="@+id/tv_line_popularOrder"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/tv_line"
+                    android:gravity="center" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/textView109"
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:layout_marginBottom="@dimen/OnpurchaseMarginLeftRight"
+                android:layout_marginTop="@dimen/OnpurchaseMarginLeftRight"
+                android:layout_weight="0"
+                android:background="@color/tv_line"
+                android:gravity="center" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/tv_comment"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="评论最多" />
+
+                <TextView
+                    android:id="@+id/tv_line_comment"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/tv_line"
+                    android:gravity="center" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/listView_showOrder"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/linearLayout4"
+            android:layout_margin="@dimen/OnpurchaseMarginLeftRight" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

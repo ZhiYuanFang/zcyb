@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+     
+    	<LinearLayout 
+    	    android:layout_width="fill_parent"
+    	    android:layout_height="wrap_content"
+    	    android:orientation="horizontal">
+    		<RadioButton
+                android:id="@+id/rb_new11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawableTop="@drawable/icon_indexn_01"
+                android:button="@null"
+                android:gravity="center"
+                android:text="折扣币专区"/>
+    		<RadioButton
+                android:id="@+id/rb_new12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawableTop="@drawable/icon_indexn_10"
+                android:button="@null"
+                android:gravity="center"
+                android:text="子城币专区" />
+    		<RadioButton
+                android:id="@+id/rb_new13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawableTop="@drawable/icon_indexn_03"
+                android:button="@null"
+                android:gravity="center"
+                android:text="新品上市" />
+    		<RadioButton
+                android:id="@+id/rb_new"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawableTop="@drawable/icon_indexn_04"
+                android:button="@null"
+                android:gravity="center"
+                android:text="商家联盟" />
+    	</LinearLayout>
+    	<LinearLayout 
+    	    android:layout_width="fill_parent"
+    	    android:layout_height="wrap_content"
+    	    android:orientation="horizontal">
+    		<RadioButton
+                android:id="@+id/rb_new1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawableTop="@drawable/icon_indexn_05"
+                android:button="@null"
+                android:gravity="center"
+                android:text="子城品牌"/>
+    		<RadioButton
+                android:id="@+id/rb_new2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawableTop="@drawable/icon_indexn_02"
+                android:button="@null"
+                android:gravity="center"
+                android:text="促销活动" />
+    		<RadioButton
+                android:id="@+id/rb_new3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawableTop="@drawable/icon_indexn_06"
+                android:button="@null"
+                android:gravity="center"
+                android:text="会员中心"/>
+    		<RadioButton
+                android:id="@+id/rb_new4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawableTop="@drawable/icon_indexn_11"
+                android:button="@null"
+                android:gravity="center"
+                android:text="商家平台" />
+    	</LinearLayout>
+    	
+ 
+
+</LinearLayout>

@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/linearLayout10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="15dp"
+        android:paddingTop="15dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingEnd="16dp"
+            android:paddingStart="16dp">
+
+            <CheckBox
+                android:id="@+id/check_shop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@drawable/radio_cart_default"
+                android:drawablePadding="7dp"
+                android:drawableStart="@drawable/cart_shop_icon"
+                android:paddingStart="8dp"
+                android:text="商城自营店( 共 1 件 )"
+                android:textColor="@color/tv_Black"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:id="@+id/img_go_shop"
+                android:layout_width="6dp"
+                android:layout_height="12dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="2dp"
+                app:srcCompat="@drawable/goto_shop" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout_full_reduction"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp"
+            android:paddingStart="40dp">
+
+            <TextView
+                android:id="@+id/textView212"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_rangle_virtul_red"
+                android:padding="3dp"
+                android:text="满额减"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/tv_full_reduction"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="6dp"
+                android:layout_toEndOf="@+id/textView212"
+                android:padding="3dp"
+                android:text="满100元减10元 ,满300元减50元."
+                android:textSize="10sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/relativeLayout7"
+        android:layout_below="@+id/linearLayout10"
+        android:divider="@drawable/list_divider"
+        android:dividerHeight="1dp"
+        android:paddingStart="20dp" />
+
+    <TextView
+        android:id="@+id/textView218"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_above="@+id/relativeLayout7"
+        android:background="@color/tv_line"
+        android:text="TextView" />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout7"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true"
+        android:gravity="center_vertical"
+        android:paddingEnd="15dp"
+        android:paddingStart="15dp"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/tv_shop_all"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="1dp"
+            android:text="￥376.00"
+            android:textColor="@color/tv_Red"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/textView215"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toStartOf="@+id/tv_shop_all"
+            android:text="合计："
+            android:textColor="@color/tv_Black"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/textView217"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/tv_line"
+        android:text="TextView"
+        android:visibility="gone" />
+
+</LinearLayout>

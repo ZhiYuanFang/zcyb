@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/OnepurchaseIndexSmallPadding">
+
+        <RelativeLayout
+            android:id="@+id/img_icon"
+            android:layout_width="80dp"
+            android:layout_height="80dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/OnpurchaseMarginLeftRight"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_goods_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:padding="@dimen/OnepurchaseIndexSmallPadding"
+                android:text="--" />
+
+            <TextView
+                android:id="@+id/tv_goods_sn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:padding="@dimen/OnepurchaseIndexSmallPadding"
+                android:text="--" />
+
+            <TextView
+                android:id="@+id/tv_extension_code"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:padding="@dimen/OnepurchaseIndexSmallPadding"
+                android:text="--" />
+
+            <TextView
+                android:id="@+id/tv_goods_attr"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:padding="@dimen/OnepurchaseIndexSmallPadding"
+                android:text="--" />
+
+            <TextView
+                android:id="@+id/tv_goods_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:padding="@dimen/OnepurchaseIndexSmallPadding"
+                android:text="--" />
+
+            <TextView
+                android:id="@+id/tv_is_real"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:padding="@dimen/OnepurchaseIndexSmallPadding"
+                android:text="--" />
+
+            <TextView
+                android:id="@+id/tv_is_gift"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:padding="@dimen/OnepurchaseIndexSmallPadding"
+                android:text="--" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="@dimen/OnepurchaseIndexSmallPadding">
+
+                <TextView
+                    android:id="@+id/textView83"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0"
+                    android:gravity="center_vertical"
+                    android:text="此单发货数量：" />
+
+                <EditText
+                    android:id="@+id/et_number"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0"
+                    android:background="@drawable/bg_collection"
+                    android:ems="10"
+                    android:inputType="number"
+                    android:padding="@dimen/OnepurchaseIndexSmallPadding"
+                    android:text="0" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:orientation="horizontal">
+
+    <Button
+        android:id="@+id/bt_buyNow"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginEnd="2dp"
+        android:layout_weight="1"
+        android:background="@drawable/onepurchase_select"
+        android:text="立即购买"
+        android:textColor="@color/tv_White" />
+
+    <Button
+        android:id="@+id/bt_addToCart"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="2dp"
+        android:layout_weight="1"
+        android:background="@drawable/onepurchase_noselect"
+        android:text="加入购物车"
+        android:textColor="@color/tv_White" />
+</LinearLayout>

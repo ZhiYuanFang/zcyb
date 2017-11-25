@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout_fragment_filter"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/need_hide_layout"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toStartOf="@+id/layout_type"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <RelativeLayout
+                android:id="@+id/layout_desc"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/img_filter"
+                    android:layout_width="8dp"
+                    android:layout_height="8dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="5dp"
+                    android:layout_toEndOf="@+id/tv_desc"
+                    android:background="@drawable/triangle_bottom_color_orange" />
+
+                <TextView
+                    android:id="@+id/tv_desc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="综合排序"
+                    android:textColor="@color/orangered" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/layout_rebate"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/tv_rebate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="返利比" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/layout_coupons"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <Switch
+                    android:id="@+id/switch_coupons"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="有券"
+                    android:textColor="@color/tv_Gray"
+                    android:textSize="12sp"
+                    tools:checked="false" />
+
+                <TextView
+                    android:id="@+id/tv_coupons"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="有券"
+                    android:visibility="gone" />
+
+            </RelativeLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout_type"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_toStartOf="@+id/textView255"
+            android:gravity="center">
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/address_select_radio" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/textView255"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_toStartOf="@+id/layout_filter"
+            android:background="@color/tv_line" />
+
+        <RelativeLayout
+            android:id="@+id/layout_filter"
+            android:layout_width="75dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/tv_filter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="筛选" />
+
+            <ImageView
+                android:id="@+id/filter_select"
+                android:layout_width="10dp"
+                android:layout_height="11dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="3dp"
+                android:layout_toRightOf="@+id/tv_filter"
+                android:background="@drawable/filter" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/textView254"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/tv_line" />
+
+</LinearLayout>

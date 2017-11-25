@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/OnepurchaseIndexSmallPadding">
+
+    <ListView
+        android:id="@+id/listView_car"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/linearLayout" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        android:padding="@dimen/OnepurchaseIndexSmallPadding">
+
+        <TextView
+            android:id="@+id/tv_summery"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="@dimen/OnepurchaseIndexSmallPadding"
+            android:text="总共购买5个商品 合计金额：1.00元" />
+
+        <TextView
+            android:id="@+id/tv_submit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/angel_border_selected"
+            android:gravity="center"
+            android:paddingBottom="@dimen/OnpurchaseMarginLeftRight"
+            android:paddingTop="@dimen/OnpurchaseMarginLeftRight"
+            android:text="结算"
+            android:textColor="@color/tv_White" />
+
+    </LinearLayout>
+
+</RelativeLayout>

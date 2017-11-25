@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="30dp"
+    android:orientation="horizontal"
+    android:weightSum="2">
+
+    <TextView
+        android:id="@+id/tv_category"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginEnd="@dimen/OnpurchaseMarginLeftRight"
+        android:layout_weight="0.4"
+        android:background="@drawable/bg_circle_red"
+        android:gravity="center|start"
+        android:paddingLeft="15dp"
+        android:paddingStart="15dp"
+        android:singleLine="true"
+        android:text="第--期正在进行中..."
+        android:textColor="@color/tv_Red" />
+
+    <TextView
+        android:id="@+id/tv_searchMore"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1.6"
+        android:background="@drawable/onepurchase_select"
+        android:gravity="center"
+        android:text="查看详情"
+        android:textColor="@color/tv_White" />
+
+</LinearLayout>

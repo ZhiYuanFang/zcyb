@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_circle_solid_white"
+    android:orientation="vertical"
+    android:paddingBottom="15dp"
+    android:paddingEnd="15dp"
+    android:paddingStart="15dp"
+    android:paddingTop="15dp">
+
+    <ImageView
+        android:id="@+id/img_ball"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/bg_circle_solid_gradute_red" />
+
+    <RelativeLayout
+        android:id="@+id/layout_high_back"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:alpha="0"
+        android:padding="15dp">
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout15"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_centerInParent="true">
+
+            <ImageView
+                android:id="@+id/imageView42"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/bg_circle_solid_gradute_red" />
+
+            <TextView
+                android:id="@+id/tv_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="2dp"
+                android:layout_marginTop="40dp"
+                android:text="最高返"
+                android:textColor="@color/tv_White"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/tv_high_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_info"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="2dp"
+                android:text="56%"
+                android:textColor="@color/tv_White"
+                android:textSize="36sp" />
+
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/imageView43"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="15dp"
+            android:layout_toStartOf="@+id/relativeLayout15"
+            android:background="@drawable/bg_circle_solid_light_red" />
+
+        <ImageView
+            android:id="@+id/imageView44"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_below="@+id/imageView43"
+            android:layout_toStartOf="@+id/relativeLayout15"
+            android:background="@drawable/bg_circle_solid_light_red" />
+
+        <ImageView
+            android:id="@+id/imageView45"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginTop="120dp"
+            android:layout_toStartOf="@+id/relativeLayout15"
+            android:background="@drawable/bg_circle_solid_light_red" />
+
+        <ImageView
+            android:id="@+id/imageView46"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignBottom="@+id/relativeLayout15"
+            android:layout_toEndOf="@+id/relativeLayout15"
+            android:background="@drawable/bg_circle_solid_light_red" />
+
+    </RelativeLayout>
+</RelativeLayout>

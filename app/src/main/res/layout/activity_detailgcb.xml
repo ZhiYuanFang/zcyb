@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/basicLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.wzzc.other_view.BasicTitleView
+        android:id="@+id/basicTitleView9"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/basicTitleView9">
+
+        <com.wzzc.other_view.extendView.scrollView.UIScrollView
+            android:id="@+id/uisv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/bottom_view">
+
+            <com.wzzc.other_view.extendView.scrollView.ExtendScrollView
+                android:id="@+id/esv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@+id/detail_bottom_view"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:id="@+id/dtv"
+                        android:layout_width="match_parent"
+                        android:layout_height="300dp">
+
+                        <android.support.v4.view.ViewPager
+                            android:id="@+id/viewPager"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" />
+
+                        <com.wzzc.other_view.SlideView.slidePager.SlidePagerCountView
+                            android:id="@+id/pageCount"
+                            android:layout_width="wrap_content"
+                            android:layout_height="37dp"
+                            android:layout_alignParentBottom="true"
+                            android:layout_centerHorizontal="true" />
+                    </RelativeLayout>
+
+                    <com.wzzc.other_view.production.detail.gcb.main_view.DetailMiddleView
+                        android:id="@+id/dmv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+            </com.wzzc.other_view.extendView.scrollView.ExtendScrollView>
+
+            <com.wzzc.other_view.production.detail.gcb.main_view.DetailBottomView
+                android:id="@+id/dbv"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_alignParentBottom="true" />
+        </com.wzzc.other_view.extendView.scrollView.UIScrollView>
+
+        <LinearLayout
+            android:id="@+id/bottom_view"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/lab_factory2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentBottom="true"
+                android:layout_weight="1"
+                android:background="@drawable/detail_number_view">
+
+                <LinearLayout
+                    android:id="@+id/lab_factory"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_weight="1"
+                    android:background="@drawable/detail_btn"
+                    android:orientation="vertical"
+                    android:tag="0">
+
+                    <ImageView
+                        android:id="@+id/ibn_like"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@drawable/btn_collect" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="5dp"
+                        android:text="收藏"
+                        android:textColor="#000000"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/lab_factory1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:tag="1">
+
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@drawable/btn_customerservice" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="5dp"
+                        android:text="客服"
+                        android:textColor="#000000"
+                        android:textSize="12sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_addcart"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#F7762E"
+                android:tag="2"
+                android:text="加入购物车"
+                android:textColor="#ffffff" />
+
+            <Button
+                android:id="@+id/btn_buying"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#ff9f34"
+                android:tag="3"
+                android:text="立即购买"
+                android:textColor="#ffffff" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

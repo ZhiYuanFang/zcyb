@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/bg_White"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textView154"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_weight="1"
+        android:background="@color/tv_line" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_index"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:drawablePadding="0dp"
+            android:gravity="center"
+            android:padding="@dimen/OnpurchaseMarginLeftRight"
+            android:text="首页" />
+
+        <TextView
+            android:id="@+id/tv_super_kill"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:drawablePadding="0dp"
+            android:gravity="center"
+            android:padding="@dimen/OnpurchaseMarginLeftRight"
+            android:text="超级秒杀" />
+
+        <TextView
+            android:id="@+id/tv_play"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:drawablePadding="0dp"
+            android:gravity="center"
+            android:padding="@dimen/OnpurchaseMarginLeftRight"
+            android:text="吃喝住行" />
+
+        <TextView
+            android:id="@+id/tv_person"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:drawablePadding="0dp"
+            android:gravity="center"
+            android:padding="@dimen/OnpurchaseMarginLeftRight"
+            android:text="个人中心" />
+    </LinearLayout>
+
+</LinearLayout>

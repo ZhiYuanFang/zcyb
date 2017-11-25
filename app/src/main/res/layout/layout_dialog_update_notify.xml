@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_dialog"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/OnpurchaseMarginLeftRight"
+        android:gravity="center"
+        android:singleLine="true"
+        android:text="title"
+        android:textColor="@color/tv_Black"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/textView23"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginEnd="@dimen/OnpurchaseMarginLeftRight"
+        android:layout_marginLeft="@dimen/OnpurchaseMarginLeftRight"
+        android:layout_marginRight="@dimen/OnpurchaseMarginLeftRight"
+        android:layout_marginStart="@dimen/OnpurchaseMarginLeftRight"
+        android:background="@color/tv_hint_red" />
+
+    <RelativeLayout
+        android:id="@+id/contain_center_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ScrollView
+            android:id="@+id/scrollview"
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:layout_margin="@dimen/OnpurchaseMarginLeftRight">
+
+            <LinearLayout
+                android:id="@+id/layout_contain_msg"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_msg"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="3dp"
+                    android:text="TextView"
+                    android:textColor="@color/tv_Black"
+                    android:textSize="14sp" />
+            </LinearLayout>
+        </ScrollView>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/textView115"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/tv_hint_red" />
+
+    <LinearLayout
+        android:id="@+id/layout_button"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:orientation="horizontal" />
+
+</LinearLayout>

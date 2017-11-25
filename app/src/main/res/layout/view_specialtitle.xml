@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/tv_Red">
+
+        <ImageButton
+            android:id="@+id/btn_back"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dp"
+            android:background="@drawable/btn_back_normal"></ImageButton>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/OnpurchaseMarginLeftRight"
+            android:layout_marginRight="@dimen/OnpurchaseMarginLeftRight"
+            android:background="@drawable/onepurchase_search_background"
+            android:focusable="true"
+            android:paddingBottom="8dp"
+            android:paddingEnd="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingStart="10dp"
+            android:paddingTop="8dp"
+            android:layout_toStartOf="@+id/btn_home"
+            android:layout_toEndOf="@+id/btn_back">
+
+            <ImageButton
+                android:id="@+id/ibn_search"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/search" />
+
+            <EditText
+                android:id="@+id/et_searchText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toStartOf="@+id/ibn_search"
+                android:background="@color/onePurchaseSearchBackground"
+                android:ems="10"
+                android:gravity="center_vertical|start"
+                android:hint="请输入您要搜索的内容"
+                android:inputType="textPersonName"
+                android:singleLine="true"
+                android:textColorHint="@color/tv_Gray"
+                android:textSize="14sp" />
+
+        </RelativeLayout>
+
+        <ImageButton
+            android:id="@+id/btn_home"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/onepurchase_home_icon" />
+    </RelativeLayout>
+</LinearLayout>

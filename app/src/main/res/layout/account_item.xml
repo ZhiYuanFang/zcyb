@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:weightSum="1">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_weight="0"
+        android:orientation="vertical"
+        android:weightSum="2">
+
+        <TextView
+            android:id="@+id/textView120"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="3dp"
+            android:layout_marginStart="3dp"
+            android:layout_weight="1"
+            android:background="@color/tv_line" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="6dp"
+            android:layout_height="6dp"
+            android:layout_weight="0"
+            android:background="@drawable/gray_ball" />
+
+        <TextView
+            android:id="@+id/textView119"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="3dp"
+            android:layout_marginStart="3dp"
+            android:layout_weight="1"
+            android:background="@color/tv_line" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0"
+        android:orientation="vertical"
+        android:padding="@dimen/OnepurchaseIndexSmallPadding">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/OnpurchaseMarginLeftRight"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:padding="@dimen/OnepurchaseIndexSmallPadding"
+                android:weightSum="2">
+
+                <TextView
+                    android:id="@+id/tv_category"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toStartOf="@+id/linearLayout7"
+                    android:layout_weight="1"
+                    android:gravity="bottom"
+                    android:text="提现：￥100.00 " />
+
+                <TextView
+                    android:id="@+id/tv_time"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="start"
+                    android:text="2017-04-20" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_other"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/tv_category"
+                android:layout_weight="1"
+                android:padding="@dimen/OnepurchaseIndexSmallPadding"
+                android:text="备注：" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView121"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_margin="@dimen/OnpurchaseMarginLeftRight"
+            android:layout_marginEnd="@dimen/OnpurchaseMarginLeftRight"
+            android:layout_marginLeft="@dimen/OnpurchaseMarginLeftRight"
+            android:layout_marginRight="@dimen/OnpurchaseMarginLeftRight"
+            android:layout_marginStart="@dimen/OnpurchaseMarginLeftRight"
+            android:layout_weight="0"
+            android:background="@color/tv_line"
+            android:text="TextView" />
+
+    </LinearLayout>
+
+</LinearLayout>

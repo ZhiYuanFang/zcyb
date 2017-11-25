@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout_production"
+    android:layout_width="122dp"
+    android:layout_height="155dp"
+    android:orientation="vertical"
+    android:paddingEnd="12dp"
+    android:paddingLeft="12dp"
+    android:paddingRight="12dp"
+    android:paddingStart="12dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="109dp">
+
+        <com.wzzc.other_view.extendView.ExtendImageView
+            android:id="@+id/eiv_production"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <ImageView
+            android:id="@+id/iv_high_back"
+            android:layout_width="35dp"
+            android:layout_height="11dp"
+            android:background="@drawable/high_back"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingEnd="7dp"
+        android:paddingLeft="7dp"
+        android:paddingRight="7dp"
+        android:paddingStart="7dp">
+
+        <TextView
+            android:id="@+id/tv_productionName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:singleLine="true"
+            android:text="席美家印花冰丝凉席1.51.8m可折叠席子三件套加厚夏天床席宿舍席"
+            android:textColor="#333333"
+            android:textSize="10sp" />
+
+        <RelativeLayout
+            android:id="@+id/layout_price"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="6dp">
+
+            <TextView
+                android:id="@+id/tv_price"
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/bg_super_kill_production_price"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="券启价￥449"
+                android:textColor="#d81f06"
+                android:textSize="8sp" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/tv_price"
+                android:background="@drawable/bg_super_kill_production_solid_coupon"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="领券"
+                android:textColor="@color/tv_White"
+                android:textSize="7sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

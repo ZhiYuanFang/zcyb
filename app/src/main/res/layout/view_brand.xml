@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_contain"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/bg_White"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_brand_title"
+        android:layout_width="match_parent"
+        android:layout_height="22dp"
+        android:gravity="center"
+        android:shadowColor="@color/tv_Black"
+        android:text="品牌特卖，每日上新"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/layout_brand"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginBottom="15dp"
+        android:layout_marginTop="27dp">
+
+        <RelativeLayout
+            android:id="@+id/layout_icon"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="10dp">
+
+            <com.wzzc.other_view.extendView.ExtendImageView
+                android:id="@+id/eiv_logo"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="13dp"
+            android:layout_toEndOf="@+id/layout_icon"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:singleLine="true"
+                android:text="2017-08-26"
+                android:textColor="@color/tv_Black"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tv_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:singleLine="true"
+                android:text="剩4天"
+                android:textSize="12sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="155dp"
+        android:layout_marginBottom="22dp"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+        <com.wzzc.NextSuperDeliver.main_view.a.BrandGoodItemView
+            android:id="@+id/bgiv_0"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <com.wzzc.NextSuperDeliver.main_view.a.BrandGoodItemView
+            android:id="@+id/bgiv_1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <com.wzzc.NextSuperDeliver.main_view.a.BrandGoodItemView
+            android:id="@+id/bgiv_2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+    </LinearLayout>
+</LinearLayout>

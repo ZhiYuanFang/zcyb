@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <ImageButton
+        android:id="@+id/ibn_home"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_centerVertical="true"
+        android:background="@drawable/onepurchase_home_icon" />
+
+    <RelativeLayout
+        android:id="@+id/shop_car"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:paddingBottom="4dp">
+
+        <ImageView
+            android:id="@+id/imageView19"
+            android:layout_width="28dp"
+            android:layout_height="25dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:background="@drawable/onepurchase_shop_car" />
+
+        <TextView
+            android:id="@+id/tv_shopCarNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/redpoint"
+            android:paddingBottom="1dp"
+            android:paddingEnd="4dp"
+            android:paddingLeft="4dp"
+            android:paddingRight="4dp"
+            android:paddingStart="4dp"
+            android:paddingTop="1dp"
+            android:text="5"
+            android:textColor="@color/tv_White"
+            android:textSize="10sp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/OnpurchaseMarginLeftRight"
+        android:layout_marginRight="@dimen/OnpurchaseMarginLeftRight"
+        android:layout_toEndOf="@+id/ibn_home"
+        android:layout_toStartOf="@+id/shop_car"
+        android:background="@drawable/onepurchase_search_background"
+        android:focusable="true"
+        android:paddingBottom="8dp"
+        android:paddingEnd="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingStart="10dp"
+        android:paddingTop="8dp">
+
+        <ImageButton
+            android:id="@+id/ibn_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/search" />
+
+        <EditText
+            android:id="@+id/et_searchText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toStartOf="@+id/ibn_search"
+            android:background="@color/onePurchaseSearchBackground"
+            android:ems="10"
+            android:gravity="center_vertical|start"
+            android:hint="商品名称"
+            android:inputType="textPersonName"
+            android:textColorHint="@color/tv_Gray"
+            android:textSize="14sp" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

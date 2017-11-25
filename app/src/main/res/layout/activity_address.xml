@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/basicLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.wzzc.other_view.BasicTitleView xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/basicTitleView15"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:title="收货地址" />
+
+    <RelativeLayout
+        android:id="@+id/layout_contain"
+        android:layout_below="@+id/basicTitleView15"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.wzzc.NextIndex.views.e.other_activity.address.AddressView
+            android:id="@+id/addressView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/touchLayout"
+        android:layout_width="@dimen/TouchLayoutWidth"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/basicTitleView15">
+
+    </RelativeLayout>
+</RelativeLayout>

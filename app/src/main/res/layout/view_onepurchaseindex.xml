@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:item="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.wzzc.onePurchase.view.OnePurchaseSearchTitleView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_height"
+        android:layout_marginBottom="@dimen/OnpurchaseMarginLeftRight"
+        android:layout_marginEnd="@dimen/OnpurchaseMarginLeftRight"
+        android:layout_marginLeft="@dimen/OnpurchaseMarginLeftRight"
+        android:layout_marginRight="@dimen/OnpurchaseMarginLeftRight"
+        android:layout_marginStart="@dimen/OnpurchaseMarginLeftRight"
+        android:layout_marginTop="@dimen/OnpurchaseMarginLeftRight"
+        android:focusable="true"
+        android:paddingEnd="@dimen/OnepurchaseIndexSmallPadding"
+        android:paddingLeft="@dimen/OnepurchaseIndexSmallPadding"
+        android:paddingRight="@dimen/OnepurchaseIndexSmallPadding"
+        android:paddingStart="@dimen/OnepurchaseIndexSmallPadding" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp">
+
+                    <TextView
+                        android:id="@+id/textView91"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginTop="50dp"
+                        android:background="@color/onePurchasePagerBackground" />
+
+                    <RelativeLayout
+                        android:id="@+id/contain_producPager"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginEnd="@dimen/OnpurchaseMarginLeftRight"
+                        android:layout_marginLeft="@dimen/OnpurchaseMarginLeftRight"
+                        android:layout_marginRight="@dimen/OnpurchaseMarginLeftRight"
+                        android:layout_marginStart="@dimen/OnpurchaseMarginLeftRight"
+                        android:paddingEnd="@dimen/OnepurchaseIndexSmallPadding"
+                        android:paddingLeft="@dimen/OnepurchaseIndexSmallPadding"
+                        android:paddingRight="@dimen/OnepurchaseIndexSmallPadding"
+                        android:paddingStart="@dimen/OnepurchaseIndexSmallPadding">
+
+                        <android.support.v4.view.ViewPager
+                            android:id="@+id/viewPager"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" />
+
+                        <com.wzzc.other_view.SlideView.slidePager.SlidePagerCountView
+                            android:id="@+id/countPager"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginBottom="@dimen/OnpurchaseMarginLeftRight"
+                            android:layout_marginEnd="@dimen/OnpurchaseMarginLeftRight"
+                            android:layout_marginRight="@dimen/OnpurchaseMarginLeftRight" />
+                    </RelativeLayout>
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="@dimen/OnpurchaseMarginLeftRight"
+                    android:layout_marginLeft="@dimen/OnpurchaseMarginLeftRight"
+                    android:layout_marginRight="@dimen/OnpurchaseMarginLeftRight"
+                    android:layout_marginStart="@dimen/OnpurchaseMarginLeftRight"
+                    android:layout_marginTop="@dimen/OnpurchaseMarginLeftRight"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:weightSum="4">
+
+                        <TextView
+                            android:id="@+id/lab_allProduction"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:drawablePadding="@dimen/OnepurchaseDrawpadding"
+                            android:drawableTop="@drawable/onepurchase_allproduction"
+                            android:gravity="bottom|center"
+                            android:text="@string/allPublic"
+                            android:textColor="@color/tv_Gray" />
+
+                        <TextView
+                            android:id="@+id/lab_lastestPublish"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:drawablePadding="@dimen/OnepurchaseDrawpadding"
+                            android:drawableTop="@drawable/onepurchase_lastpublish"
+                            android:gravity="bottom|center"
+                            android:text="@string/lastPublish"
+                            android:textColor="@color/tv_Gray" />
+
+                        <TextView
+                            android:id="@+id/lab_shotTime"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:drawablePadding="@dimen/OnepurchaseDrawpadding"
+                            android:drawableTop="@drawable/onepurchase_shortbuy"
+                            android:gravity="bottom|center"
+                            android:text="@string/shortTimeForRare"
+                            android:textColor="@color/tv_Gray" />
+
+                        <TextView
+                            android:id="@+id/lab_showOrder"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:drawablePadding="@dimen/OnepurchaseDrawpadding"
+                            android:drawableTop="@drawable/onepurchase_showorder"
+                            android:gravity="bottom|center"
+                            android:text="@string/getRareAndShowOrder"
+                            android:textColor="@color/tv_Gray" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/textView97"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="@dimen/OnpurchaseMarginLeftRight"
+                        android:background="@color/tv_line" />
+
+                    <com.wzzc.onePurchase.activity.index.main_view.home.OnePurchaseItemHeadlineView
+                        android:id="@+id/headline_lastpublish"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/OnpurchaseMarginLeftRight"
+                        item:headline="@string/lastPublish" />
+
+                    <HorizontalScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/OnpurchaseMarginLeftRight"
+                        android:scrollbars="none">
+
+                        <LinearLayout
+                            android:id="@+id/contain_hasWinedViwe"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:paddingEnd="@dimen/OnepurchaseIndexSmallPadding"
+                            android:paddingLeft="@dimen/OnepurchaseIndexSmallPadding"
+                            android:paddingRight="@dimen/OnepurchaseIndexSmallPadding"
+                            android:paddingStart="@dimen/OnepurchaseIndexSmallPadding" />
+                    </HorizontalScrollView>
+
+                    <TextView
+                        android:id="@+id/textView94"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="@dimen/OnpurchaseMarginLeftRight"
+                        android:background="@color/tv_line"
+                        android:text="TextView" />
+
+                    <com.wzzc.onePurchase.activity.index.main_view.home.OnePurchaseItemHeadlineView
+                        android:id="@+id/headline_shortTime"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/OnpurchaseMarginLeftRight"
+                        item:headline="今日限时" />
+
+                    <HorizontalScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/OnpurchaseMarginLeftRight"
+                        android:scrollbars="none">
+
+                        <LinearLayout
+                            android:id="@+id/contain_waitBuyViwe"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:paddingEnd="@dimen/OnepurchaseIndexSmallPadding"
+                            android:paddingLeft="@dimen/OnepurchaseIndexSmallPadding"
+                            android:paddingRight="@dimen/OnepurchaseIndexSmallPadding"
+                            android:paddingStart="@dimen/OnepurchaseIndexSmallPadding" />
+                    </HorizontalScrollView>
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/OnpurchaseMarginLeftRight"
+                android:background="@color/bg_hasOK"
+                android:paddingBottom="@dimen/OnepurchaseIndexSmallPadding"
+                android:paddingEnd="@dimen/OnpurchaseMarginLeftRight"
+                android:paddingLeft="@dimen/OnpurchaseMarginLeftRight"
+                android:paddingRight="@dimen/OnpurchaseMarginLeftRight"
+                android:paddingStart="@dimen/OnpurchaseMarginLeftRight"
+                android:paddingTop="@dimen/OnepurchaseIndexSmallPadding">
+
+                <com.wzzc.onePurchase.activity.index.main_view.home.OnePurchaseItemHeadlineView
+                    android:id="@+id/headline_promator"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/bg_hasOK"
+                    item:headColor="@color/tv_White"
+                    item:headline="热门推荐"
+                    item:iconColor="@color/bg_White"
+                    item:nextDrawable="@drawable/next_arror" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/contain_promator"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingEnd="@dimen/OnepurchaseIndexSmallPadding"
+                android:paddingLeft="@dimen/OnepurchaseIndexSmallPadding"
+                android:paddingRight="@dimen/OnepurchaseIndexSmallPadding"
+                android:paddingStart="@dimen/OnepurchaseIndexSmallPadding"
+                android:orientation="vertical"></LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+</LinearLayout>

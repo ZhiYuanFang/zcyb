@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:tag="4"
+    android:weightSum="4">
+
+    <LinearLayout
+        android:id="@+id/lv_bottom_a"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingBottom="4dp"
+        android:paddingTop="5dp"
+        android:tag="1">
+
+        <ImageView
+            android:id="@+id/iv_bottom_a"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="@drawable/index_focus"
+            android:scaleType="centerInside"
+            android:tag="1" />
+
+        <TextView
+            android:id="@+id/tv_bottom_a"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="主页"
+            android:textColor="@color/tv_Red"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lv_bottom_b"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingBottom="4dp"
+        android:paddingTop="5dp"
+        android:tag="2">
+
+        <ImageView
+            android:id="@+id/iv_bottom_b"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="@drawable/super_brand_gray"
+            android:scaleType="centerInside"
+            android:tag="2" />
+
+        <TextView
+            android:id="@+id/tv_bottom_b"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="品牌特惠"
+            android:textColor="@color/tv_Gray"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lv_bottom_c"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingBottom="4dp"
+        android:paddingTop="5dp"
+        android:tag="3">
+
+        <ImageView
+            android:id="@+id/iv_bottom_c"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="@drawable/super_high_back_gray"
+            android:scaleType="centerInside"
+            android:tag="3" />
+
+        <TextView
+            android:id="@+id/tv_bottom_c"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="高返推荐"
+            android:textColor="@color/tv_Gray"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lv_bottom_d"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingBottom="4dp"
+        android:paddingTop="5dp"
+        android:tag="4">
+
+        <ImageView
+            android:id="@+id/iv_bottom_d"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="@drawable/super_kill_gray"
+            android:scaleType="centerInside"
+            android:tag="4" />
+
+        <TextView
+            android:id="@+id/tv_bottom_d"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="秒杀"
+            android:textColor="@color/tv_Gray"
+            android:textSize="12sp" />
+    </LinearLayout>
+</LinearLayout>

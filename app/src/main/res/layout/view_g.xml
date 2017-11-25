@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <com.wzzc.other_view.extendView.ExtendImageView
+        android:id="@+id/eiv_title"
+        android:layout_width="match_parent"
+        android:layout_height="32dp">
+
+    </com.wzzc.other_view.extendView.ExtendImageView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingBottom="17dp"
+        android:paddingEnd="5dp"
+        android:paddingStart="5dp"
+        android:paddingTop="3dp">
+
+        <com.wzzc.other_view.extendView.ExtendImageView
+            android:id="@+id/eiv_0"
+            android:layout_width="match_parent"
+            android:layout_height="125dp"
+            android:layout_marginBottom="3dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="138dp"
+            android:orientation="horizontal">
+
+            <com.wzzc.other_view.extendView.ExtendImageView
+                android:id="@+id/eiv_1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="2.5dp"
+                android:layout_weight="1" />
+
+            <com.wzzc.other_view.extendView.ExtendImageView
+                android:id="@+id/eiv_2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="2.5dp"
+                android:layout_marginStart="2.5dp"
+                android:layout_weight="1" />
+
+            <com.wzzc.other_view.extendView.ExtendImageView
+                android:id="@+id/eiv_3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="2.5dp"
+                android:layout_weight="1" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

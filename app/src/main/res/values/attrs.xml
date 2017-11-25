@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <attr name="arrow" format="reference" />
+    <attr name="title" format="string" />
+    <attr name="titleSize" format="integer" />
+    <attr name="titleColor" format="color" />
+    <attr name="headline" format="string" />
+    <attr name="iconColor" format="color" />
+    <attr name="headColor" format="color" />
+    <attr name="nextDrawable" format="reference" />
+    <attr name="top_color" format="color" />
+    <attr name="titleDrawable" format="reference" />
+    <attr name="tableType" format="integer"/>
+    <attr name="hasBack" format="boolean"/>
+    <attr name="hasHome" format="boolean"/>
+    <attr name="hasNext" format="boolean"/>
+    <attr name="layout_height" format="integer"/>
+    <attr name="layout_color" format="color"/>
+    <attr name="roundColor" format="color"/>
+    <attr name="roundProgressColor" format="color"/>
+    <attr name="roundWidth" format="dimension"/>
+    <attr name="textColor" format="color" />
+    <attr name="textSize" format="dimension" />
+    <attr name="max" format="integer"/>
+    <attr name="textIsDisplayable" format="boolean"/>
+    <attr name="style">
+        <enum name="STROKE" value="0"/>
+        <enum name="FILL" value="1"/>
+    </attr>
+    <declare-styleable name="RoundProgressBar">
+        <attr name="roundColor" />
+        <attr name="roundProgressColor"/>
+        <attr name="roundWidth" />
+        <attr name="textColor" />
+        <attr name="textSize"/>
+        <attr name="max" />
+        <attr name="textIsDisplayable" />
+        <attr name="style"/>
+    </declare-styleable>
+    <declare-styleable name="LineChar">
+        <attr name="xylinecolor" format="color" /><!-- xy坐标轴颜色 -->
+        <attr name="xylinewidth" format="dimension" /><!-- xy坐标轴宽度 -->
+        <attr name="xytextcolor" format="color" /><!-- xy坐标轴文字颜色 -->
+        <attr name="xytextsize" format="dimension" /><!-- xy坐标轴文字大小 -->
+        <attr name="linecolor" format="color" /><!-- 折线图中折线的颜色 -->
+        <attr name="interval" format="dimension" /><!-- x轴各个坐标点水平间距 -->
+        <attr name="bgcolor" format="color" /><!-- 背景颜色 -->
+    </declare-styleable>
+
+    <declare-styleable name="OnePurchasePanelBasicLayoutElement">
+        <attr name="top_color" />
+    </declare-styleable>
+
+    <declare-styleable name="OnePurchasePanelBasicTitleElement">
+        <attr name="title" />
+    </declare-styleable>
+
+    <declare-styleable name="OnePurchaseItemHeadlineElement">
+        <attr name="headline" />
+        <attr name="iconColor" />
+        <attr name="headColor" />
+        <attr name="nextDrawable" />
+    </declare-styleable>
+
+    <declare-styleable name="OnePurchaseAnotherItemElement">
+        <attr name="arrow" />
+        <attr name="title" />
+        <attr name="titleSize" />
+        <attr name="titleColor" />
+        <attr name="titleDrawable" />
+    </declare-styleable>
+
+    <declare-styleable name="BasicTitleElement">
+        <attr name="title" />
+        <attr name="hasBack"/>
+        <attr name="hasHome"/>
+    </declare-styleable>
+
+    <declare-styleable name="RegionViewElement">
+        <attr name="tableType" />
+    </declare-styleable>
+
+    <declare-styleable name="RelationItemView">
+        <attr name="layout_height"/>
+        <attr name="layout_color"/>
+        <attr name="hasNext"/>
+    </declare-styleable>
+</resources>

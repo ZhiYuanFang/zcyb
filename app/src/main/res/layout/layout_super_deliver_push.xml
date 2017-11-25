@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="31dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="@dimen/OnepurchaseIndexSmallPadding"
+        android:weightSum="1">
+
+        <ImageView
+            android:id="@+id/bt_control_play"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_marginEnd="@dimen/OnpurchaseMarginLeftRight"
+            android:layout_marginLeft="@dimen/OnpurchaseMarginLeftRight"
+            android:layout_marginRight="@dimen/OnpurchaseMarginLeftRight"
+            android:layout_marginStart="@dimen/OnpurchaseMarginLeftRight"
+            android:layout_weight="0"
+            android:background="@drawable/super_deliver_red" />
+
+        <TextView
+            android:id="@+id/tv_push"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/OnpurchaseMarginLeftRight"
+            android:layout_marginLeft="@dimen/OnpurchaseMarginLeftRight"
+            android:layout_marginRight="@dimen/OnpurchaseMarginLeftRight"
+            android:layout_marginStart="@dimen/OnpurchaseMarginLeftRight"
+            android:layout_weight="0"
+            android:background="@drawable/bg_circle_red"
+            android:padding="@dimen/OnepurchaseIndexSmallPadding"
+            android:text="推送"
+            android:textColor="@color/tv_Red" />
+
+        <com.wzzc.other_view.extendView.scrollView.ExtendScrollView
+            android:id="@+id/lv_notice"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:layout_weight="1"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:id="@+id/contain_item"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" />
+        </com.wzzc.other_view.extendView.scrollView.ExtendScrollView>
+
+    </LinearLayout>
+</LinearLayout>

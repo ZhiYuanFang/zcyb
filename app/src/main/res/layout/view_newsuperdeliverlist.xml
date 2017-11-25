@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="25dp">
+
+    <include
+        android:id="@+id/include_filter"
+        layout="@layout/recyle_superdeliver_list_filter" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/bg_White"
+        tools:ignore="UselessParent">
+
+        <com.wzzc.other_view.LoadMoreRecyclerView
+            android:id="@+id/lmrv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </RelativeLayout>
+
+
+</FrameLayout>

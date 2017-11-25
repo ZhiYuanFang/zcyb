@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="82dp"
+    android:orientation="horizontal"
+    android:paddingBottom="6dp"
+    android:paddingTop="6dp">
+
+    <com.wzzc.other_view.extendView.ExtendImageView
+        android:id="@+id/img_photo"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_alignParentStart="true"
+        android:layout_weight="0"
+        android:background="@drawable/bg_circle_virtual_gray" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_toEndOf="@+id/img_photo"
+        android:layout_toStartOf="@+id/linearLayout12"
+        android:layout_weight="0"
+        android:orientation="vertical"
+        android:paddingBottom="3dp"
+        android:paddingStart="7dp"
+        android:paddingTop="3dp">
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/lab_model"
+            android:layout_toStartOf="@+id/lab_format_price"
+            android:maxLines="2"
+            android:text="美胸仪等2种商品"
+            android:textColor="@color/tv_Black"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/lab_goods_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="2dp"
+            android:gravity="end"
+            android:text="x3"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/lab_format_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_weight="0"
+            android:gravity="end"
+            android:text="￥0.01"
+            android:textColor="@color/tv_Black"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/lab_model"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:singleLine="true"
+            android:text="颜色：白色"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+</LinearLayout>

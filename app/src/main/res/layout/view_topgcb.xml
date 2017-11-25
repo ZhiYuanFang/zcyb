@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:id="@+id/ads1_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@color/bg_Gray_light"
+            android:gravity="center">
+
+            <EditText
+                android:id="@+id/et_browse"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="28dp"
+                android:layout_marginLeft="28dp"
+                android:layout_marginRight="28dp"
+                android:layout_marginStart="28dp"
+                android:background="@drawable/angel_border_noselect"
+                android:ems="10"
+                android:hint="输入您想买的商品"
+                android:imeOptions="actionSearch"
+                android:inputType="textPersonName"
+                android:padding="@dimen/OnpurchaseMarginLeftRight" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.wzzc.other_view.extendView.ExtendImageView
+                android:id="@+id/ads_1"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:scaleType="centerInside" />
+
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:background="@drawable/ads_nolose"
+                android:scaleType="centerCrop" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="280dp"
+            android:layout_marginEnd="7dp"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+            android:layout_marginStart="7dp"
+            android:background="@drawable/gzb_bg1"
+            android:orientation="vertical"
+            android:paddingBottom="30dp"
+            android:paddingEnd="5dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingStart="5dp"
+            android:paddingTop="20dp"
+            android:weightSum="2">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <com.wzzc.other_view.extendView.ExtendImageView
+                    android:id="@+id/ads_2.1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="2dp"
+                    android:layout_marginRight="2dp"
+                    android:layout_weight="0.5"
+                    android:scaleType="centerInside" />
+
+                <com.wzzc.other_view.extendView.ExtendImageView
+                    android:id="@+id/ads_2.2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginStart="2dp"
+                    android:layout_weight="0.5"
+                    android:elevation="0dp"
+                    android:scaleType="centerInside" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <com.wzzc.other_view.extendView.ExtendImageView
+                    android:id="@+id/ads_3.1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="2dp"
+                    android:layout_marginRight="2dp"
+                    android:layout_weight="0.25"
+                    android:scaleType="centerInside" />
+
+                <com.wzzc.other_view.extendView.ExtendImageView
+                    android:id="@+id/ads_3.2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="2dp"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="2dp"
+                    android:layout_marginStart="2dp"
+                    android:layout_weight="0.25"
+                    android:scaleType="centerInside" />
+
+                <com.wzzc.other_view.extendView.ExtendImageView
+                    android:id="@+id/ads_3.3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="2dp"
+                    android:layout_marginRight="2dp"
+                    android:layout_weight="0.25"
+                    android:paddingEnd="2dp"
+                    android:paddingLeft="2dp"
+                    android:paddingRight="2dp"
+                    android:paddingStart="2dp"
+                    android:scaleType="centerInside" />
+
+                <com.wzzc.other_view.extendView.ExtendImageView
+                    android:id="@+id/ads_3.4"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginStart="2dp"
+                    android:layout_weight="0.25"
+                    android:scaleType="centerInside" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/imageView20"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/zcb_bar" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:background="@color/bg_Gray_light"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <TextView
+                android:id="@+id/tv_nomal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="@dimen/OnepurchaseIndexSmallPadding"
+                android:text="默认" />
+
+            <TextView
+                android:id="@+id/textView149"
+                android:layout_width="5dp"
+                android:layout_height="5dp"
+                android:layout_weight="0"
+                android:background="@drawable/bg_iszhuce" />
+
+            <TextView
+                android:id="@+id/tv_new"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="@dimen/OnepurchaseIndexSmallPadding"
+                android:text="最新" />
+
+            <TextView
+                android:id="@+id/textView146"
+                android:layout_width="5dp"
+                android:layout_height="5dp"
+                android:layout_weight="0"
+                android:background="@drawable/bg_iszhuce" />
+
+            <TextView
+                android:id="@+id/tv_sales"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="@dimen/OnepurchaseIndexSmallPadding"
+                android:text="销量" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="34dp">
+        <TextView
+            android:id="@+id/lab_area"
+            android:layout_weight="1"
+            android:paddingLeft="5dp"
+            android:gravity="center_vertical"
+            android:background="@drawable/bg_collection"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="所辖行政区"/>
+        <TextView
+            android:id="@+id/lab_state"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:background="@drawable/bg_collection"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="代理状态"/>
+        <TextView
+            android:id="@+id/lab_money"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:background="@drawable/bg_collection"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="代理价格"/>
+    </LinearLayout>
+
+</LinearLayout>

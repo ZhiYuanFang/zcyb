@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/bg_White"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/imageView29"
+        android:layout_width="match_parent"
+        android:layout_height="125dp"
+        android:background="@drawable/buysuccess"
+        android:scaleType="centerCrop" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/OnpurchaseMarginLeftRight"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView145"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/OnpurchaseMarginLeftRight"
+            android:text="请注意一下事项：" />
+
+        <TextView
+            android:id="@+id/tv_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/OnpurchaseMarginLeftRight"
+            android:lineSpacingExtra="8sp"
+            android:text="1.下单价：29.90,请在下单页面核对下单价是否一致。"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tv_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/OnpurchaseMarginLeftRight"
+            android:text="2. 返还划算金：14.95元交易完成后，将返还给您金额。"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/textView150"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/OnpurchaseMarginLeftRight"
+            android:text="注意：报名抢购后60分钟内不下单付款并返回填写订单号，本次订单将自动关闭。"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/OnpurchaseMarginLeftRight"
+            android:layout_weight="1"
+            android:background="@drawable/angel_border_gray"
+            android:gravity="center"
+            android:padding="@dimen/OnpurchaseMarginLeftRight"
+            android:text="继续逛逛" />
+
+        <TextView
+            android:id="@+id/tv_buy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/OnpurchaseMarginLeftRight"
+            android:layout_weight="1"
+            android:background="@drawable/angel_border_selected"
+            android:gravity="center"
+            android:padding="@dimen/OnpurchaseMarginLeftRight"
+            android:text="抢购成功，立马购买"
+            android:textColor="@color/tv_White" />
+
+    </LinearLayout>
+</LinearLayout>

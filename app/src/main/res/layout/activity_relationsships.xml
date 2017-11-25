@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.wzzc.other_view.BasicTitleView xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:title="推荐关系" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <TextView
+                android:id="@+id/tv_first"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="一级(100人)"
+                android:textColor="@color/tv_Red" />
+
+            <TextView
+                android:id="@+id/tv_second"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="二级(200人)"
+                android:textColor="@color/tv_Gray" />
+        </LinearLayout>
+
+        <com.wzzc.NextIndex.views.e.other_activity.RelationsShips.forActivity.main_view.RelationItemView xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:hasNext="false"
+            app:layout_color="#dddddd"
+            app:layout_height="45" />
+
+        <RelativeLayout
+            android:id="@+id/fgLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/aqua" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/touchLayout"
+        android:layout_width="@dimen/TouchLayoutWidth"
+        android:layout_height="match_parent">
+
+    </RelativeLayout>
+</RelativeLayout>

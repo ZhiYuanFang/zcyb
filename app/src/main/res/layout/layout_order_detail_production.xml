@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/border"
+        android:weightSum="1"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:paddingEnd="15dp"
+        android:paddingRight="15dp"
+        android:paddingLeft="5dp"
+        android:paddingStart="5dp">
+
+        <com.wzzc.other_view.extendView.ExtendImageView
+            android:layout_weight="0"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:id="@+id/img_thumb" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:weightSum="2"
+            android:layout_marginLeft="5dp"
+            android:layout_marginStart="5dp">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <TextView
+                    android:text="..."
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/tv_production_name"
+                    android:layout_weight="0.3" />
+
+                <TextView
+                    android:text="X1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/tv_num"
+                    android:layout_weight="1.7"
+                    android:gravity="end" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="left|center_vertical"
+                android:id="@+id/layout_our_price"></LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

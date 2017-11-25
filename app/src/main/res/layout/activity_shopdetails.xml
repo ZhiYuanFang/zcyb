@@ -1,0 +1,382 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/basicLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/layout_home"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:id="@+id/scroll"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/layout_all"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:id="@+id/rv_player"
+                        android:layout_width="match_parent"
+                        android:layout_height="165dp">
+
+                        <com.wzzc.other_view.SlideView.SlideView
+                            android:id="@+id/slideView"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:divider="@null"
+                            android:dividerHeight="0dp"
+                            android:scrollbars="none"></com.wzzc.other_view.SlideView.SlideView>
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:paddingEnd="15dp"
+                            android:paddingStart="15dp">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginBottom="9dp"
+                                android:layout_marginTop="12dp">
+
+                                <TextView
+                                    android:id="@+id/user_names"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_toStartOf="@+id/tv_distance"
+                                    android:gravity="center_vertical"
+                                    android:text="商铺名称"
+                                    android:textColor="@color/bg_Black"
+                                    android:textSize="18sp" />
+
+                                <TextView
+                                    android:id="@+id/tv_distance"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:layout_alignParentEnd="true"
+                                    android:gravity="center_vertical"
+                                    android:text="0km" />
+
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <RatingBar
+                                    android:id="@+id/ratingBar"
+                                    style="@style/Widget.AppCompat.RatingBar.Small"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:max="5"
+                                    android:progressTint="@color/bgthree"
+                                    android:rating="5" />
+
+                                <TextView
+                                    android:id="@+id/tv_num"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_toRightOf="@+id/ratingBar"
+                                    android:text="5分"
+                                    android:textColor="@color/bgthree" />
+
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginBottom="13dp"
+                                android:layout_marginTop="13dp">
+
+                                <TextView
+                                    android:id="@+id/textView171"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="月消费人次：200+" />
+                            </RelativeLayout>
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/textView173"
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/tv_line" />
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center_vertical"
+                            android:padding="15dp">
+
+                            <ImageButton
+                                android:id="@+id/ibn_call"
+                                android:layout_width="16dp"
+                                android:layout_height="16dp"
+                                android:layout_alignParentEnd="true"
+                                android:background="@drawable/phone_red" />
+
+                            <TextView
+                                android:id="@+id/tv_local"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:drawableLeft="@drawable/local_icon"
+                                android:drawablePadding="9dp"
+                                android:text="0km" />
+                        </RelativeLayout>
+
+                        <TextView
+                            android:id="@+id/textView175"
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/tv_line" />
+
+                        <com.wzzc.onePurchase.view.AnotherItemLayoutView
+                            android:id="@+id/ailv_promote"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            app:arrow="@drawable/settinggoto"
+                            app:title="商家介绍"
+                            app:titleDrawable="@drawable/home" />
+
+                        <LinearLayout
+                            android:id="@+id/layout_promate"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/textView174"
+                                android:layout_width="match_parent"
+                                android:layout_height="9dp"
+                                android:background="@color/tv_line" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical"
+                                android:paddingEnd="15dp"
+                                android:paddingStart="15dp">
+
+                                <RelativeLayout
+                                    android:id="@+id/rv_promote"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent">
+
+                                    <ListView
+                                        android:id="@+id/lv_promote"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:divider="@color/tv_line"
+                                        android:dividerHeight="1dp"
+                                        android:scrollbars="none" />
+                                </RelativeLayout>
+
+                                <RelativeLayout
+                                    android:id="@+id/rv_other"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:paddingBottom="10dp"
+                                    android:paddingTop="10dp">
+
+                                    <TextView
+                                        android:id="@+id/tv_shop_other"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:gravity="center"
+                                        android:text="查看其它0个"
+                                        android:textColor="@color/tv_Red"
+                                        android:textSize="18sp"
+                                        android:visibility="gone" />
+
+                                    <ListView
+                                        android:id="@+id/lv_other"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:scrollbars="none" />
+                                </RelativeLayout>
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+
+                        <TextView
+                            android:id="@+id/textView176"
+                            android:layout_width="match_parent"
+                            android:layout_height="9dp"
+                            android:background="@color/tv_line" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <com.wzzc.onePurchase.view.AnotherItemLayoutView
+                                android:id="@+id/ailv_profile"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                app:arrow="@drawable/settinggoto"
+                                app:title="商家推荐" />
+
+                            <TextView
+                                android:id="@+id/textView180"
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:background="@color/tv_line" />
+
+                            <RelativeLayout
+                                android:id="@+id/rv_profile"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:paddingEnd="15dp"
+                                android:paddingStart="15dp">
+
+                                <com.wzzc.index.home.h.main_view.main_view.main_view.b.ShopDetailPromationView
+                                    android:id="@+id/sdpv"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent" />
+                            </RelativeLayout>
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/textView177"
+                            android:layout_width="match_parent"
+                            android:layout_height="9dp"
+                            android:background="@color/tv_line" />
+
+                        <com.wzzc.onePurchase.view.AnotherItemLayoutView
+                            android:id="@+id/ailv_nearby"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:paddingEnd="30dp"
+                            android:paddingStart="15dp"
+                            app:arrow="@drawable/settinggoto"
+                            app:title="附近联盟商家" />
+
+                        <TextView
+                            android:id="@+id/textView178"
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/tv_line" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:paddingEnd="15dp"
+                            android:paddingStart="15dp">
+
+                            <RelativeLayout
+                                android:id="@+id/rv_nearBy"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <ListView
+                                    android:id="@+id/nearby_shop"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:divider="@color/tv_line"
+                                    android:dividerHeight="1dp" />
+                            </RelativeLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+
+        <RelativeLayout
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/title_height"
+            android:gravity="center_vertical">
+
+            <RelativeLayout
+                android:id="@+id/lv_bottom"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:alpha="0"
+                android:background="#bcff0000">
+
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/btn_back"
+                android:layout_width="10dp"
+                android:layout_height="17dp"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="15dp"
+                android:background="@drawable/btn_back_normal" />
+
+            <ImageView
+                android:id="@+id/btn_share"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/share" />
+
+            <TextView
+                android:id="@+id/tv_collect"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="18dp"
+                android:layout_toStartOf="@+id/btn_share"
+                android:text="56240"
+                android:textColor="@color/tv_White" />
+
+            <ImageView
+                android:id="@+id/iv_collec"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="4dp"
+                android:layout_toStartOf="@+id/tv_collect"
+                android:background="@drawable/c_no" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/touchLayout"
+            android:layout_width="@dimen/TouchLayoutWidth"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/title" />
+
+        <RelativeLayout
+            android:id="@+id/layout_contain"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true">
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

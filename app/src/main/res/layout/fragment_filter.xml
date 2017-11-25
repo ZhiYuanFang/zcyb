@@ -1,0 +1,378 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_fragment"
+    android:orientation="horizontal"
+    android:weightSum="2">
+
+    <RelativeLayout
+        android:id="@+id/layout_out"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1.6">
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.4"
+        android:background="@color/bg_White"
+        android:clickable="true"
+        android:orientation="vertical"
+        android:paddingBottom="3dp"
+        android:paddingEnd="3dp"
+        android:paddingLeft="3dp"
+        android:paddingRight="3dp"
+        android:paddingStart="3dp"
+        android:paddingTop="25dp">
+
+        <TextView
+            android:id="@+id/textView248"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="3dp"
+            android:layout_marginStart="3dp"
+            android:layout_marginTop="15dp"
+            android:text="返利区间(%)"
+            android:textColor="@color/tv_Black" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/bg_angle_gray"
+            android:padding="5dp"
+            android:visibility="gone">
+
+            <EditText
+                android:id="@+id/et_back_one"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_toStartOf="@+id/textView251"
+                android:background="@drawable/bg_circle_solid_white"
+                android:ems="10"
+                android:gravity="center"
+                android:inputType="number"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/textView251"
+                android:layout_width="15dp"
+                android:layout_height="3dp"
+                android:layout_centerInParent="true"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                android:background="@color/bg_Gray" />
+
+            <EditText
+                android:id="@+id/et_back_tow"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_toEndOf="@+id/textView251"
+                android:background="@drawable/bg_circle_solid_white"
+                android:ems="10"
+                android:gravity="center"
+                android:inputType="number"
+                android:textSize="14sp" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginStart="15dp"
+            android:orientation="horizontal"
+            android:paddingBottom="3dp"
+            android:paddingTop="3dp"
+            android:weightSum="3">
+
+            <TextView
+                android:id="@+id/tv_reback_1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginStart="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_angle_gray"
+                android:gravity="center"
+                android:text="0-5%" />
+
+            <TextView
+                android:id="@+id/tv_reback_2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginStart="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_angle_gray"
+                android:gravity="center"
+                android:text="5-10%" />
+
+            <TextView
+                android:id="@+id/tv_reback_3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginStart="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_angle_gray"
+                android:gravity="center"
+                android:text="10-15%" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginStart="15dp"
+            android:orientation="horizontal"
+            android:paddingBottom="3dp"
+            android:paddingTop="3dp"
+            android:weightSum="3">
+
+            <TextView
+                android:id="@+id/tv_reback_4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginStart="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_angle_gray"
+                android:gravity="center"
+                android:text="15-20%" />
+
+            <TextView
+                android:id="@+id/tv_reback_5"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginStart="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_angle_gray"
+                android:gravity="center"
+                android:text="20%以上" />
+
+            <TextView
+                android:id="@+id/tv_reback_6"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginStart="5dp"
+                android:layout_weight="1"
+                android:background="@color/alibc_transparent"
+                android:clickable="false"
+                android:gravity="center" />
+        </LinearLayout>
+        <TextView
+            android:id="@+id/textView249"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="3dp"
+            android:layout_marginStart="3dp"
+            android:layout_marginTop="15dp"
+            android:text="价格区间(元)"
+            android:textColor="@color/tv_Black" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/bg_angle_gray"
+            android:padding="5dp"
+            android:visibility="gone">
+
+            <EditText
+                android:id="@+id/et_money_one"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_toStartOf="@+id/textView252"
+                android:background="@drawable/bg_circle_solid_white"
+                android:ems="10"
+                android:gravity="center"
+                android:inputType="number"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/textView252"
+                android:layout_width="15dp"
+                android:layout_height="3dp"
+                android:layout_centerInParent="true"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                android:background="@color/bg_Gray" />
+
+            <EditText
+                android:id="@+id/et_money_tow"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_toEndOf="@+id/textView252"
+                android:background="@drawable/bg_circle_solid_white"
+                android:ems="10"
+                android:gravity="center"
+                android:inputType="number"
+                android:textSize="14sp" />
+        </RelativeLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginStart="15dp"
+            android:orientation="horizontal"
+            android:paddingBottom="3dp"
+            android:paddingTop="3dp"
+            android:weightSum="3">
+
+            <TextView
+                android:id="@+id/tv_money_1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginStart="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_angle_gray"
+                android:gravity="center"
+                android:text="0-100" />
+
+            <TextView
+                android:id="@+id/tv_money_2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginStart="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_angle_gray"
+                android:gravity="center"
+                android:text="100-200" />
+
+            <TextView
+                android:id="@+id/tv_money_3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginStart="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_angle_gray"
+                android:gravity="center"
+                android:text="200-300" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginStart="15dp"
+            android:orientation="horizontal"
+            android:paddingBottom="3dp"
+            android:paddingTop="3dp"
+            android:weightSum="3">
+
+            <TextView
+                android:id="@+id/tv_money_4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginStart="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_angle_gray"
+                android:gravity="center"
+                android:text="300-500" />
+
+            <TextView
+                android:id="@+id/tv_money_5"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginStart="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_angle_gray"
+                android:gravity="center"
+                android:text="500-700" />
+
+            <TextView
+                android:id="@+id/tv_money_6"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginStart="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_angle_gray"
+                android:gravity="center"
+                android:text="700以上" />
+        </LinearLayout>
+        <TextView
+            android:id="@+id/textView250"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="3dp"
+            android:layout_marginStart="3dp"
+            android:layout_marginTop="15dp"
+            android:text="销量"
+            android:textColor="@color/tv_Black" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="3dp"
+            android:layout_marginStart="3dp">
+
+            <Spinner
+                android:id="@+id/spinner_sold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_alignParentBottom="true"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/bt_reset"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_pressed_trangle_gradule_yello"
+                    android:text="重置"
+                    android:textColor="@color/tv_White" />
+
+                <Button
+                    android:id="@+id/bt_finish"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_pressed_trangle_gradule_red"
+                    android:text="完成"
+                    android:textColor="@color/tv_White" />
+            </LinearLayout>
+        </RelativeLayout>
+
+    </LinearLayout>
+</LinearLayout>

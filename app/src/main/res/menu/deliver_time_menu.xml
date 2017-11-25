@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group>
+        <item
+            android:id="@+id/deliver_1"
+            android:title="@string/deliver_time_1" />
+        <item
+            android:id="@+id/deliver_2"
+            android:title="@string/deliver_time_2" />
+        <item
+            android:id="@+id/deliver_3"
+            android:title="@string/deliver_time_3" />
+    </group>
+
+</menu>

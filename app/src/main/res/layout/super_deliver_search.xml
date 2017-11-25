@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_height"
+        android:gravity="center_vertical"
+        android:paddingTop="25dp"
+        android:id="@+id/relativeLayout23">
+
+        <TextView
+            android:id="@+id/textView270"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/title_height"
+            android:gravity="center"
+            android:text="超值返搜索"
+            android:textColor="@color/tv_Red"
+            android:textSize="18sp" />
+
+        <RelativeLayout
+            android:id="@+id/btn_back"
+            android:layout_width="30dp"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imageView58"
+                android:layout_width="@dimen/SuperDeliverBackDrawableHeight"
+                android:layout_height="@dimen/SuperDeliverBackDrawableHeight"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="10dp"
+                android:background="@drawable/super_deliver_back" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/relativeLayout23">
+
+        <include
+            layout="@layout/layout_super_deliver_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/include8" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/include8">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="15dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageButton
+                        android:id="@+id/imb_delete"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:background="@drawable/button_pressed_cart_delete" />
+
+                    <TextView
+                        android:id="@+id/textView253"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="搜索历史"
+                        android:textColor="@color/tv_Black" />
+                </RelativeLayout>
+
+                <com.wzzc.other_view.production.detail.main_view.FlowLayout
+                    android:id="@+id/flowLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp" />
+
+            </LinearLayout>
+        </ScrollView>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/touchLayout"
+        android:layout_width="@dimen/TouchLayoutWidth"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/relativeLayout23"
+        android:layout_alignParentStart="true">
+
+    </RelativeLayout>
+</RelativeLayout>

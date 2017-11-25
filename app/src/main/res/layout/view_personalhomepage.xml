@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_hasOK">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/head_icon"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/bg_collection"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_goods_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:gravity="center"
+            android:padding="@dimen/OnepurchaseIndexSmallPadding"
+            android:text="@string/app_name"
+            android:textColor="@color/tv_Red" />
+
+        <TextView
+            android:id="@+id/tv_signature"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="@dimen/OnepurchaseIndexSmallPadding"
+            android:text="作为一名电商我很认真！"
+            android:textSize="12sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:orientation="horizontal"
+            android:padding="@dimen/OnepurchaseIndexSmallPadding"
+            android:weightSum="3">
+
+            <TextView
+                android:id="@+id/tv_indiana"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="@dimen/OnepurchaseIndexSmallPadding"
+                android:tag="0"
+                android:text="夺宝记录" />
+
+            <TextView
+                android:id="@+id/tv_hasWined"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="@dimen/OnepurchaseIndexSmallPadding"
+                android:tag="1"
+                android:text="获得的商品" />
+
+            <TextView
+                android:id="@+id/tv_showOrder"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="@dimen/OnepurchaseIndexSmallPadding"
+                android:tag="2"
+                android:text="晒单" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/contain_indiana"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:tag="0">
+
+            <ListView
+                android:id="@+id/listView_indiana"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/contain_hasWined"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:tag="1">
+
+            <ListView
+                android:id="@+id/listView_hasWined"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/contain_showOrder"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:tag="2">
+
+            <ListView
+                android:id="@+id/listView_showOrder"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </RelativeLayout>
+    </LinearLayout>
+
+
+    <com.wzzc.other_view.extendView.ExtendImageView
+        android:id="@+id/head_icon"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@mipmap/applogo" />
+
+</RelativeLayout>

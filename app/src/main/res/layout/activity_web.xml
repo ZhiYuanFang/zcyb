@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.wzzc.other_activity.web.main_view.WebBrowser
+        android:id="@+id/main_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></com.wzzc.other_activity.web.main_view.WebBrowser>
+
+    <!--<ImageView-->
+        <!--android:id="@+id/launchimage"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_gravity="center"-->
+        <!--android:scaleType="fitXY"-->
+        <!--android:src="@drawable/launchimage" />-->
+</RelativeLayout>

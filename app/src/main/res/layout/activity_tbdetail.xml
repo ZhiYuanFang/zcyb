@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout20"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@color/tv_Red"
+        android:paddingTop="25dp">
+
+        <RelativeLayout
+            android:id="@+id/layout_set"
+            android:layout_width="30dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true">
+
+            <ImageView
+                android:id="@+id/imageView49"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/index_center" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/textView242"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toEndOf="@+id/btn_back"
+            android:layout_toStartOf="@+id/layout_set"
+            android:gravity="center"
+            android:text="宝贝详情"
+            android:textColor="@color/tv_White"
+            android:textSize="18sp" />
+
+        <RelativeLayout
+            android:id="@+id/btn_back"
+            android:layout_width="30dp"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imageView48"
+                android:layout_width="12dp"
+                android:layout_height="20dp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/btn_back_normal"
+                android:clickable="false" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <com.wzzc.other_activity.web.tou.MyWebView
+        android:id="@+id/myWebView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/relativeLayout20">
+
+    </com.wzzc.other_activity.web.tou.MyWebView>
+
+    <RelativeLayout
+        android:id="@+id/contain_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/relativeLayout20">
+
+        <com.wzzc.other_view.FloatButton
+            android:id="@+id/float_button"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:background="@drawable/float_logo"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/touchLayout"
+        android:layout_width="@dimen/TouchLayoutWidth"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/relativeLayout20"
+        android:layout_alignParentStart="true">
+
+    </RelativeLayout>
+</RelativeLayout>

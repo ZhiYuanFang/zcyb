@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1"
+        android:layout_marginTop="5dp">
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/check_production"
+            android:layout_weight="0" />
+
+        <com.wzzc.other_view.extendView.ExtendImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_weight="0"
+            android:id="@+id/img_production" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:weightSum="3"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp">
+
+            <TextView
+                android:text="。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/tv_goods_name"
+                android:singleLine="true"
+                android:layout_weight="1"
+                android:gravity="center_vertical" />
+
+            <TextView
+                android:text="黄光"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/tv_type"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:background="@drawable/bg_collection"
+                android:padding="5dp"
+                android:singleLine="true" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="120dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:background="@drawable/bg_collection"
+                android:weightSum="3"
+                android:layout_marginTop="5dp"
+                android:layout_height="30dp">
+
+                <Button
+                    android:text="－"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/bt_release"
+                    android:layout_weight="1.1"
+                    android:background="@drawable/bg_collection"
+                    android:textColor="@color/tv_Red"
+                    android:tag="0" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:inputType="textPersonName"
+                    android:text="0"
+                    android:ems="10"
+                    android:id="@+id/et_num"
+                    android:layout_weight="0.8"
+                    android:background="@drawable/detail_number_view"
+                    android:gravity="center_vertical|center"
+                    android:focusable="false" />
+
+                <Button
+                    android:text="＋"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/bt_add"
+                    android:layout_weight="1.1"
+                    android:background="@drawable/bg_collection"
+                    android:textColor="@color/tv_Red"
+                    android:tag="1" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_weight="0"
+                android:layout_height="30dp"
+                android:layout_width="160dp">
+
+                <TextView
+                    android:text="0.00"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/tv_nowprice"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical|start"
+                    android:textColor="@color/tv_Red"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:text="原价：0.00"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/tv_forprice"
+                    android:layout_weight="1"
+                    android:gravity="center" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="0">
+
+            <ImageButton
+                android:id="@+id/ib_delete"
+                android:layout_width="26dp"
+                android:layout_height="29dp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/btn_delete"
+                android:tag="2" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

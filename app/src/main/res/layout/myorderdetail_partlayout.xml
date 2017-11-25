@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="2"
+        android:paddingBottom="15dp"
+        android:paddingTop="15dp">
+
+        <TextView
+            android:text="缺货处理 :"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/tv_state"
+            android:layout_weight="1.6"
+            android:gravity="end" />
+
+        <TextView
+            android:text="等待所有商品备齐后再发"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/tv_category"
+            android:layout_weight="0.4"
+            android:paddingStart="15dp"
+            android:paddingLeft="15dp" />
+    </LinearLayout>
+</LinearLayout>

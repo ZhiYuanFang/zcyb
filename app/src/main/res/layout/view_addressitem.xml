@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textView205"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/tv_line" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_pressed_normal"
+        android:orientation="vertical"
+        android:paddingEnd="15dp"
+        android:paddingStart="15dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="15dp"
+            android:paddingTop="15dp">
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:text="张三"
+                android:textColor="@color/tv_Black"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/tv_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_weight="0"
+                android:text="15866668888"
+                android:textColor="@color/tv_Black"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="河南省郑州市管城区" />
+
+        <TextView
+            android:id="@+id/tv_address_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="19dp"
+            android:layout_marginTop="9dp"
+            android:text="航海路中州大道交叉口富田太阳城52号5666号" />
+
+        <TextView
+            android:id="@+id/textView207"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/tv_line" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"
+            android:paddingEnd="1dp"
+            android:paddingStart="4dp">
+
+            <TextView
+                android:id="@+id/tv_edit_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="15dp"
+                android:layout_toStartOf="@+id/tv_delete_address"
+                android:background="@drawable/button_pressed_text_line"
+                android:drawablePadding="5dp"
+                android:drawableStart="@drawable/address_edit"
+                android:padding="3dp"
+                android:text="编辑" />
+
+            <TextView
+                android:id="@+id/tv_delete_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:background="@drawable/button_pressed_text_line"
+                android:drawablePadding="5dp"
+                android:drawableStart="@drawable/address_delete"
+                android:padding="3dp"
+                android:text="删除" />
+
+            <RadioButton
+                android:id="@+id/radio_default"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@drawable/radio_address_default"
+                android:checked="false"
+                android:padding="3dp"
+                android:paddingStart="7dp"
+                android:text="默认地址"
+                android:textColor="@color/tv_Gray" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView206"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/tv_line" />
+</LinearLayout>

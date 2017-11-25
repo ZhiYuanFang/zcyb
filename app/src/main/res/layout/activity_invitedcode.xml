@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/basicLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#32fce0e3"
+    android:orientation="vertical">
+
+    <com.wzzc.other_view.BasicTitleView xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/basicTitleView11"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:title="邀请码" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/basicTitleView11">
+
+        <LinearLayout
+            android:id="@+id/scrollview_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/OnpurchaseMarginLeftRight"
+            android:background="@color/bg_White"
+            android:orientation="vertical"
+            android:padding="@dimen/OnepurchaseIndexSmallPadding">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_margin="@dimen/OnpurchaseMarginLeftRight"
+                android:orientation="horizontal"
+                android:padding="@dimen/OnepurchaseIndexSmallPadding">
+
+                <TextView
+                    android:id="@+id/textView172"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="方式一、您的邀请码："
+                    android:textColor="@color/tv_Red" />
+
+                <com.wzzc.other_view.TextLoadView
+                    android:id="@+id/tlv_code"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_category"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/OnpurchaseMarginLeftRight"
+                android:padding="@dimen/OnepurchaseIndexSmallPadding"
+                android:text="其它人在本站注册时，输入您的邀请码，即可绑定为您的下线，您的下线会员在本站超值送版块下单，订单完成后，您将会得到分成奖励。 					" />
+
+            <TextView
+                android:id="@+id/textView181"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/OnpurchaseMarginLeftRight"
+                android:padding="@dimen/OnepurchaseIndexSmallPadding"
+                android:text="方式二、您的邀请链接："
+                android:textColor="@color/tv_Red" />
+
+            <com.wzzc.other_view.TextLoadView
+                android:id="@+id/tv_link"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/OnpurchaseMarginLeftRight"
+                android:padding="@dimen/OnepurchaseIndexSmallPadding" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/btn_copy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_margin="@dimen/OnpurchaseMarginLeftRight"
+                    android:background="@drawable/angel_border_selected"
+                    android:gravity="center"
+                    android:padding="@dimen/OnepurchaseIndexSmallPadding"
+                    android:text="复制链接"
+                    android:textColor="@color/tv_White" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_second_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/OnpurchaseMarginLeftRight"
+                android:padding="@dimen/OnepurchaseIndexSmallPadding"
+                android:text="您也可以把邀请链接分享给朋友，当他们点击这个链接到本站注册时，会自动绑定为您的下线。" />
+
+            <TextView
+                android:id="@+id/textView185"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/OnpurchaseMarginLeftRight"
+                android:padding="@dimen/OnepurchaseIndexSmallPadding"
+                android:text="方式三、您的分享二维码："
+                android:textColor="@color/tv_Red" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/OnpurchaseMarginLeftRight"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:padding="@dimen/OnepurchaseIndexSmallPadding">
+
+                <ImageView
+                    android:id="@+id/img_code"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_margin="@dimen/OnpurchaseMarginLeftRight"
+                    android:background="@color/SuperDeliverGJColor"
+                    android:scaleType="centerInside" />
+
+                <TextView
+                    android:id="@+id/textView186"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/OnpurchaseMarginLeftRight"
+                    android:text="长按二维码保存图片或发送给朋友" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/contain_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/touchLayout"
+        android:layout_width="@dimen/TouchLayoutWidth"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/basicTitleView11">
+
+    </RelativeLayout>
+
+</RelativeLayout>

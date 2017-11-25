@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:weightSum="1"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="提现金额 :"
+            android:layout_weight="0.7"
+            android:gravity="center" />
+
+        <EditText
+            android:id="@+id/input_money"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/bg_collection"
+            android:layout_weight="0.3" />
+
+        <TextView
+            android:text="元"
+            android:layout_width="20dp"
+            android:id="@+id/textView34"
+            android:layout_weight="0"
+            android:layout_height="20dp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:id="@+id/textView35"
+        android:background="@color/tv_Gray" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:weightSum="1"
+        android:paddingTop="20dp"
+        android:paddingBottom="30dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp"
+            android:text="会员备注 :"
+            android:layout_weight="0.7"
+            android:gravity="center_horizontal" />
+
+        <EditText
+            android:id="@+id/edit_input"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/bg_collection"
+            android:layout_weight="0.3"
+            android:gravity="start" />
+
+        <TextView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:id="@+id/textView37"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#FF2233"
+        android:text="(*满100才可以提现,首次提现请在会员资料里面填写工商银行卡信息,提现后会在1-3个工作日内予以付款)" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:weightSum="1"
+        android:padding="8dp"
+        android:layout_marginTop="15dp">
+
+        <Button
+            android:id="@+id/btn_tj"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="0.5"
+            android:background="@drawable/angel_border_selected"
+            android:gravity="center"
+            android:tag="1"
+            android:text="提交申请"
+            android:textColor="@color/tv_White"
+            android:textSize="18sp" />
+
+        <Button
+            android:text="重置表单"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/btn_reset"
+            android:layout_weight="0.5"
+            android:background="@drawable/angel_border_selected"
+            android:textColor="@color/tv_White"
+            android:textSize="18sp"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:tag="2" />
+    </LinearLayout>
+</LinearLayout>

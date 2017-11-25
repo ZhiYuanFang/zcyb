@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tv_shop_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawablePadding="7dp"
+                android:drawableStart="@drawable/cart_shop_icon"
+                android:text="@string/order_home" />
+
+            <ImageView
+                android:id="@+id/img_call"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="10dp"
+                android:layout_toEndOf="@+id/imageView3"
+                android:background="@drawable/order_call" />
+
+            <TextView
+                android:id="@+id/lab_state"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@+id/img_call"
+                android:gravity="center_vertical|end"
+                android:singleLine="true"
+                android:text="未确认,未付款,未发货"
+                android:textColor="@color/tv_Red"
+                android:textSize="12sp" />
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="10dp"
+                android:layout_height="18dp"
+                android:layout_toEndOf="@+id/tv_shop_name"
+                android:background="@drawable/user_right" />
+        </RelativeLayout>
+
+        <ListView
+            android:id="@+id/list_order_detail"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginBottom="7dp"
+            android:layout_marginTop="5dp"
+            android:divider="@drawable/list_divider"
+            android:dividerHeight="3dp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <TextView
+                android:id="@+id/lab_sum_money"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:text="￥0.07"
+                android:textColor="@color/tv_Red"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/textView42"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toStartOf="@+id/lab_sum_money"
+                android:text="实付："
+                android:textColor="@color/tv_Black" />
+
+            <TextView
+                android:id="@+id/lab_sumery"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="5dp"
+                android:layout_toStartOf="@+id/textView42"
+                android:text="共3件商品"
+                android:textColor="@color/tv_Black" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/textView44"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/tv_line" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/bt_cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginEnd="@dimen/OnpurchaseMarginLeftRight"
+                android:layout_marginRight="@dimen/OnpurchaseMarginLeftRight"
+                android:layout_toStartOf="@+id/bt_detail"
+                android:background="@drawable/button_pressed_virtual_circle_red"
+                android:paddingBottom="3dp"
+                android:paddingEnd="6dp"
+                android:paddingStart="6dp"
+                android:paddingTop="3dp"
+                android:text="取消订单"
+                android:textColor="@color/tv_Black"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/bt_detail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="7dp"
+                android:background="@drawable/button_pressed_virtual_circle_red"
+                android:paddingBottom="3dp"
+                android:paddingEnd="6dp"
+                android:paddingStart="6dp"
+                android:paddingTop="3dp"
+                android:text="查看订单详情"
+                android:textColor="@color/tv_Black"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/bt_confirm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_pressed_virtual_circle_red"
+                android:paddingBottom="3dp"
+                android:paddingEnd="6dp"
+                android:paddingStart="6dp"
+                android:paddingTop="3dp"
+                android:text="确认收货"
+                android:textColor="@color/tv_Black"
+                android:textSize="12sp" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

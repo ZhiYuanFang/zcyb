@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout18"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@color/aquamarine"
+        android:paddingTop="25dp">
+
+        <TextView
+            android:id="@+id/textView242"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="30dp"
+            android:layout_toEndOf="@+id/btn_back"
+            android:gravity="center"
+            android:text="优惠券"
+            android:textColor="@color/tv_White"
+            android:textSize="18sp" />
+
+        <RelativeLayout
+            android:id="@+id/btn_back"
+            android:layout_width="30dp"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imageView48"
+                android:layout_width="12dp"
+                android:layout_height="20dp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/btn_back_normal" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <com.wzzc.other_activity.web.tou.MyWebView
+        android:id="@+id/myWebView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/relativeLayout18"
+        android:layout_above="@+id/relativeLayout19">
+
+    </com.wzzc.other_activity.web.tou.MyWebView>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout19"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/aquamarine">
+
+        <TextView
+            android:id="@+id/tv_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="TextView"
+            android:textColor="@color/tv_White" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/touchLayout"
+        android:layout_width="@dimen/TouchLayoutWidth"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/relativeLayout18">
+
+    </RelativeLayout>
+</RelativeLayout>

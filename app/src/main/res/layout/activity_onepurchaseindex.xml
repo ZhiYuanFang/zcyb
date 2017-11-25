@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/contain_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/tv_redLine">
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_redLine"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_above="@+id/linearLayout2"
+        android:background="@color/tv_Red"
+        android:paddingBottom="@dimen/OnepurchaseIndexSmallPadding"
+        android:paddingTop="@dimen/OnepurchaseIndexSmallPadding" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/linearLayout2">
+
+        <TextView
+            android:id="@+id/tv_home"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawablePadding="@dimen/OnepurchaseDrawpadding"
+            android:drawableTop="@drawable/onepurchase_index_notselect"
+            android:gravity="center"
+            android:text="首页" />
+
+        <TextView
+            android:id="@+id/tv_production"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawablePadding="@dimen/OnepurchaseDrawpadding"
+            android:drawableTop="@drawable/onepurchase_allproduction_noselect"
+            android:gravity="center"
+            android:text="所有商品" />
+
+        <TextView
+            android:id="@+id/tv_car"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawablePadding="@dimen/OnepurchaseDrawpadding"
+            android:drawableTop="@drawable/onepurchase_shop_car"
+            android:gravity="center"
+            android:text="购物车" />
+
+        <TextView
+            android:id="@+id/tv_center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawablePadding="@dimen/OnepurchaseDrawpadding"
+            android:drawableTop="@drawable/onepurchase_mycloud_noselect"
+            android:gravity="center"
+            android:text="我的云购" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e8e8e8">
+
+    <com.wzzc.other_view.BasicTitleView
+        android:id="@+id/basicTitleView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:title="个人代理在线升级" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/angel_border_white"
+        android:layout_margin="15dp">
+
+        <LinearLayout
+            android:id="@+id/wx_layout"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="60dp">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:id="@+id/imageView17"
+                android:background="@drawable/wx"
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="center"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="微信支付"
+                android:textSize="19sp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/textView244" />
+            
+            <ImageView
+                android:id="@+id/wx_selected_img"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/btn_radio_noselect"/>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#e8e8e8"/>
+
+        <LinearLayout
+            android:id="@+id/zfb_layout"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="60dp">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/zfb"
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="center"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="支付宝支付"
+                android:textSize="19sp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp" />
+
+            <ImageView
+                android:id="@+id/zfb_selected_img"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/btn_radio_noselect"/>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#e8e8e8"/>
+
+        <TextView
+            android:id="@+id/ok_pay_btn"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_margin="25dp"
+            android:background="@drawable/angel_border_selected"
+            android:text="确认支付 --元"
+            android:gravity="center"
+            android:textSize="17sp"
+            android:textColor="@color/white"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

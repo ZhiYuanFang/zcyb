@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="10dp"
+    android:paddingEnd="15dp"
+    android:paddingStart="15dp"
+    android:paddingTop="10dp">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout8"
+        android:layout_width="28dp"
+        android:layout_height="wrap_content">
+
+        <CheckBox
+            android:id="@+id/check_goods"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@drawable/radio_cart_default" />
+
+        <TextView
+            android:id="@+id/tv_none"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="失效"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout10"
+        android:layout_width="match_parent"
+        android:layout_height="94dp"
+        android:layout_toEndOf="@+id/relativeLayout8">
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout9"
+            android:layout_width="94dp"
+            android:layout_height="match_parent">
+
+            <com.wzzc.other_view.extendView.ExtendImageView
+                android:id="@+id/eiv_production"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/bg_around_line" />
+
+            <TextView
+                android:id="@+id/tv_allGone"
+                android:layout_width="match_parent"
+                android:layout_height="36dp"
+                android:layout_centerVertical="true"
+                android:background="#a6a6a6"
+                android:gravity="center"
+                android:text="已售罄"
+                android:textColor="@color/tv_White"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toEndOf="@+id/relativeLayout9"
+            android:layout_toStartOf="@+id/img_delete"
+            android:paddingEnd="6dp"
+            android:paddingStart="13dp">
+
+            <TextView
+                android:id="@+id/tv_production_name"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@+id/layout_category"
+                android:layout_marginBottom="12dp"
+                android:text="韩版宽松翻领长款系带羊毛大…" />
+
+            <RelativeLayout
+                android:id="@+id/layout_category"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/layout_copre"
+                android:layout_marginBottom="12dp"
+                android:background="@drawable/bg_circle_virtual_gray"
+                android:gravity="center"
+                android:paddingBottom="7dp"
+                android:paddingEnd="10dp"
+                android:paddingStart="10dp"
+                android:paddingTop="7dp">
+
+                <TextView
+                    android:id="@+id/tv_category"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:text="中号  黑色 "
+                    android:textSize="10sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/layout_copre"
+                android:layout_width="129dp"
+                android:layout_height="27dp"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/bg_circle_virtual_gray">
+
+                <RelativeLayout
+                    android:id="@+id/layout_reduce"
+                    android:layout_width="28dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginStart="2dp"
+                    android:layout_marginTop="2dp"
+                    android:background="@drawable/button_pressed_normal">
+
+                    <ImageView
+                        android:id="@+id/imageView38"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/reduce" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/textView220"
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:layout_toEndOf="@+id/layout_reduce"
+                    android:background="@color/tv_line" />
+
+                <EditText
+                    android:id="@+id/editNumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/et_number"
+                    android:layout_toEndOf="@+id/layout_reduce"
+                    android:layout_toStartOf="@+id/layout_add"
+                    android:background="@android:color/transparent"
+                    android:ems="10"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:text="1"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/textView221"
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:layout_toStartOf="@+id/layout_add"
+                    android:background="@color/tv_line" />
+
+                <RelativeLayout
+                    android:id="@+id/layout_add"
+                    android:layout_width="28dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginEnd="2dp"
+                    android:layout_marginTop="2dp"
+                    android:background="@drawable/button_pressed_normal">
+
+                    <ImageView
+                        android:id="@+id/imageView39"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/add" />
+                </RelativeLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/img_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/button_pressed_cart_delete" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relativeLayout10"
+        android:gravity="center_vertical"
+        android:paddingBottom="7dp"
+        android:paddingStart="138dp"
+        android:paddingTop="7dp">
+
+        <TextView
+            android:id="@+id/tv_coupons"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="12dp"
+            android:text="￥188.00"
+            android:textColor="@color/tv_Red" />
+
+        <TextView
+            android:id="@+id/tv_for_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/tv_coupons"
+            android:singleLine="true"
+            android:text="原价：￥188.00"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+</RelativeLayout>

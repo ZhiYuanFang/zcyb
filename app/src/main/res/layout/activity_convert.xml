@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical">
+
+
+    <com.wzzc.other_view.BasicTitleView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <!--<ImageView-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="234dp"-->
+                <!--android:src="@drawable/logodh" />-->
+            <!--<ImageView-->
+                <!--android:id="@+id/lab_exchange"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="162dp"-->
+                <!--android:src="@drawable/lpdh" />-->
+            <!--<ImageView-->
+                <!--android:id="@+id/lab_payment"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="162dp"-->
+                <!--android:src="@drawable/xszf" />-->
+            <LinearLayout
+                android:id="@+id/lab_exchange"
+                android:layout_marginTop="50dp"
+                android:layout_width="250dp"
+                android:layout_height="100dp"
+                android:gravity="center"
+                android:background="@drawable/bg_zczy"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/smimage1"/>
+                <LinearLayout
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="31sp"
+                        android:text="兑换商品"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="EXCHANGE GOODS"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lab_payment"
+                android:layout_marginTop="50dp"
+                android:layout_width="250dp"
+                android:layout_height="100dp"
+                android:gravity="center"
+                android:background="@drawable/bg_zczy"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/smimage"/>
+                <LinearLayout
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="30sp"
+                        android:text="线上支付"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="ONLINE PAYMENT"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_out"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_fragment"
+    android:padding="3dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/bt_cancel"
+        android:layout_marginBottom="3dp"
+        android:background="@drawable/bg_circle_graduate_alpha_red">
+
+        <ListView
+            android:id="@+id/fragment_listView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="#d8ff3a50"
+            android:dividerHeight="1dp"
+            android:scrollbars="none" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/bt_cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:background="@drawable/button_pressed_angle_solid_alpha_red"
+        android:text="取消"
+        android:textColor="@color/tv_White" />
+</RelativeLayout>
